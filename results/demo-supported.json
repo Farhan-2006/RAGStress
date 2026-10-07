@@ -1,0 +1,1555 @@
+{
+  "query": "Does antiretroviral therapy reduce tuberculosis incidence?",
+  "method": "hybrid",
+  "k": 5,
+  "initial_answer": "Antiretroviral therapy reduces the incidence of tuberculosis in adults with HIV infection. [4883040] [7111021] [31363207]",
+  "generation_mode": "local-flan-t5-small",
+  "model_revisions": {
+    "sentence-transformers/all-MiniLM-L6-v2": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "cross-encoder/nli-MiniLM2-L6-H768": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+    "cross-encoder/nli-deberta-v3-small": "fa2804872c3b4bd748f38c0185cc85775361e735",
+    "google/flan-t5-small": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab"
+  },
+  "stance_model": "cross-encoder/nli-deberta-v3-small",
+  "prototype_thresholds": {
+    "stance": 0.8,
+    "query_jaccard": 0.4,
+    "query_cosine": 0.3,
+    "claim_term_coverage": 0.25
+  },
+  "warning": "Initial references are provisional context IDs; final citations are assigned by the evidence audit.",
+  "retrieved": [
+    {
+      "source_id": "4883040",
+      "score": 0.03278688524590164,
+      "sparse_rank": 1,
+      "bm25": 26.96731221634614,
+      "dense_rank": 1,
+      "dense": 0.7953728437423706,
+      "chunk_id": "4883040:0",
+      "passage": "BACKGROUND Human immunodeficiency virus (HIV) infection is the strongest risk factor for developing tuberculosis and has fuelled its resurgence, especially in sub-Saharan Africa. In 2010, there were an estimated 1.1 million incident cases of tuberculosis among the 34 million people living with HIV worldwide. Antiretroviral therapy has substantial potential to prevent HIV-associated tuberculosis. We conducted a systematic review of studies that analysed the impact of antiretroviral therapy on the incidence of tuberculosis in adults with HIV infection. METHODS AND FINDINGS PubMed, Embase, African Index Medicus, LILACS, and clinical trial registries were systematically searched. Randomised controlled trials, prospective cohort studies, and retrospective cohort studies were included if they compared tuberculosis incidence by antiretroviral therapy status in HIV-infected adults for a median of over 6 mo in developing countries.",
+      "rank": 1,
+      "rrf": 0.03278688524590164,
+      "title": "Antiretroviral Therapy for Prevention of Tuberculosis in Adults with HIV: A Systematic Review and Meta-Analysis"
+    },
+    {
+      "source_id": "7111021",
+      "score": 0.03200204813108039,
+      "sparse_rank": 2,
+      "bm25": 22.429143773925823,
+      "dense_rank": 3,
+      "dense": 0.7219246625900269,
+      "chunk_id": "7111021:0",
+      "passage": "BACKGROUND We previously reported that integrating antiretroviral therapy (ART) with tuberculosis treatment reduces mortality. However, the timing for the initiation of ART during tuberculosis treatment remains unresolved. METHODS We conducted a three-group, open-label, randomized, controlled trial in South Africa involving 642 ambulatory patients, all with tuberculosis (confirmed by a positive sputum smear for acid-fast bacilli), human immunodeficiency virus infection, and a CD4+ T-cell count of less than 500 per cubic millimeter. Findings in the earlier-ART group (ART initiated within 4 weeks after the start of tuberculosis treatment, 214 patients) and later-ART group (ART initiated during the first 4 weeks of the continuation phase of tuberculosis treatment, 215 patients) are presented here. RESULTS At baseline, the median CD4+ T-cell count was 150 per cubic millimeter, and the median viral load was 161,000 copies per milliliter, with no significant differences between the two groups.",
+      "rank": 2,
+      "rrf": 0.03200204813108039,
+      "title": "Integration of antiretroviral therapy with tuberculosis treatment."
+    },
+    {
+      "source_id": "31363207",
+      "score": 0.03149801587301587,
+      "sparse_rank": 3,
+      "bm25": 21.869721499325998,
+      "dense_rank": 4,
+      "dense": 0.7209987640380859,
+      "chunk_id": "31363207:2",
+      "passage": "CONCLUSIONS This review raises serious concerns regarding current recommendations for treatment of HIV-tuberculosis coinfection. The data suggest that at least 8 months duration of rifamycin therapy, initial daily dosing, and concurrent antiretroviral therapy might be associated with better outcomes, but adequately powered randomized trials are urgently needed to confirm this.",
+      "rank": 3,
+      "rrf": 0.03149801587301587,
+      "title": "Treatment of active tuberculosis in HIV-coinfected patients: a systematic review and meta-analysis."
+    },
+    {
+      "source_id": "32012666",
+      "score": 0.03055037313432836,
+      "sparse_rank": 4,
+      "bm25": 20.350579034083943,
+      "dense_rank": 7,
+      "dense": 0.6160707473754883,
+      "chunk_id": "32012666:0",
+      "passage": "This retrospective observational review documents the efforts of the Swaziland National Tuberculosis (TB) Control Programme between 2004 and 2014. The objective is to describe the disparity between actual declines in case notification and increases in estimated incidence. The review of policies and practices shows the most influential factors associated with the decrease in TB case notification to be an increase in access to antiretroviral therapy for co-infected TB patients, the general success of TB and human immunodeficiency virus service integration in the country and improvements in implementation of all components of directly observed treatment, active case finding, and rapid diagnosis using new technologies.",
+      "rank": 4,
+      "rrf": 0.03055037313432836,
+      "title": "Declining tuberculosis notification trend associated with strengthened TB and expanded HIV care in Swaziland."
+    },
+    {
+      "source_id": "11254040",
+      "score": 0.029411764705882353,
+      "sparse_rank": 8,
+      "bm25": 14.786162709965982,
+      "dense_rank": 8,
+      "dense": 0.5839918851852417,
+      "chunk_id": "11254040:1",
+      "passage": "The 3 most common side effects were gastrointestinal disorders (32.1%), ototoxicity (14.6%), and psychiatric disorders (13.2%). Subgroup analyses based on each characteristic (study population, previous tuberculosis treated, human immunodeficiency virus prevalence, and length of treatment) did not show any significant difference between groups. Additionally, among 1519 patients who developed ADEs with available data of impact on MDR-TB therapy, 70.4% required change of MDR-TB treatment. Adverse events were common among MDR-TB cases, occurring in more than half of the cases, with over two-thirds requiring change of anti-MDR-TB treatment. MDR-TB patients should be monitored closely and managed aggressively for side effects during therapy, especially for ototoxicity and psychiatric disorders.",
+      "rank": 5,
+      "rrf": 0.029411764705882353,
+      "title": "Adverse Events Associated With the Treatment of Multidrug-Resistant Tuberculosis: A Systematic Review and Meta-analysis."
+    }
+  ],
+  "query_terms": [
+    {
+      "term": "antiretroviral",
+      "df": 38,
+      "idf": 4.902673996738372,
+      "postings_sample": [
+        [
+          "374902",
+          2
+        ],
+        [
+          "437924",
+          2
+        ],
+        [
+          "601033",
+          2
+        ],
+        [
+          "708425",
+          1
+        ],
+        [
+          "1986482",
+          2
+        ],
+        [
+          "3493623",
+          1
+        ],
+        [
+          "4347374",
+          1
+        ],
+        [
+          "4883040",
+          8
+        ]
+      ]
+    },
+    {
+      "term": "tuberculosis",
+      "df": 56,
+      "idf": 4.519091599879715,
+      "postings_sample": [
+        [
+          "341324",
+          9
+        ],
+        [
+          "1259359",
+          3
+        ],
+        [
+          "1386103",
+          5
+        ],
+        [
+          "2274272",
+          1
+        ],
+        [
+          "3475317",
+          3
+        ],
+        [
+          "4246523",
+          1
+        ],
+        [
+          "4424888",
+          4
+        ],
+        [
+          "4883040",
+          9
+        ]
+      ]
+    },
+    {
+      "term": "reduce",
+      "df": 183,
+      "idf": 3.341117570537486,
+      "postings_sample": [
+        [
+          "92308",
+          1
+        ],
+        [
+          "202259",
+          1
+        ],
+        [
+          "374902",
+          3
+        ],
+        [
+          "437924",
+          2
+        ],
+        [
+          "583260",
+          1
+        ],
+        [
+          "597790",
+          1
+        ],
+        [
+          "790598",
+          1
+        ],
+        [
+          "791050",
+          1
+        ]
+      ]
+    },
+    {
+      "term": "does",
+      "df": 199,
+      "idf": 3.2575180017021923,
+      "postings_sample": [
+        [
+          "152245",
+          1
+        ],
+        [
+          "207972",
+          1
+        ],
+        [
+          "243694",
+          1
+        ],
+        [
+          "323335",
+          1
+        ],
+        [
+          "516867",
+          1
+        ],
+        [
+          "750781",
+          1
+        ],
+        [
+          "778436",
+          1
+        ],
+        [
+          "790598",
+          2
+        ]
+      ]
+    },
+    {
+      "term": "incidence",
+      "df": 200,
+      "idf": 3.2525179912854867,
+      "postings_sample": [
+        [
+          "301866",
+          1
+        ],
+        [
+          "323335",
+          1
+        ],
+        [
+          "343052",
+          1
+        ],
+        [
+          "374902",
+          2
+        ],
+        [
+          "437924",
+          2
+        ],
+        [
+          "829646",
+          1
+        ],
+        [
+          "1102268",
+          3
+        ],
+        [
+          "1215116",
+          1
+        ]
+      ]
+    },
+    {
+      "term": "therapy",
+      "df": 391,
+      "idf": 2.5833467226012528,
+      "postings_sample": [
+        [
+          "118568",
+          1
+        ],
+        [
+          "293661",
+          2
+        ],
+        [
+          "323335",
+          4
+        ],
+        [
+          "374902",
+          2
+        ],
+        [
+          "409280",
+          1
+        ],
+        [
+          "496873",
+          1
+        ],
+        [
+          "520579",
+          1
+        ],
+        [
+          "601033",
+          3
+        ]
+      ]
+    }
+  ],
+  "query_relevance_cosine": 0.7953728437423706,
+  "stability": {
+    "kind": "rule-based active/passive question rewrites (review for equivalence)",
+    "base_ids": [
+      "4883040",
+      "7111021",
+      "31363207",
+      "32012666",
+      "11254040"
+    ],
+    "variants": [
+      {
+        "query": "Is tuberculosis incidence reduced by antiretroviral therapy?",
+        "source_ids": [
+          "4883040",
+          "7111021",
+          "31363207",
+          "32012666",
+          "21479231"
+        ],
+        "jaccard": 0.6666666666666666
+      },
+      {
+        "query": "tuberculosis incidence: is it reduced by antiretroviral therapy?",
+        "source_ids": [
+          "4883040",
+          "7111021",
+          "31363207",
+          "32012666",
+          "21479231"
+        ],
+        "jaccard": 0.6666666666666666
+      },
+      {
+        "query": "What is the evidence on whether antiretroviral therapy reduces tuberculosis incidence?",
+        "source_ids": [
+          "4883040",
+          "31363207",
+          "7111021",
+          "32012666",
+          "8294009"
+        ],
+        "jaccard": 0.6666666666666666
+      }
+    ],
+    "mean_jaccard": 0.6666666666666666
+  },
+  "claims": [
+    {
+      "claim": "Antiretroviral therapy reduces the incidence of tuberculosis in adults with HIV infection.",
+      "claim_retrieval": [
+        {
+          "source_id": "4883040",
+          "score": 0.03278688524590164,
+          "sparse_rank": 1,
+          "bm25": 41.827043063763234,
+          "dense_rank": 1,
+          "dense": 0.8688274621963501,
+          "chunk_id": "4883040:0",
+          "passage": "BACKGROUND Human immunodeficiency virus (HIV) infection is the strongest risk factor for developing tuberculosis and has fuelled its resurgence, especially in sub-Saharan Africa. In 2010, there were an estimated 1.1 million incident cases of tuberculosis among the 34 million people living with HIV worldwide. Antiretroviral therapy has substantial potential to prevent HIV-associated tuberculosis. We conducted a systematic review of studies that analysed the impact of antiretroviral therapy on the incidence of tuberculosis in adults with HIV infection. METHODS AND FINDINGS PubMed, Embase, African Index Medicus, LILACS, and clinical trial registries were systematically searched. Randomised controlled trials, prospective cohort studies, and retrospective cohort studies were included if they compared tuberculosis incidence by antiretroviral therapy status in HIV-infected adults for a median of over 6 mo in developing countries.",
+          "rank": 1,
+          "rrf": 0.03278688524590164,
+          "title": "Antiretroviral Therapy for Prevention of Tuberculosis in Adults with HIV: A Systematic Review and Meta-Analysis"
+        },
+        {
+          "source_id": "31363207",
+          "score": 0.03200204813108039,
+          "sparse_rank": 2,
+          "bm25": 28.373299086508972,
+          "dense_rank": 3,
+          "dense": 0.7356364130973816,
+          "chunk_id": "31363207:2",
+          "passage": "CONCLUSIONS This review raises serious concerns regarding current recommendations for treatment of HIV-tuberculosis coinfection. The data suggest that at least 8 months duration of rifamycin therapy, initial daily dosing, and concurrent antiretroviral therapy might be associated with better outcomes, but adequately powered randomized trials are urgently needed to confirm this.",
+          "rank": 2,
+          "rrf": 0.03200204813108039,
+          "title": "Treatment of active tuberculosis in HIV-coinfected patients: a systematic review and meta-analysis."
+        },
+        {
+          "source_id": "7111021",
+          "score": 0.03149801587301587,
+          "sparse_rank": 3,
+          "bm25": 27.936389694017485,
+          "dense_rank": 4,
+          "dense": 0.7296032309532166,
+          "chunk_id": "7111021:0",
+          "passage": "BACKGROUND We previously reported that integrating antiretroviral therapy (ART) with tuberculosis treatment reduces mortality. However, the timing for the initiation of ART during tuberculosis treatment remains unresolved. METHODS We conducted a three-group, open-label, randomized, controlled trial in South Africa involving 642 ambulatory patients, all with tuberculosis (confirmed by a positive sputum smear for acid-fast bacilli), human immunodeficiency virus infection, and a CD4+ T-cell count of less than 500 per cubic millimeter. Findings in the earlier-ART group (ART initiated within 4 weeks after the start of tuberculosis treatment, 214 patients) and later-ART group (ART initiated during the first 4 weeks of the continuation phase of tuberculosis treatment, 215 patients) are presented here. RESULTS At baseline, the median CD4+ T-cell count was 150 per cubic millimeter, and the median viral load was 161,000 copies per milliliter, with no significant differences between the two groups.",
+          "rank": 3,
+          "rrf": 0.03149801587301587,
+          "title": "Integration of antiretroviral therapy with tuberculosis treatment."
+        },
+        {
+          "source_id": "32012666",
+          "score": 0.03007688828584351,
+          "sparse_rank": 6,
+          "bm25": 25.785766767070573,
+          "dense_rank": 7,
+          "dense": 0.6250177621841431,
+          "chunk_id": "32012666:0",
+          "passage": "This retrospective observational review documents the efforts of the Swaziland National Tuberculosis (TB) Control Programme between 2004 and 2014. The objective is to describe the disparity between actual declines in case notification and increases in estimated incidence. The review of policies and practices shows the most influential factors associated with the decrease in TB case notification to be an increase in access to antiretroviral therapy for co-infected TB patients, the general success of TB and human immunodeficiency virus service integration in the country and improvements in implementation of all components of directly observed treatment, active case finding, and rapid diagnosis using new technologies.",
+          "rank": 4,
+          "rrf": 0.03007688828584351,
+          "title": "Declining tuberculosis notification trend associated with strengthened TB and expanded HIV care in Swaziland."
+        },
+        {
+          "source_id": "13899137",
+          "score": 0.028790389395194696,
+          "sparse_rank": 8,
+          "bm25": 23.443519458631624,
+          "dense_rank": 11,
+          "dense": 0.5443451404571533,
+          "chunk_id": "13899137:2",
+          "passage": "The number of person-years of ART per infection averted over 8 y ranged between 5.8 and 18.7. Considering the actual scale-up of ART in South Africa, seven models estimated that current HIV incidence is 17% to 32% lower than it would have been in the absence of ART. Differences between model assumptions about CD4 decline and HIV transmissibility over the course of infection explained only a modest amount of the variation in model results. CONCLUSIONS Mathematical models evaluating the impact of ART vary substantially in structure, complexity, and parameter choices, but all suggest that ART, at high levels of access and with high adherence, has the potential to substantially reduce new HIV infections. There was broad agreement regarding the short-term epidemiologic impact of ambitious treatment scale-up, but more variation in longer term projections and in the efficiency with which treatment can reduce new infections.",
+          "rank": 5,
+          "rrf": 0.028790389395194696,
+          "title": "HIV Treatment as Prevention: Systematic Comparison of Mathematical Models of the Potential Impact of Antiretroviral Therapy on HIV Incidence in South Africa"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "4883040",
+          "chunk_id": "4883040:0",
+          "quote": "We conducted a systematic review of studies that analysed the impact of antiretroviral therapy on the incidence of tuberculosis in adults with HIV infection.",
+          "label": "NEUTRAL",
+          "support": 0.005089995451271534,
+          "contradiction": 0.0012962805340066552,
+          "neutral": 0.9936137795448303,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.8729530492645791,
+          "source_group": "57e4e7023ed05990",
+          "retrieval_rank": 1
+        },
+        {
+          "source_id": "4883040",
+          "chunk_id": "4883040:0",
+          "quote": "Randomised controlled trials, prospective cohort studies, and retrospective cohort studies were included if they compared tuberculosis incidence by antiretroviral therapy status in HIV-infected adults for a median of over 6 mo in developing countries.",
+          "label": "NEUTRAL",
+          "support": 0.0033099716529250145,
+          "contradiction": 0.0002796330663841218,
+          "neutral": 0.9964104294776917,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.8729530492645791,
+          "source_group": "57e4e7023ed05990",
+          "retrieval_rank": 1
+        },
+        {
+          "source_id": "4883040",
+          "chunk_id": "4883040:0",
+          "quote": "Antiretroviral therapy has substantial potential to prevent HIV-associated tuberculosis.",
+          "label": "NEUTRAL",
+          "support": 0.011623309925198555,
+          "contradiction": 7.593363261548802e-05,
+          "neutral": 0.9883008003234863,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.8729530492645791,
+          "source_group": "57e4e7023ed05990",
+          "retrieval_rank": 1
+        },
+        {
+          "source_id": "4883040",
+          "chunk_id": "4883040:0",
+          "quote": "BACKGROUND Human immunodeficiency virus (HIV) infection is the strongest risk factor for developing tuberculosis and has fuelled its resurgence, especially in sub-Saharan Africa. In 2010, there were an estimated 1.1 million incident cases of tuberculosis among the 34 million people living with HIV worldwide. Antiretroviral therapy has substantial potential to prevent HIV-associated tuberculosis. We conducted a systematic review of studies that analysed the impact of antiretroviral therapy on the incidence of tuberculosis in adults with HIV infection. METHODS AND FINDINGS PubMed, Embase, African Index Medicus, LILACS, and clinical trial registries were systematically searched. Randomised controlled trials, prospective cohort studies, and retrospective cohort studies were included if they compared tuberculosis incidence by antiretroviral therapy status in HIV-infected adults for a median of over 6 mo in developing countries.",
+          "label": "NEUTRAL",
+          "support": 0.004165425896644592,
+          "contradiction": 0.0012811303604394197,
+          "neutral": 0.9945534467697144,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.8729530492645791,
+          "source_group": "57e4e7023ed05990",
+          "retrieval_rank": 1
+        },
+        {
+          "source_id": "7111021",
+          "chunk_id": "7111021:0",
+          "quote": "BACKGROUND We previously reported that integrating antiretroviral therapy (ART) with tuberculosis treatment reduces mortality.",
+          "label": "NEUTRAL",
+          "support": 0.009178806096315384,
+          "contradiction": 0.000942688959185034,
+          "neutral": 0.9898785352706909,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.6358481544913824,
+          "source_group": "01f8b46e33081ead",
+          "retrieval_rank": 3
+        },
+        {
+          "source_id": "7111021",
+          "chunk_id": "7111021:0",
+          "quote": "METHODS We conducted a three-group, open-label, randomized, controlled trial in South Africa involving 642 ambulatory patients, all with tuberculosis (confirmed by a positive sputum smear for acid-fast bacilli), human immunodeficiency virus infection, and a CD4+ T-cell count of less than 500 per cubic millimeter.",
+          "label": "NEUTRAL",
+          "support": 0.0009310622117482126,
+          "contradiction": 0.0005196905112825334,
+          "neutral": 0.9985492825508118,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.6358481544913824,
+          "source_group": "01f8b46e33081ead",
+          "retrieval_rank": 3
+        },
+        {
+          "source_id": "7111021",
+          "chunk_id": "7111021:0",
+          "quote": "Findings in the earlier-ART group (ART initiated within 4 weeks after the start of tuberculosis treatment, 214 patients) and later-ART group (ART initiated during the first 4 weeks of the continuation phase of tuberculosis treatment, 215 patients) are presented here.",
+          "label": "NEUTRAL",
+          "support": 0.00038977479562163353,
+          "contradiction": 0.0009997732704505324,
+          "neutral": 0.9986103773117065,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.6358481544913824,
+          "source_group": "01f8b46e33081ead",
+          "retrieval_rank": 3
+        },
+        {
+          "source_id": "7111021",
+          "chunk_id": "7111021:0",
+          "quote": "BACKGROUND We previously reported that integrating antiretroviral therapy (ART) with tuberculosis treatment reduces mortality. However, the timing for the initiation of ART during tuberculosis treatment remains unresolved. METHODS We conducted a three-group, open-label, randomized, controlled trial in South Africa involving 642 ambulatory patients, all with tuberculosis (confirmed by a positive sputum smear for acid-fast bacilli), human immunodeficiency virus infection, and a CD4+ T-cell count of less than 500 per cubic millimeter. Findings in the earlier-ART group (ART initiated within 4 weeks after the start of tuberculosis treatment, 214 patients) and later-ART group (ART initiated during the first 4 weeks of the continuation phase of tuberculosis treatment, 215 patients) are presented here. RESULTS At baseline, the median CD4+ T-cell count was 150 per cubic millimeter, and the median viral load was 161,000 copies per milliliter, with no significant differences between the two groups.",
+          "label": "NEUTRAL",
+          "support": 0.0016525395913049579,
+          "contradiction": 0.0034691181499511003,
+          "neutral": 0.9948782920837402,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.6358481544913824,
+          "source_group": "01f8b46e33081ead",
+          "retrieval_rank": 3
+        },
+        {
+          "source_id": "31363207",
+          "chunk_id": "31363207:2",
+          "quote": "The data suggest that at least 8 months duration of rifamycin therapy, initial daily dosing, and concurrent antiretroviral therapy might be associated with better outcomes, but adequately powered randomized trials are urgently needed to confirm this.",
+          "label": "NEUTRAL",
+          "support": 0.00010402691987110302,
+          "contradiction": 0.0012870428618043661,
+          "neutral": 0.9986090064048767,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.5521437460130783,
+          "source_group": "3c20db6751c683e8",
+          "retrieval_rank": 2
+        },
+        {
+          "source_id": "31363207",
+          "chunk_id": "31363207:2",
+          "quote": "CONCLUSIONS This review raises serious concerns regarding current recommendations for treatment of HIV-tuberculosis coinfection.",
+          "label": "NEUTRAL",
+          "support": 0.0005241069593466818,
+          "contradiction": 0.0005333727458491921,
+          "neutral": 0.9989425539970398,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.5521437460130783,
+          "source_group": "3c20db6751c683e8",
+          "retrieval_rank": 2
+        },
+        {
+          "source_id": "31363207",
+          "chunk_id": "31363207:2",
+          "quote": "CONCLUSIONS This review raises serious concerns regarding current recommendations for treatment of HIV-tuberculosis coinfection. The data suggest that at least 8 months duration of rifamycin therapy, initial daily dosing, and concurrent antiretroviral therapy might be associated with better outcomes, but adequately powered randomized trials are urgently needed to confirm this.",
+          "label": "NEUTRAL",
+          "support": 0.001770071336068213,
+          "contradiction": 0.00041269740904681385,
+          "neutral": 0.9978172779083252,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.5521437460130783,
+          "source_group": "3c20db6751c683e8",
+          "retrieval_rank": 2
+        },
+        {
+          "source_id": "32012666",
+          "chunk_id": "32012666:0",
+          "quote": "The review of policies and practices shows the most influential factors associated with the decrease in TB case notification to be an increase in access to antiretroviral therapy for co-infected TB patients, the general success of TB and human immunodeficiency virus service integration in the country and improvements in implementation of all components of directly observed treatment, active case finding, and rapid diagnosis using new technologies.",
+          "label": "NEUTRAL",
+          "support": 0.05609141290187836,
+          "contradiction": 0.0013279048725962639,
+          "neutral": 0.9425806999206543,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.5262265878083878,
+          "source_group": "97874418e00cf3dc",
+          "retrieval_rank": 4
+        },
+        {
+          "source_id": "32012666",
+          "chunk_id": "32012666:0",
+          "quote": "This retrospective observational review documents the efforts of the Swaziland National Tuberculosis (TB) Control Programme between 2004 and 2014.",
+          "label": "NEUTRAL",
+          "support": 0.00035027574631385505,
+          "contradiction": 0.00030414509819820523,
+          "neutral": 0.999345600605011,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.5262265878083878,
+          "source_group": "97874418e00cf3dc",
+          "retrieval_rank": 4
+        },
+        {
+          "source_id": "32012666",
+          "chunk_id": "32012666:0",
+          "quote": "The objective is to describe the disparity between actual declines in case notification and increases in estimated incidence.",
+          "label": "NEUTRAL",
+          "support": 0.00014597496192436665,
+          "contradiction": 0.023234479129314423,
+          "neutral": 0.97661954164505,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.5262265878083878,
+          "source_group": "97874418e00cf3dc",
+          "retrieval_rank": 4
+        },
+        {
+          "source_id": "32012666",
+          "chunk_id": "32012666:0",
+          "quote": "This retrospective observational review documents the efforts of the Swaziland National Tuberculosis (TB) Control Programme between 2004 and 2014. The objective is to describe the disparity between actual declines in case notification and increases in estimated incidence. The review of policies and practices shows the most influential factors associated with the decrease in TB case notification to be an increase in access to antiretroviral therapy for co-infected TB patients, the general success of TB and human immunodeficiency virus service integration in the country and improvements in implementation of all components of directly observed treatment, active case finding, and rapid diagnosis using new technologies.",
+          "label": "NEUTRAL",
+          "support": 0.0025695543736219406,
+          "contradiction": 0.0019925928208976984,
+          "neutral": 0.9954379200935364,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.5262265878083878,
+          "source_group": "97874418e00cf3dc",
+          "retrieval_rank": 4
+        },
+        {
+          "source_id": "11254040",
+          "chunk_id": "11254040:1",
+          "quote": "Subgroup analyses based on each characteristic (study population, previous tuberculosis treated, human immunodeficiency virus prevalence, and length of treatment) did not show any significant difference between groups.",
+          "label": "NEUTRAL",
+          "support": 0.0004238302353769541,
+          "contradiction": 0.0019032206619158387,
+          "neutral": 0.997672975063324,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.25018691368418067,
+          "source_group": "e727b45276619b5c",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "11254040",
+          "chunk_id": "11254040:1",
+          "quote": "Additionally, among 1519 patients who developed ADEs with available data of impact on MDR-TB therapy, 70.4% required change of MDR-TB treatment.",
+          "label": "NEUTRAL",
+          "support": 0.0011176071129739285,
+          "contradiction": 0.001170822768472135,
+          "neutral": 0.9977115392684937,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.25018691368418067,
+          "source_group": "e727b45276619b5c",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "11254040",
+          "chunk_id": "11254040:1",
+          "quote": "MDR-TB patients should be monitored closely and managed aggressively for side effects during therapy, especially for ototoxicity and psychiatric disorders.",
+          "label": "NEUTRAL",
+          "support": 0.0007299944409169257,
+          "contradiction": 0.0006950944080017507,
+          "neutral": 0.9985748529434204,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.25018691368418067,
+          "source_group": "e727b45276619b5c",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "11254040",
+          "chunk_id": "11254040:1",
+          "quote": "The 3 most common side effects were gastrointestinal disorders (32.1%), ototoxicity (14.6%), and psychiatric disorders (13.2%). Subgroup analyses based on each characteristic (study population, previous tuberculosis treated, human immunodeficiency virus prevalence, and length of treatment) did not show any significant difference between groups. Additionally, among 1519 patients who developed ADEs with available data of impact on MDR-TB therapy, 70.4% required change of MDR-TB treatment. Adverse events were common among MDR-TB cases, occurring in more than half of the cases, with over two-thirds requiring change of anti-MDR-TB treatment. MDR-TB patients should be monitored closely and managed aggressively for side effects during therapy, especially for ototoxicity and psychiatric disorders.",
+          "label": "NEUTRAL",
+          "support": 0.006973601877689362,
+          "contradiction": 0.0008355156169272959,
+          "neutral": 0.9921908974647522,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "idf_weighted_claim_term_coverage": 0.25018691368418067,
+          "source_group": "e727b45276619b5c",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "13899137",
+          "chunk_id": "13899137:2",
+          "quote": "Considering the actual scale-up of ART in South Africa, seven models estimated that current HIV incidence is 17% to 32% lower than it would have been in the absence of ART.",
+          "label": "NEUTRAL",
+          "support": 0.000408789434004575,
+          "contradiction": 0.07281620800495148,
+          "neutral": 0.9267750382423401,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.34918595712333816,
+          "source_group": "1d4eeb3214c48e19",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "13899137",
+          "chunk_id": "13899137:2",
+          "quote": "Differences between model assumptions about CD4 decline and HIV transmissibility over the course of infection explained only a modest amount of the variation in model results.",
+          "label": "NEUTRAL",
+          "support": 0.00010158160876017064,
+          "contradiction": 0.0027146798092871904,
+          "neutral": 0.9971837401390076,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.34918595712333816,
+          "source_group": "1d4eeb3214c48e19",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "13899137",
+          "chunk_id": "13899137:2",
+          "quote": "CONCLUSIONS Mathematical models evaluating the impact of ART vary substantially in structure, complexity, and parameter choices, but all suggest that ART, at high levels of access and with high adherence, has the potential to substantially reduce new HIV infections.",
+          "label": "NEUTRAL",
+          "support": 0.00019929331028833985,
+          "contradiction": 0.009549088776111603,
+          "neutral": 0.9902516603469849,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.34918595712333816,
+          "source_group": "1d4eeb3214c48e19",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "13899137",
+          "chunk_id": "13899137:2",
+          "quote": "The number of person-years of ART per infection averted over 8 y ranged between 5.8 and 18.7. Considering the actual scale-up of ART in South Africa, seven models estimated that current HIV incidence is 17% to 32% lower than it would have been in the absence of ART. Differences between model assumptions about CD4 decline and HIV transmissibility over the course of infection explained only a modest amount of the variation in model results. CONCLUSIONS Mathematical models evaluating the impact of ART vary substantially in structure, complexity, and parameter choices, but all suggest that ART, at high levels of access and with high adherence, has the potential to substantially reduce new HIV infections. There was broad agreement regarding the short-term epidemiologic impact of ambitious treatment scale-up, but more variation in longer term projections and in the efficiency with which treatment can reduce new infections.",
+          "label": "NEUTRAL",
+          "support": 0.0003455188125371933,
+          "contradiction": 0.0022267296444624662,
+          "neutral": 0.997427761554718,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.34918595712333816,
+          "source_group": "1d4eeb3214c48e19",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "14806256",
+          "chunk_id": "14806256:0",
+          "quote": "CONTEXT Use of antiretroviral drugs, including protease inhibitors, for treatment of human immunodeficiency virus (HIV) infection has been anecdotally associated with hepatotoxicity, particularly in persons coinfected with hepatitis C or B virus.",
+          "label": "NEUTRAL",
+          "support": 0.0005138645065017045,
+          "contradiction": 0.5492173433303833,
+          "neutral": 0.45026883482933044,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.6025752976671537,
+          "source_group": "ab230cd8f88aeca6",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "14806256",
+          "chunk_id": "14806256:0",
+          "quote": "OBJECTIVES To ascertain if incidence of severe hepatotoxicity during antiretroviral therapy is similar for all antiretroviral drug combinations, and to define the role of chronic viral hepatitis in its development.",
+          "label": "NEUTRAL",
+          "support": 0.0007916487520560622,
+          "contradiction": 0.7551923394203186,
+          "neutral": 0.24401594698429108,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.6025752976671537,
+          "source_group": "ab230cd8f88aeca6",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "14806256",
+          "chunk_id": "14806256:0",
+          "quote": "PATIENTS A total of 298 patients who were prescribed new antiretroviral therapies between January 1996 and January 1998, 211 (71%) of whom received protease inhibitors as part of combination therapy (median follow-up, 182 days) and 87 (29%) of whom received dual nucleoside analog regimens (median follow-up, 167 days).",
+          "label": "NEUTRAL",
+          "support": 0.0002527083270251751,
+          "contradiction": 0.0023483578115701675,
+          "neutral": 0.9973989725112915,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.6025752976671537,
+          "source_group": "ab230cd8f88aeca6",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "14806256",
+          "chunk_id": "14806256:0",
+          "quote": "CONTEXT Use of antiretroviral drugs, including protease inhibitors, for treatment of human immunodeficiency virus (HIV) infection has been anecdotally associated with hepatotoxicity, particularly in persons coinfected with hepatitis C or B virus. OBJECTIVES To ascertain if incidence of severe hepatotoxicity during antiretroviral therapy is similar for all antiretroviral drug combinations, and to define the role of chronic viral hepatitis in its development. DESIGN Prospective cohort study. SETTING University-based urban HIV clinic. PATIENTS A total of 298 patients who were prescribed new antiretroviral therapies between January 1996 and January 1998, 211 (71%) of whom received protease inhibitors as part of combination therapy (median follow-up, 182 days) and 87 (29%) of whom received dual nucleoside analog regimens (median follow-up, 167 days). Chronic hepatitis C and B virus infection was present in 154 (52%) and 8 (2.7%) patients, respectively.",
+          "label": "NEUTRAL",
+          "support": 0.002033527009189129,
+          "contradiction": 0.02729657106101513,
+          "neutral": 0.9706699252128601,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.6025752976671537,
+          "source_group": "ab230cd8f88aeca6",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "13899137",
+          "chunk_id": "13899137:1",
+          "quote": "For a scenario in which 80% of HIV-infected individuals start treatment on average 1 y after their CD4 count drops below 350 cells/µl and 85% remain on treatment after 3 y, the models projected that HIV incidence would be 35% to 54% lower 8 y after the introduction of ART, compared to a counterfactual scenario in which there is no ART.",
+          "label": "NEUTRAL",
+          "support": 0.002127666724845767,
+          "contradiction": 0.344634473323822,
+          "neutral": 0.6532378196716309,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.34026975961708245,
+          "source_group": "1d4eeb3214c48e19",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "13899137",
+          "chunk_id": "13899137:1",
+          "quote": "The impact of optimistic interventions including immediate ART initiation varied widely across models, maintaining substantial uncertainty about the theoretical prospect for elimination of HIV from the population using ART alone over the next four decades.",
+          "label": "NEUTRAL",
+          "support": 0.0002602121967356652,
+          "contradiction": 0.08119868487119675,
+          "neutral": 0.9185411334037781,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.34026975961708245,
+          "source_group": "1d4eeb3214c48e19",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "13899137",
+          "chunk_id": "13899137:1",
+          "quote": "More variation existed in the estimated long-term (38 y) reductions in incidence.",
+          "label": "NEUTRAL",
+          "support": 0.00016354743274860084,
+          "contradiction": 0.0020492025651037693,
+          "neutral": 0.9977872371673584,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.34026975961708245,
+          "source_group": "1d4eeb3214c48e19",
+          "retrieval_rank": 5
+        },
+        {
+          "source_id": "13899137",
+          "chunk_id": "13899137:1",
+          "quote": "Intervention scenarios systematically varied the CD4 count threshold for treatment eligibility, access to treatment, and programme retention. For a scenario in which 80% of HIV-infected individuals start treatment on average 1 y after their CD4 count drops below 350 cells/µl and 85% remain on treatment after 3 y, the models projected that HIV incidence would be 35% to 54% lower 8 y after the introduction of ART, compared to a counterfactual scenario in which there is no ART. More variation existed in the estimated long-term (38 y) reductions in incidence. The impact of optimistic interventions including immediate ART initiation varied widely across models, maintaining substantial uncertainty about the theoretical prospect for elimination of HIV from the population using ART alone over the next four decades. The number of person-years of ART per infection averted over 8 y ranged between 5.8 and 18.7.",
+          "label": "NEUTRAL",
+          "support": 0.001274965819902718,
+          "contradiction": 0.010979797691106796,
+          "neutral": 0.9877452254295349,
+          "missing_entity_anchors": [],
+          "idf_weighted_claim_term_coverage": 0.34026975961708245,
+          "source_group": "1d4eeb3214c48e19",
+          "retrieval_rank": 5
+        }
+      ],
+      "counter_evidence": {
+        "queries": [
+          "Antiretroviral therapy reduces the incidence of tuberculosis in adults with HIV infection",
+          "Antiretroviral therapy reduces the incidence of tuberculosis in adults with HIV infection conflicting evidence",
+          "Antiretroviral therapy reduces the incidence of tuberculosis in adults with HIV infection no significant effect ineffective",
+          "Antiretroviral therapy reduces the incidence of tuberculosis in adults with HIV infection refuted does not contrary evidence"
+        ],
+        "runs": [
+          {
+            "query": "Antiretroviral therapy reduces the incidence of tuberculosis in adults with HIV infection",
+            "hits": [
+              {
+                "source_id": "4883040",
+                "score": 0.03278688524590164,
+                "sparse_rank": 1,
+                "bm25": 41.827043063763234,
+                "dense_rank": 1,
+                "dense": 0.8794460296630859,
+                "chunk_id": "4883040:0",
+                "passage": "BACKGROUND Human immunodeficiency virus (HIV) infection is the strongest risk factor for developing tuberculosis and has fuelled its resurgence, especially in sub-Saharan Africa. In 2010, there were an estimated 1.1 million incident cases of tuberculosis among the 34 million people living with HIV worldwide. Antiretroviral therapy has substantial potential to prevent HIV-associated tuberculosis. We conducted a systematic review of studies that analysed the impact of antiretroviral therapy on the incidence of tuberculosis in adults with HIV infection. METHODS AND FINDINGS PubMed, Embase, African Index Medicus, LILACS, and clinical trial registries were systematically searched. Randomised controlled trials, prospective cohort studies, and retrospective cohort studies were included if they compared tuberculosis incidence by antiretroviral therapy status in HIV-infected adults for a median of over 6 mo in developing countries.",
+                "rank": 1,
+                "rrf": 0.03278688524590164,
+                "title": "Antiretroviral Therapy for Prevention of Tuberculosis in Adults with HIV: A Systematic Review and Meta-Analysis"
+              },
+              {
+                "source_id": "31363207",
+                "score": 0.03200204813108039,
+                "sparse_rank": 2,
+                "bm25": 28.373299086508972,
+                "dense_rank": 3,
+                "dense": 0.7447036504745483,
+                "chunk_id": "31363207:2",
+                "passage": "CONCLUSIONS This review raises serious concerns regarding current recommendations for treatment of HIV-tuberculosis coinfection. The data suggest that at least 8 months duration of rifamycin therapy, initial daily dosing, and concurrent antiretroviral therapy might be associated with better outcomes, but adequately powered randomized trials are urgently needed to confirm this.",
+                "rank": 2,
+                "rrf": 0.03200204813108039,
+                "title": "Treatment of active tuberculosis in HIV-coinfected patients: a systematic review and meta-analysis."
+              },
+              {
+                "source_id": "7111021",
+                "score": 0.03149801587301587,
+                "sparse_rank": 3,
+                "bm25": 27.936389694017485,
+                "dense_rank": 4,
+                "dense": 0.7331564426422119,
+                "chunk_id": "7111021:0",
+                "passage": "BACKGROUND We previously reported that integrating antiretroviral therapy (ART) with tuberculosis treatment reduces mortality. However, the timing for the initiation of ART during tuberculosis treatment remains unresolved. METHODS We conducted a three-group, open-label, randomized, controlled trial in South Africa involving 642 ambulatory patients, all with tuberculosis (confirmed by a positive sputum smear for acid-fast bacilli), human immunodeficiency virus infection, and a CD4+ T-cell count of less than 500 per cubic millimeter. Findings in the earlier-ART group (ART initiated within 4 weeks after the start of tuberculosis treatment, 214 patients) and later-ART group (ART initiated during the first 4 weeks of the continuation phase of tuberculosis treatment, 215 patients) are presented here. RESULTS At baseline, the median CD4+ T-cell count was 150 per cubic millimeter, and the median viral load was 161,000 copies per milliliter, with no significant differences between the two groups.",
+                "rank": 3,
+                "rrf": 0.03149801587301587,
+                "title": "Integration of antiretroviral therapy with tuberculosis treatment."
+              },
+              {
+                "source_id": "32012666",
+                "score": 0.03007688828584351,
+                "sparse_rank": 6,
+                "bm25": 25.785766767070573,
+                "dense_rank": 7,
+                "dense": 0.6345537900924683,
+                "chunk_id": "32012666:0",
+                "passage": "This retrospective observational review documents the efforts of the Swaziland National Tuberculosis (TB) Control Programme between 2004 and 2014. The objective is to describe the disparity between actual declines in case notification and increases in estimated incidence. The review of policies and practices shows the most influential factors associated with the decrease in TB case notification to be an increase in access to antiretroviral therapy for co-infected TB patients, the general success of TB and human immunodeficiency virus service integration in the country and improvements in implementation of all components of directly observed treatment, active case finding, and rapid diagnosis using new technologies.",
+                "rank": 4,
+                "rrf": 0.03007688828584351,
+                "title": "Declining tuberculosis notification trend associated with strengthened TB and expanded HIV care in Swaziland."
+              },
+              {
+                "source_id": "13899137",
+                "score": 0.028790389395194696,
+                "sparse_rank": 8,
+                "bm25": 23.443519458631624,
+                "dense_rank": 11,
+                "dense": 0.5464468598365784,
+                "chunk_id": "13899137:2",
+                "passage": "The number of person-years of ART per infection averted over 8 y ranged between 5.8 and 18.7. Considering the actual scale-up of ART in South Africa, seven models estimated that current HIV incidence is 17% to 32% lower than it would have been in the absence of ART. Differences between model assumptions about CD4 decline and HIV transmissibility over the course of infection explained only a modest amount of the variation in model results. CONCLUSIONS Mathematical models evaluating the impact of ART vary substantially in structure, complexity, and parameter choices, but all suggest that ART, at high levels of access and with high adherence, has the potential to substantially reduce new HIV infections. There was broad agreement regarding the short-term epidemiologic impact of ambitious treatment scale-up, but more variation in longer term projections and in the efficiency with which treatment can reduce new infections.",
+                "rank": 5,
+                "rrf": 0.028790389395194696,
+                "title": "HIV Treatment as Prevention: Systematic Comparison of Mathematical Models of the Potential Impact of Antiretroviral Therapy on HIV Incidence in South Africa"
+              }
+            ]
+          },
+          {
+            "query": "Antiretroviral therapy reduces the incidence of tuberculosis in adults with HIV infection conflicting evidence",
+            "hits": [
+              {
+                "source_id": "4883040",
+                "score": 0.03278688524590164,
+                "sparse_rank": 1,
+                "bm25": 43.59036683325021,
+                "dense_rank": 1,
+                "dense": 0.8800822496414185,
+                "chunk_id": "4883040:0",
+                "passage": "BACKGROUND Human immunodeficiency virus (HIV) infection is the strongest risk factor for developing tuberculosis and has fuelled its resurgence, especially in sub-Saharan Africa. In 2010, there were an estimated 1.1 million incident cases of tuberculosis among the 34 million people living with HIV worldwide. Antiretroviral therapy has substantial potential to prevent HIV-associated tuberculosis. We conducted a systematic review of studies that analysed the impact of antiretroviral therapy on the incidence of tuberculosis in adults with HIV infection. METHODS AND FINDINGS PubMed, Embase, African Index Medicus, LILACS, and clinical trial registries were systematically searched. Randomised controlled trials, prospective cohort studies, and retrospective cohort studies were included if they compared tuberculosis incidence by antiretroviral therapy status in HIV-infected adults for a median of over 6 mo in developing countries.",
+                "rank": 1,
+                "rrf": 0.03278688524590164,
+                "title": "Antiretroviral Therapy for Prevention of Tuberculosis in Adults with HIV: A Systematic Review and Meta-Analysis"
+              },
+              {
+                "source_id": "31363207",
+                "score": 0.03225806451612903,
+                "sparse_rank": 2,
+                "bm25": 28.373299086508972,
+                "dense_rank": 2,
+                "dense": 0.7415928840637207,
+                "chunk_id": "31363207:2",
+                "passage": "CONCLUSIONS This review raises serious concerns regarding current recommendations for treatment of HIV-tuberculosis coinfection. The data suggest that at least 8 months duration of rifamycin therapy, initial daily dosing, and concurrent antiretroviral therapy might be associated with better outcomes, but adequately powered randomized trials are urgently needed to confirm this.",
+                "rank": 2,
+                "rrf": 0.03225806451612903,
+                "title": "Treatment of active tuberculosis in HIV-coinfected patients: a systematic review and meta-analysis."
+              },
+              {
+                "source_id": "7111021",
+                "score": 0.03149801587301587,
+                "sparse_rank": 3,
+                "bm25": 27.936389694017485,
+                "dense_rank": 4,
+                "dense": 0.7313261032104492,
+                "chunk_id": "7111021:0",
+                "passage": "BACKGROUND We previously reported that integrating antiretroviral therapy (ART) with tuberculosis treatment reduces mortality. However, the timing for the initiation of ART during tuberculosis treatment remains unresolved. METHODS We conducted a three-group, open-label, randomized, controlled trial in South Africa involving 642 ambulatory patients, all with tuberculosis (confirmed by a positive sputum smear for acid-fast bacilli), human immunodeficiency virus infection, and a CD4+ T-cell count of less than 500 per cubic millimeter. Findings in the earlier-ART group (ART initiated within 4 weeks after the start of tuberculosis treatment, 214 patients) and later-ART group (ART initiated during the first 4 weeks of the continuation phase of tuberculosis treatment, 215 patients) are presented here. RESULTS At baseline, the median CD4+ T-cell count was 150 per cubic millimeter, and the median viral load was 161,000 copies per milliliter, with no significant differences between the two groups.",
+                "rank": 3,
+                "rrf": 0.03149801587301587,
+                "title": "Integration of antiretroviral therapy with tuberculosis treatment."
+              },
+              {
+                "source_id": "32012666",
+                "score": 0.03007688828584351,
+                "sparse_rank": 6,
+                "bm25": 25.785766767070573,
+                "dense_rank": 7,
+                "dense": 0.6494393348693848,
+                "chunk_id": "32012666:0",
+                "passage": "This retrospective observational review documents the efforts of the Swaziland National Tuberculosis (TB) Control Programme between 2004 and 2014. The objective is to describe the disparity between actual declines in case notification and increases in estimated incidence. The review of policies and practices shows the most influential factors associated with the decrease in TB case notification to be an increase in access to antiretroviral therapy for co-infected TB patients, the general success of TB and human immunodeficiency virus service integration in the country and improvements in implementation of all components of directly observed treatment, active case finding, and rapid diagnosis using new technologies.",
+                "rank": 4,
+                "rrf": 0.03007688828584351,
+                "title": "Declining tuberculosis notification trend associated with strengthened TB and expanded HIV care in Swaziland."
+              },
+              {
+                "source_id": "13899137",
+                "score": 0.028594771241830064,
+                "sparse_rank": 8,
+                "bm25": 23.443519458631624,
+                "dense_rank": 12,
+                "dense": 0.5526456832885742,
+                "chunk_id": "13899137:2",
+                "passage": "The number of person-years of ART per infection averted over 8 y ranged between 5.8 and 18.7. Considering the actual scale-up of ART in South Africa, seven models estimated that current HIV incidence is 17% to 32% lower than it would have been in the absence of ART. Differences between model assumptions about CD4 decline and HIV transmissibility over the course of infection explained only a modest amount of the variation in model results. CONCLUSIONS Mathematical models evaluating the impact of ART vary substantially in structure, complexity, and parameter choices, but all suggest that ART, at high levels of access and with high adherence, has the potential to substantially reduce new HIV infections. There was broad agreement regarding the short-term epidemiologic impact of ambitious treatment scale-up, but more variation in longer term projections and in the efficiency with which treatment can reduce new infections.",
+                "rank": 5,
+                "rrf": 0.028594771241830064,
+                "title": "HIV Treatment as Prevention: Systematic Comparison of Mathematical Models of the Potential Impact of Antiretroviral Therapy on HIV Incidence in South Africa"
+              }
+            ]
+          },
+          {
+            "query": "Antiretroviral therapy reduces the incidence of tuberculosis in adults with HIV infection no significant effect ineffective",
+            "hits": [
+              {
+                "source_id": "4883040",
+                "score": 0.03278688524590164,
+                "sparse_rank": 1,
+                "bm25": 43.40949212912658,
+                "dense_rank": 1,
+                "dense": 0.8753833770751953,
+                "chunk_id": "4883040:0",
+                "passage": "BACKGROUND Human immunodeficiency virus (HIV) infection is the strongest risk factor for developing tuberculosis and has fuelled its resurgence, especially in sub-Saharan Africa. In 2010, there were an estimated 1.1 million incident cases of tuberculosis among the 34 million people living with HIV worldwide. Antiretroviral therapy has substantial potential to prevent HIV-associated tuberculosis. We conducted a systematic review of studies that analysed the impact of antiretroviral therapy on the incidence of tuberculosis in adults with HIV infection. METHODS AND FINDINGS PubMed, Embase, African Index Medicus, LILACS, and clinical trial registries were systematically searched. Randomised controlled trials, prospective cohort studies, and retrospective cohort studies were included if they compared tuberculosis incidence by antiretroviral therapy status in HIV-infected adults for a median of over 6 mo in developing countries.",
+                "rank": 1,
+                "rrf": 0.03278688524590164,
+                "title": "Antiretroviral Therapy for Prevention of Tuberculosis in Adults with HIV: A Systematic Review and Meta-Analysis"
+              },
+              {
+                "source_id": "31363207",
+                "score": 0.031754032258064516,
+                "sparse_rank": 4,
+                "bm25": 28.373299086508972,
+                "dense_rank": 2,
+                "dense": 0.7496098279953003,
+                "chunk_id": "31363207:2",
+                "passage": "CONCLUSIONS This review raises serious concerns regarding current recommendations for treatment of HIV-tuberculosis coinfection. The data suggest that at least 8 months duration of rifamycin therapy, initial daily dosing, and concurrent antiretroviral therapy might be associated with better outcomes, but adequately powered randomized trials are urgently needed to confirm this.",
+                "rank": 2,
+                "rrf": 0.031754032258064516,
+                "title": "Treatment of active tuberculosis in HIV-coinfected patients: a systematic review and meta-analysis."
+              },
+              {
+                "source_id": "7111021",
+                "score": 0.03149801587301587,
+                "sparse_rank": 3,
+                "bm25": 31.047124212666795,
+                "dense_rank": 4,
+                "dense": 0.7227909564971924,
+                "chunk_id": "7111021:0",
+                "passage": "BACKGROUND We previously reported that integrating antiretroviral therapy (ART) with tuberculosis treatment reduces mortality. However, the timing for the initiation of ART during tuberculosis treatment remains unresolved. METHODS We conducted a three-group, open-label, randomized, controlled trial in South Africa involving 642 ambulatory patients, all with tuberculosis (confirmed by a positive sputum smear for acid-fast bacilli), human immunodeficiency virus infection, and a CD4+ T-cell count of less than 500 per cubic millimeter. Findings in the earlier-ART group (ART initiated within 4 weeks after the start of tuberculosis treatment, 214 patients) and later-ART group (ART initiated during the first 4 weeks of the continuation phase of tuberculosis treatment, 215 patients) are presented here. RESULTS At baseline, the median CD4+ T-cell count was 150 per cubic millimeter, and the median viral load was 161,000 copies per milliliter, with no significant differences between the two groups.",
+                "rank": 3,
+                "rrf": 0.03149801587301587,
+                "title": "Integration of antiretroviral therapy with tuberculosis treatment."
+              },
+              {
+                "source_id": "32012666",
+                "score": 0.029850746268656716,
+                "sparse_rank": 7,
+                "bm25": 25.785766767070573,
+                "dense_rank": 7,
+                "dense": 0.6290684938430786,
+                "chunk_id": "32012666:0",
+                "passage": "This retrospective observational review documents the efforts of the Swaziland National Tuberculosis (TB) Control Programme between 2004 and 2014. The objective is to describe the disparity between actual declines in case notification and increases in estimated incidence. The review of policies and practices shows the most influential factors associated with the decrease in TB case notification to be an increase in access to antiretroviral therapy for co-infected TB patients, the general success of TB and human immunodeficiency virus service integration in the country and improvements in implementation of all components of directly observed treatment, active case finding, and rapid diagnosis using new technologies.",
+                "rank": 4,
+                "rrf": 0.029850746268656716,
+                "title": "Declining tuberculosis notification trend associated with strengthened TB and expanded HIV care in Swaziland."
+              },
+              {
+                "source_id": "14806256",
+                "score": 0.02946236559139785,
+                "sparse_rank": 2,
+                "bm25": 32.214033498087225,
+                "dense_rank": 15,
+                "dense": 0.5263474583625793,
+                "chunk_id": "14806256:0",
+                "passage": "CONTEXT Use of antiretroviral drugs, including protease inhibitors, for treatment of human immunodeficiency virus (HIV) infection has been anecdotally associated with hepatotoxicity, particularly in persons coinfected with hepatitis C or B virus. OBJECTIVES To ascertain if incidence of severe hepatotoxicity during antiretroviral therapy is similar for all antiretroviral drug combinations, and to define the role of chronic viral hepatitis in its development. DESIGN Prospective cohort study. SETTING University-based urban HIV clinic. PATIENTS A total of 298 patients who were prescribed new antiretroviral therapies between January 1996 and January 1998, 211 (71%) of whom received protease inhibitors as part of combination therapy (median follow-up, 182 days) and 87 (29%) of whom received dual nucleoside analog regimens (median follow-up, 167 days). Chronic hepatitis C and B virus infection was present in 154 (52%) and 8 (2.7%) patients, respectively.",
+                "rank": 5,
+                "rrf": 0.02946236559139785,
+                "title": "Hepatotoxicity associated with antiretroviral therapy in adults infected with human immunodeficiency virus and the role of hepatitis C or B virus infection."
+              }
+            ]
+          },
+          {
+            "query": "Antiretroviral therapy reduces the incidence of tuberculosis in adults with HIV infection refuted does not contrary evidence",
+            "hits": [
+              {
+                "source_id": "4883040",
+                "score": 0.03278688524590164,
+                "sparse_rank": 1,
+                "bm25": 43.59036683325021,
+                "dense_rank": 1,
+                "dense": 0.8281471729278564,
+                "chunk_id": "4883040:0",
+                "passage": "BACKGROUND Human immunodeficiency virus (HIV) infection is the strongest risk factor for developing tuberculosis and has fuelled its resurgence, especially in sub-Saharan Africa. In 2010, there were an estimated 1.1 million incident cases of tuberculosis among the 34 million people living with HIV worldwide. Antiretroviral therapy has substantial potential to prevent HIV-associated tuberculosis. We conducted a systematic review of studies that analysed the impact of antiretroviral therapy on the incidence of tuberculosis in adults with HIV infection. METHODS AND FINDINGS PubMed, Embase, African Index Medicus, LILACS, and clinical trial registries were systematically searched. Randomised controlled trials, prospective cohort studies, and retrospective cohort studies were included if they compared tuberculosis incidence by antiretroviral therapy status in HIV-infected adults for a median of over 6 mo in developing countries.",
+                "rank": 1,
+                "rrf": 0.03278688524590164,
+                "title": "Antiretroviral Therapy for Prevention of Tuberculosis in Adults with HIV: A Systematic Review and Meta-Analysis"
+              },
+              {
+                "source_id": "31363207",
+                "score": 0.03200204813108039,
+                "sparse_rank": 2,
+                "bm25": 29.29152600476284,
+                "dense_rank": 3,
+                "dense": 0.7321577072143555,
+                "chunk_id": "31363207:2",
+                "passage": "CONCLUSIONS This review raises serious concerns regarding current recommendations for treatment of HIV-tuberculosis coinfection. The data suggest that at least 8 months duration of rifamycin therapy, initial daily dosing, and concurrent antiretroviral therapy might be associated with better outcomes, but adequately powered randomized trials are urgently needed to confirm this.",
+                "rank": 2,
+                "rrf": 0.03200204813108039,
+                "title": "Treatment of active tuberculosis in HIV-coinfected patients: a systematic review and meta-analysis."
+              },
+              {
+                "source_id": "7111021",
+                "score": 0.03125,
+                "sparse_rank": 4,
+                "bm25": 27.936389694017485,
+                "dense_rank": 4,
+                "dense": 0.7113677263259888,
+                "chunk_id": "7111021:0",
+                "passage": "BACKGROUND We previously reported that integrating antiretroviral therapy (ART) with tuberculosis treatment reduces mortality. However, the timing for the initiation of ART during tuberculosis treatment remains unresolved. METHODS We conducted a three-group, open-label, randomized, controlled trial in South Africa involving 642 ambulatory patients, all with tuberculosis (confirmed by a positive sputum smear for acid-fast bacilli), human immunodeficiency virus infection, and a CD4+ T-cell count of less than 500 per cubic millimeter. Findings in the earlier-ART group (ART initiated within 4 weeks after the start of tuberculosis treatment, 214 patients) and later-ART group (ART initiated during the first 4 weeks of the continuation phase of tuberculosis treatment, 215 patients) are presented here. RESULTS At baseline, the median CD4+ T-cell count was 150 per cubic millimeter, and the median viral load was 161,000 copies per milliliter, with no significant differences between the two groups.",
+                "rank": 3,
+                "rrf": 0.03125,
+                "title": "Integration of antiretroviral therapy with tuberculosis treatment."
+              },
+              {
+                "source_id": "32012666",
+                "score": 0.029850746268656716,
+                "sparse_rank": 7,
+                "bm25": 25.785766767070573,
+                "dense_rank": 7,
+                "dense": 0.6296695470809937,
+                "chunk_id": "32012666:0",
+                "passage": "This retrospective observational review documents the efforts of the Swaziland National Tuberculosis (TB) Control Programme between 2004 and 2014. The objective is to describe the disparity between actual declines in case notification and increases in estimated incidence. The review of policies and practices shows the most influential factors associated with the decrease in TB case notification to be an increase in access to antiretroviral therapy for co-infected TB patients, the general success of TB and human immunodeficiency virus service integration in the country and improvements in implementation of all components of directly observed treatment, active case finding, and rapid diagnosis using new technologies.",
+                "rank": 4,
+                "rrf": 0.029850746268656716,
+                "title": "Declining tuberculosis notification trend associated with strengthened TB and expanded HIV care in Swaziland."
+              },
+              {
+                "source_id": "13899137",
+                "score": 0.02877846790890269,
+                "sparse_rank": 9,
+                "bm25": 24.205109136534773,
+                "dense_rank": 10,
+                "dense": 0.5441479086875916,
+                "chunk_id": "13899137:1",
+                "passage": "Intervention scenarios systematically varied the CD4 count threshold for treatment eligibility, access to treatment, and programme retention. For a scenario in which 80% of HIV-infected individuals start treatment on average 1 y after their CD4 count drops below 350 cells/µl and 85% remain on treatment after 3 y, the models projected that HIV incidence would be 35% to 54% lower 8 y after the introduction of ART, compared to a counterfactual scenario in which there is no ART. More variation existed in the estimated long-term (38 y) reductions in incidence. The impact of optimistic interventions including immediate ART initiation varied widely across models, maintaining substantial uncertainty about the theoretical prospect for elimination of HIV from the population using ART alone over the next four decades. The number of person-years of ART per infection averted over 8 y ranged between 5.8 and 18.7.",
+                "rank": 5,
+                "rrf": 0.02877846790890269,
+                "title": "HIV Treatment as Prevention: Systematic Comparison of Mathematical Models of the Potential Impact of Antiretroviral Therapy on HIV Incidence in South Africa"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "4883040",
+            "chunk_id": "4883040:0",
+            "quote": "We conducted a systematic review of studies that analysed the impact of antiretroviral therapy on the incidence of tuberculosis in adults with HIV infection.",
+            "label": "NEUTRAL",
+            "support": 0.005089995451271534,
+            "contradiction": 0.0012962805340066552,
+            "neutral": 0.9936137795448303,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.8729530492645791,
+            "source_group": "57e4e7023ed05990",
+            "retrieval_rank": 1
+          },
+          {
+            "source_id": "4883040",
+            "chunk_id": "4883040:0",
+            "quote": "Randomised controlled trials, prospective cohort studies, and retrospective cohort studies were included if they compared tuberculosis incidence by antiretroviral therapy status in HIV-infected adults for a median of over 6 mo in developing countries.",
+            "label": "NEUTRAL",
+            "support": 0.0033099716529250145,
+            "contradiction": 0.0002796330663841218,
+            "neutral": 0.9964104294776917,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.8729530492645791,
+            "source_group": "57e4e7023ed05990",
+            "retrieval_rank": 1
+          },
+          {
+            "source_id": "4883040",
+            "chunk_id": "4883040:0",
+            "quote": "Antiretroviral therapy has substantial potential to prevent HIV-associated tuberculosis.",
+            "label": "NEUTRAL",
+            "support": 0.011623309925198555,
+            "contradiction": 7.593363261548802e-05,
+            "neutral": 0.9883008003234863,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.8729530492645791,
+            "source_group": "57e4e7023ed05990",
+            "retrieval_rank": 1
+          },
+          {
+            "source_id": "4883040",
+            "chunk_id": "4883040:0",
+            "quote": "BACKGROUND Human immunodeficiency virus (HIV) infection is the strongest risk factor for developing tuberculosis and has fuelled its resurgence, especially in sub-Saharan Africa. In 2010, there were an estimated 1.1 million incident cases of tuberculosis among the 34 million people living with HIV worldwide. Antiretroviral therapy has substantial potential to prevent HIV-associated tuberculosis. We conducted a systematic review of studies that analysed the impact of antiretroviral therapy on the incidence of tuberculosis in adults with HIV infection. METHODS AND FINDINGS PubMed, Embase, African Index Medicus, LILACS, and clinical trial registries were systematically searched. Randomised controlled trials, prospective cohort studies, and retrospective cohort studies were included if they compared tuberculosis incidence by antiretroviral therapy status in HIV-infected adults for a median of over 6 mo in developing countries.",
+            "label": "NEUTRAL",
+            "support": 0.004165425896644592,
+            "contradiction": 0.0012811303604394197,
+            "neutral": 0.9945534467697144,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.8729530492645791,
+            "source_group": "57e4e7023ed05990",
+            "retrieval_rank": 1
+          },
+          {
+            "source_id": "31363207",
+            "chunk_id": "31363207:2",
+            "quote": "The data suggest that at least 8 months duration of rifamycin therapy, initial daily dosing, and concurrent antiretroviral therapy might be associated with better outcomes, but adequately powered randomized trials are urgently needed to confirm this.",
+            "label": "NEUTRAL",
+            "support": 0.00010402691987110302,
+            "contradiction": 0.0012870428618043661,
+            "neutral": 0.9986090064048767,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.5521437460130783,
+            "source_group": "3c20db6751c683e8",
+            "retrieval_rank": 2
+          },
+          {
+            "source_id": "31363207",
+            "chunk_id": "31363207:2",
+            "quote": "CONCLUSIONS This review raises serious concerns regarding current recommendations for treatment of HIV-tuberculosis coinfection.",
+            "label": "NEUTRAL",
+            "support": 0.0005241069593466818,
+            "contradiction": 0.0005333727458491921,
+            "neutral": 0.9989425539970398,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.5521437460130783,
+            "source_group": "3c20db6751c683e8",
+            "retrieval_rank": 2
+          },
+          {
+            "source_id": "31363207",
+            "chunk_id": "31363207:2",
+            "quote": "CONCLUSIONS This review raises serious concerns regarding current recommendations for treatment of HIV-tuberculosis coinfection. The data suggest that at least 8 months duration of rifamycin therapy, initial daily dosing, and concurrent antiretroviral therapy might be associated with better outcomes, but adequately powered randomized trials are urgently needed to confirm this.",
+            "label": "NEUTRAL",
+            "support": 0.001770071336068213,
+            "contradiction": 0.00041269740904681385,
+            "neutral": 0.9978172779083252,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.5521437460130783,
+            "source_group": "3c20db6751c683e8",
+            "retrieval_rank": 2
+          },
+          {
+            "source_id": "7111021",
+            "chunk_id": "7111021:0",
+            "quote": "BACKGROUND We previously reported that integrating antiretroviral therapy (ART) with tuberculosis treatment reduces mortality.",
+            "label": "NEUTRAL",
+            "support": 0.009178806096315384,
+            "contradiction": 0.000942688959185034,
+            "neutral": 0.9898785352706909,
+            "missing_entity_anchors": [
+              "hiv"
+            ],
+            "idf_weighted_claim_term_coverage": 0.6358481544913824,
+            "source_group": "01f8b46e33081ead",
+            "retrieval_rank": 3
+          },
+          {
+            "source_id": "7111021",
+            "chunk_id": "7111021:0",
+            "quote": "METHODS We conducted a three-group, open-label, randomized, controlled trial in South Africa involving 642 ambulatory patients, all with tuberculosis (confirmed by a positive sputum smear for acid-fast bacilli), human immunodeficiency virus infection, and a CD4+ T-cell count of less than 500 per cubic millimeter.",
+            "label": "NEUTRAL",
+            "support": 0.0009310622117482126,
+            "contradiction": 0.0005196905112825334,
+            "neutral": 0.9985492825508118,
+            "missing_entity_anchors": [
+              "hiv"
+            ],
+            "idf_weighted_claim_term_coverage": 0.6358481544913824,
+            "source_group": "01f8b46e33081ead",
+            "retrieval_rank": 3
+          },
+          {
+            "source_id": "7111021",
+            "chunk_id": "7111021:0",
+            "quote": "Findings in the earlier-ART group (ART initiated within 4 weeks after the start of tuberculosis treatment, 214 patients) and later-ART group (ART initiated during the first 4 weeks of the continuation phase of tuberculosis treatment, 215 patients) are presented here.",
+            "label": "NEUTRAL",
+            "support": 0.00038977479562163353,
+            "contradiction": 0.0009997732704505324,
+            "neutral": 0.9986103773117065,
+            "missing_entity_anchors": [
+              "hiv"
+            ],
+            "idf_weighted_claim_term_coverage": 0.6358481544913824,
+            "source_group": "01f8b46e33081ead",
+            "retrieval_rank": 3
+          },
+          {
+            "source_id": "7111021",
+            "chunk_id": "7111021:0",
+            "quote": "BACKGROUND We previously reported that integrating antiretroviral therapy (ART) with tuberculosis treatment reduces mortality. However, the timing for the initiation of ART during tuberculosis treatment remains unresolved. METHODS We conducted a three-group, open-label, randomized, controlled trial in South Africa involving 642 ambulatory patients, all with tuberculosis (confirmed by a positive sputum smear for acid-fast bacilli), human immunodeficiency virus infection, and a CD4+ T-cell count of less than 500 per cubic millimeter. Findings in the earlier-ART group (ART initiated within 4 weeks after the start of tuberculosis treatment, 214 patients) and later-ART group (ART initiated during the first 4 weeks of the continuation phase of tuberculosis treatment, 215 patients) are presented here. RESULTS At baseline, the median CD4+ T-cell count was 150 per cubic millimeter, and the median viral load was 161,000 copies per milliliter, with no significant differences between the two groups.",
+            "label": "NEUTRAL",
+            "support": 0.0016525395913049579,
+            "contradiction": 0.0034691181499511003,
+            "neutral": 0.9948782920837402,
+            "missing_entity_anchors": [
+              "hiv"
+            ],
+            "idf_weighted_claim_term_coverage": 0.6358481544913824,
+            "source_group": "01f8b46e33081ead",
+            "retrieval_rank": 3
+          },
+          {
+            "source_id": "32012666",
+            "chunk_id": "32012666:0",
+            "quote": "The review of policies and practices shows the most influential factors associated with the decrease in TB case notification to be an increase in access to antiretroviral therapy for co-infected TB patients, the general success of TB and human immunodeficiency virus service integration in the country and improvements in implementation of all components of directly observed treatment, active case finding, and rapid diagnosis using new technologies.",
+            "label": "NEUTRAL",
+            "support": 0.05609141290187836,
+            "contradiction": 0.0013279048725962639,
+            "neutral": 0.9425806999206543,
+            "missing_entity_anchors": [
+              "hiv"
+            ],
+            "idf_weighted_claim_term_coverage": 0.5262265878083878,
+            "source_group": "97874418e00cf3dc",
+            "retrieval_rank": 4
+          },
+          {
+            "source_id": "32012666",
+            "chunk_id": "32012666:0",
+            "quote": "This retrospective observational review documents the efforts of the Swaziland National Tuberculosis (TB) Control Programme between 2004 and 2014.",
+            "label": "NEUTRAL",
+            "support": 0.00035027574631385505,
+            "contradiction": 0.00030414509819820523,
+            "neutral": 0.999345600605011,
+            "missing_entity_anchors": [
+              "hiv"
+            ],
+            "idf_weighted_claim_term_coverage": 0.5262265878083878,
+            "source_group": "97874418e00cf3dc",
+            "retrieval_rank": 4
+          },
+          {
+            "source_id": "32012666",
+            "chunk_id": "32012666:0",
+            "quote": "The objective is to describe the disparity between actual declines in case notification and increases in estimated incidence.",
+            "label": "NEUTRAL",
+            "support": 0.00014597496192436665,
+            "contradiction": 0.023234479129314423,
+            "neutral": 0.97661954164505,
+            "missing_entity_anchors": [
+              "hiv"
+            ],
+            "idf_weighted_claim_term_coverage": 0.5262265878083878,
+            "source_group": "97874418e00cf3dc",
+            "retrieval_rank": 4
+          },
+          {
+            "source_id": "32012666",
+            "chunk_id": "32012666:0",
+            "quote": "This retrospective observational review documents the efforts of the Swaziland National Tuberculosis (TB) Control Programme between 2004 and 2014. The objective is to describe the disparity between actual declines in case notification and increases in estimated incidence. The review of policies and practices shows the most influential factors associated with the decrease in TB case notification to be an increase in access to antiretroviral therapy for co-infected TB patients, the general success of TB and human immunodeficiency virus service integration in the country and improvements in implementation of all components of directly observed treatment, active case finding, and rapid diagnosis using new technologies.",
+            "label": "NEUTRAL",
+            "support": 0.0025695543736219406,
+            "contradiction": 0.0019925928208976984,
+            "neutral": 0.9954379200935364,
+            "missing_entity_anchors": [
+              "hiv"
+            ],
+            "idf_weighted_claim_term_coverage": 0.5262265878083878,
+            "source_group": "97874418e00cf3dc",
+            "retrieval_rank": 4
+          },
+          {
+            "source_id": "13899137",
+            "chunk_id": "13899137:2",
+            "quote": "Considering the actual scale-up of ART in South Africa, seven models estimated that current HIV incidence is 17% to 32% lower than it would have been in the absence of ART.",
+            "label": "NEUTRAL",
+            "support": 0.000408789434004575,
+            "contradiction": 0.07281620800495148,
+            "neutral": 0.9267750382423401,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.34918595712333816,
+            "source_group": "1d4eeb3214c48e19",
+            "retrieval_rank": 5
+          },
+          {
+            "source_id": "13899137",
+            "chunk_id": "13899137:2",
+            "quote": "Differences between model assumptions about CD4 decline and HIV transmissibility over the course of infection explained only a modest amount of the variation in model results.",
+            "label": "NEUTRAL",
+            "support": 0.00010158160876017064,
+            "contradiction": 0.0027146798092871904,
+            "neutral": 0.9971837401390076,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.34918595712333816,
+            "source_group": "1d4eeb3214c48e19",
+            "retrieval_rank": 5
+          },
+          {
+            "source_id": "13899137",
+            "chunk_id": "13899137:2",
+            "quote": "CONCLUSIONS Mathematical models evaluating the impact of ART vary substantially in structure, complexity, and parameter choices, but all suggest that ART, at high levels of access and with high adherence, has the potential to substantially reduce new HIV infections.",
+            "label": "NEUTRAL",
+            "support": 0.00019929331028833985,
+            "contradiction": 0.009549088776111603,
+            "neutral": 0.9902516603469849,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.34918595712333816,
+            "source_group": "1d4eeb3214c48e19",
+            "retrieval_rank": 5
+          },
+          {
+            "source_id": "13899137",
+            "chunk_id": "13899137:2",
+            "quote": "The number of person-years of ART per infection averted over 8 y ranged between 5.8 and 18.7. Considering the actual scale-up of ART in South Africa, seven models estimated that current HIV incidence is 17% to 32% lower than it would have been in the absence of ART. Differences between model assumptions about CD4 decline and HIV transmissibility over the course of infection explained only a modest amount of the variation in model results. CONCLUSIONS Mathematical models evaluating the impact of ART vary substantially in structure, complexity, and parameter choices, but all suggest that ART, at high levels of access and with high adherence, has the potential to substantially reduce new HIV infections. There was broad agreement regarding the short-term epidemiologic impact of ambitious treatment scale-up, but more variation in longer term projections and in the efficiency with which treatment can reduce new infections.",
+            "label": "NEUTRAL",
+            "support": 0.0003455188125371933,
+            "contradiction": 0.0022267296444624662,
+            "neutral": 0.997427761554718,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.34918595712333816,
+            "source_group": "1d4eeb3214c48e19",
+            "retrieval_rank": 5
+          },
+          {
+            "source_id": "14806256",
+            "chunk_id": "14806256:0",
+            "quote": "CONTEXT Use of antiretroviral drugs, including protease inhibitors, for treatment of human immunodeficiency virus (HIV) infection has been anecdotally associated with hepatotoxicity, particularly in persons coinfected with hepatitis C or B virus.",
+            "label": "NEUTRAL",
+            "support": 0.0005138645065017045,
+            "contradiction": 0.5492173433303833,
+            "neutral": 0.45026883482933044,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.6025752976671537,
+            "source_group": "ab230cd8f88aeca6",
+            "retrieval_rank": 5
+          },
+          {
+            "source_id": "14806256",
+            "chunk_id": "14806256:0",
+            "quote": "OBJECTIVES To ascertain if incidence of severe hepatotoxicity during antiretroviral therapy is similar for all antiretroviral drug combinations, and to define the role of chronic viral hepatitis in its development.",
+            "label": "NEUTRAL",
+            "support": 0.0007916487520560622,
+            "contradiction": 0.7551923394203186,
+            "neutral": 0.24401594698429108,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.6025752976671537,
+            "source_group": "ab230cd8f88aeca6",
+            "retrieval_rank": 5
+          },
+          {
+            "source_id": "14806256",
+            "chunk_id": "14806256:0",
+            "quote": "PATIENTS A total of 298 patients who were prescribed new antiretroviral therapies between January 1996 and January 1998, 211 (71%) of whom received protease inhibitors as part of combination therapy (median follow-up, 182 days) and 87 (29%) of whom received dual nucleoside analog regimens (median follow-up, 167 days).",
+            "label": "NEUTRAL",
+            "support": 0.0002527083270251751,
+            "contradiction": 0.0023483578115701675,
+            "neutral": 0.9973989725112915,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.6025752976671537,
+            "source_group": "ab230cd8f88aeca6",
+            "retrieval_rank": 5
+          },
+          {
+            "source_id": "14806256",
+            "chunk_id": "14806256:0",
+            "quote": "CONTEXT Use of antiretroviral drugs, including protease inhibitors, for treatment of human immunodeficiency virus (HIV) infection has been anecdotally associated with hepatotoxicity, particularly in persons coinfected with hepatitis C or B virus. OBJECTIVES To ascertain if incidence of severe hepatotoxicity during antiretroviral therapy is similar for all antiretroviral drug combinations, and to define the role of chronic viral hepatitis in its development. DESIGN Prospective cohort study. SETTING University-based urban HIV clinic. PATIENTS A total of 298 patients who were prescribed new antiretroviral therapies between January 1996 and January 1998, 211 (71%) of whom received protease inhibitors as part of combination therapy (median follow-up, 182 days) and 87 (29%) of whom received dual nucleoside analog regimens (median follow-up, 167 days). Chronic hepatitis C and B virus infection was present in 154 (52%) and 8 (2.7%) patients, respectively.",
+            "label": "NEUTRAL",
+            "support": 0.002033527009189129,
+            "contradiction": 0.02729657106101513,
+            "neutral": 0.9706699252128601,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.6025752976671537,
+            "source_group": "ab230cd8f88aeca6",
+            "retrieval_rank": 5
+          },
+          {
+            "source_id": "13899137",
+            "chunk_id": "13899137:1",
+            "quote": "For a scenario in which 80% of HIV-infected individuals start treatment on average 1 y after their CD4 count drops below 350 cells/µl and 85% remain on treatment after 3 y, the models projected that HIV incidence would be 35% to 54% lower 8 y after the introduction of ART, compared to a counterfactual scenario in which there is no ART.",
+            "label": "NEUTRAL",
+            "support": 0.002127666724845767,
+            "contradiction": 0.344634473323822,
+            "neutral": 0.6532378196716309,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.34026975961708245,
+            "source_group": "1d4eeb3214c48e19",
+            "retrieval_rank": 5
+          },
+          {
+            "source_id": "13899137",
+            "chunk_id": "13899137:1",
+            "quote": "The impact of optimistic interventions including immediate ART initiation varied widely across models, maintaining substantial uncertainty about the theoretical prospect for elimination of HIV from the population using ART alone over the next four decades.",
+            "label": "NEUTRAL",
+            "support": 0.0002602121967356652,
+            "contradiction": 0.08119868487119675,
+            "neutral": 0.9185411334037781,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.34026975961708245,
+            "source_group": "1d4eeb3214c48e19",
+            "retrieval_rank": 5
+          },
+          {
+            "source_id": "13899137",
+            "chunk_id": "13899137:1",
+            "quote": "More variation existed in the estimated long-term (38 y) reductions in incidence.",
+            "label": "NEUTRAL",
+            "support": 0.00016354743274860084,
+            "contradiction": 0.0020492025651037693,
+            "neutral": 0.9977872371673584,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.34026975961708245,
+            "source_group": "1d4eeb3214c48e19",
+            "retrieval_rank": 5
+          },
+          {
+            "source_id": "13899137",
+            "chunk_id": "13899137:1",
+            "quote": "Intervention scenarios systematically varied the CD4 count threshold for treatment eligibility, access to treatment, and programme retention. For a scenario in which 80% of HIV-infected individuals start treatment on average 1 y after their CD4 count drops below 350 cells/µl and 85% remain on treatment after 3 y, the models projected that HIV incidence would be 35% to 54% lower 8 y after the introduction of ART, compared to a counterfactual scenario in which there is no ART. More variation existed in the estimated long-term (38 y) reductions in incidence. The impact of optimistic interventions including immediate ART initiation varied widely across models, maintaining substantial uncertainty about the theoretical prospect for elimination of HIV from the population using ART alone over the next four decades. The number of person-years of ART per infection averted over 8 y ranged between 5.8 and 18.7.",
+            "label": "NEUTRAL",
+            "support": 0.001274965819902718,
+            "contradiction": 0.010979797691106796,
+            "neutral": 0.9877452254295349,
+            "missing_entity_anchors": [],
+            "idf_weighted_claim_term_coverage": 0.34026975961708245,
+            "source_group": "1d4eeb3214c48e19",
+            "retrieval_rank": 5
+          }
+        ],
+        "audited_passages": 7
+      },
+      "ablation": {
+        "tests": [],
+        "survival": null,
+        "tested_sources": 0,
+        "total_supporting_sources": 0,
+        "coverage_limited": false
+      },
+      "decision": "ABSTAIN",
+      "status": "INSUFFICIENT",
+      "reason": "No retrieved passage reaches the support threshold.",
+      "components": {
+        "support_max": 0.05609141290187836,
+        "contradiction_max": 0.7551923394203186,
+        "distinct_support_groups": 0,
+        "ablation_survival": null,
+        "query_jaccard": 0.6666666666666666,
+        "query_relevant": true
+      }
+    }
+  ],
+  "claim_extraction": "sentence/semicolon candidates; complex sentences may not be atomic",
+  "unexamined_sentences_omitted": false,
+  "decision": "ABSTAIN",
+  "final_answer": "I could not retrieve sufficiently robust evidence from this corpus to answer this claim confidently.",
+  "elapsed_seconds": 18.59556129993871
+}

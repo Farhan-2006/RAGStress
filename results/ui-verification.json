@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "method": "hybrid",
+  "generator": "local-flan-t5-small",
+  "decision": "REWRITE",
+  "sources": 5,
+  "claims": 1,
+  "runtime_seconds": 27.207308300072327,
+  "checks": "Streamlit AppTest: load actual app, click live question, real hybrid corpus/model pipeline, no UI errors."
+}

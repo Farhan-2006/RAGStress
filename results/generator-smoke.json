@@ -1,0 +1,6 @@
+{
+  "query": "Does antiretroviral therapy reduce tuberculosis incidence?",
+  "answer": "Antiretroviral therapy reduces tuberculosis in HIV-positive adults. [4883040] [7111021] [31363207]",
+  "mode": "local-flan-t5-small",
+  "warning": "Initial references are provisional context IDs; final citations are assigned by the evidence audit."
+}

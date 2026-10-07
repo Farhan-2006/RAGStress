@@ -1,0 +1,10 @@
+{
+  "pairs": 50,
+  "accuracy": 0.26,
+  "coverage": 0.34,
+  "accuracy_on_decisive_pairs": 0.7647058823529411,
+  "threshold": 0.8,
+  "model": "cross-encoder/nli-deberta-v3-small",
+  "split": "dev",
+  "protocol": "Seeded original annotated rationale pairs only; gold supplied as premise for isolated classifier diagnosis, never runtime. Not end-to-end accuracy; no neutral gold here."
+}
