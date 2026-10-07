@@ -19,7 +19,7 @@
   "models_pinned": true,
   "report_status": "draft pending actual team contributions and human judgments",
   "remote_llm_verified": false,
-  "github_published": false,
+  "github_published": true,
   "video_recorded": false,
   "report_main_pages": 6,
   "report_reference_pages": 1,
@@ -30,5 +30,7 @@
     "Human judgments pending",
     "Counter-query expansion did not beat equal-slot-budget original query"
   ],
-  "answer_repair": "Verified real local-model question returns REWRITE to audited corpus quote"
+  "answer_repair": "Verified real local-model question returns REWRITE to audited corpus quote",
+  "github_repository": "https://github.com/Farhan-2006/RAGStress",
+  "github_visibility": "private"
 }

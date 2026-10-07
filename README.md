@@ -3,6 +3,8 @@
 **Counterfactual evidence stress testing for retrieval-augmented generation.** CSD358 T1 hackathon prototype.
 The core question: does a generated claim remain defensible after changing its evidence?
 
+Repository: [Farhan-2006/RAGStress](https://github.com/Farhan-2006/RAGStress). Currently private; grant evaluator access or change visibility before submission.
+
 ## Setup (Python 3.12 recommended, CPU sufficient)
 ```powershell
 python -m venv .venv
@@ -93,7 +95,7 @@ Libraries declared in requirements and lock snapshot. Code authored for this pro
 
 ## Submission status
 See `docs/REQUIREMENTS.md`, `DESIGN.md`, `EXPERIMENTS.md`, `AI_USE.md`, `VIDEO_PLAN.md` and `HUMAN_REVIEW.md`.
-The final submission needs team names/actual work division, completed human judgments, a GitHub repository URL and a recorded 5-8 minute video link. Those cannot be fabricated. Keep the report <=8 main pages excluding references/appendix. No slides in video. Local execution is sufficient.
+The code is uploaded to the repository linked above. The final submission still needs team names/actual work division, completed human judgments and a recorded 5-8 minute video link. Those cannot be fabricated. Keep the report <=8 main pages excluding references/appendix. No slides in video. Local execution is sufficient.
 
 ## Verified demo inputs
 - Question (local LLM + hybrid): `What potential does antiretroviral therapy have to prevent HIV-associated tuberculosis?` -> QUALIFY; actual answer supported by source 4883040 but fragile under removal.
