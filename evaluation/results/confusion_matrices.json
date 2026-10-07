@@ -1,0 +1,89 @@
+{
+  "vanilla": {
+    "labels": [
+      "SUPPORT",
+      "CONTRADICT"
+    ],
+    "predictions": [
+      "SUPPORT",
+      "CONTRADICT",
+      "UNRESOLVED",
+      "ABSTAIN"
+    ],
+    "matrix": [
+      [
+        15,
+        2,
+        8,
+        0
+      ],
+      [
+        14,
+        6,
+        5,
+        0
+      ]
+    ],
+    "precision": 0.6336206896551724,
+    "recall": 0.42,
+    "f1": 0.4595959595959596
+  },
+  "nli_only": {
+    "labels": [
+      "SUPPORT",
+      "CONTRADICT"
+    ],
+    "predictions": [
+      "SUPPORT",
+      "CONTRADICT",
+      "UNRESOLVED",
+      "ABSTAIN"
+    ],
+    "matrix": [
+      [
+        9,
+        3,
+        12,
+        1
+      ],
+      [
+        0,
+        17,
+        7,
+        1
+      ]
+    ],
+    "precision": 0.925,
+    "recall": 0.52,
+    "f1": 0.642483660130719
+  },
+  "ragstress": {
+    "labels": [
+      "SUPPORT",
+      "CONTRADICT"
+    ],
+    "predictions": [
+      "SUPPORT",
+      "CONTRADICT",
+      "UNRESOLVED",
+      "ABSTAIN"
+    ],
+    "matrix": [
+      [
+        9,
+        4,
+        11,
+        1
+      ],
+      [
+        0,
+        17,
+        7,
+        1
+      ]
+    ],
+    "precision": 0.9047619047619048,
+    "recall": 0.52,
+    "f1": 0.6342710997442456
+  }
+}

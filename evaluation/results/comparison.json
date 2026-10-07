@@ -1,0 +1,310 @@
+[
+  {
+    "Metric": "P@5",
+    "Vanilla RAG": 0.17199999999999996,
+    "RAGStress": 0.17199999999999996,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "Recall@5",
+    "Vanilla RAG": 0.82,
+    "RAGStress": 0.82,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "F1@5",
+    "Vanilla RAG": 0.28126984126984134,
+    "RAGStress": 0.28126984126984134,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "MRR@5",
+    "Vanilla RAG": 0.6816666666666668,
+    "RAGStress": 0.6816666666666668,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "nDCG@5",
+    "Vanilla RAG": 0.7133536392694408,
+    "RAGStress": 0.7133536392694408,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "Recall@1",
+    "Vanilla RAG": 0.58,
+    "RAGStress": 0.58,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "P@10",
+    "Vanilla RAG": 0.09799999999999999,
+    "RAGStress": 0.09799999999999999,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "Recall@10",
+    "Vanilla RAG": 0.915,
+    "RAGStress": 0.915,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "F1@10",
+    "Vanilla RAG": 0.17523809523809525,
+    "RAGStress": 0.17523809523809525,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "MRR@10",
+    "Vanilla RAG": 0.6948333333333333,
+    "RAGStress": 0.6948333333333333,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "nDCG@10",
+    "Vanilla RAG": 0.7449747251633734,
+    "RAGStress": 0.7449747251633734,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "Claim Support Rate (NLI)",
+    "Vanilla RAG": 0.7313432835820896,
+    "RAGStress": 0.967741935483871,
+    "Absolute Change": 0.23639865190178144,
+    "Relative Change (%)": 32.32389730085583
+  },
+  {
+    "Metric": "Contradiction Rate (NLI)",
+    "Vanilla RAG": 0.22388059701492538,
+    "RAGStress": 0.0967741935483871,
+    "Absolute Change": -0.1271064034665383,
+    "Relative Change (%)": -56.774193548387096
+  },
+  {
+    "Metric": "Unsupported Claim Rate (NLI)",
+    "Vanilla RAG": 0.11940298507462686,
+    "RAGStress": 0.03225806451612903,
+    "Absolute Change": -0.08714492055849783,
+    "Relative Change (%)": -72.98387096774194
+  },
+  {
+    "Metric": "Evidence Coverage (NLI)",
+    "Vanilla RAG": 0.7313432835820896,
+    "RAGStress": 0.967741935483871,
+    "Absolute Change": 0.23639865190178144,
+    "Relative Change (%)": 32.32389730085583
+  },
+  {
+    "Metric": "Groundedness (NLI)",
+    "Vanilla RAG": 0.6567164179104478,
+    "RAGStress": 0.8709677419354839,
+    "Absolute Change": 0.2142513240250361,
+    "Relative Change (%)": 32.624633431085044
+  },
+  {
+    "Metric": "Gold evidence sentence recall",
+    "Vanilla RAG": 0.5666666666666667,
+    "RAGStress": 0.5666666666666667,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "Fully supported answer incidence (NLI)",
+    "Vanilla RAG": 0.54,
+    "RAGStress": 0.8,
+    "Absolute Change": 0.26,
+    "Relative Change (%)": 48.148148148148145
+  },
+  {
+    "Metric": "Evidence Precision",
+    "Vanilla RAG": "Not available — insufficient gold annotation",
+    "RAGStress": "Not available — insufficient gold annotation",
+    "Absolute Change": null,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Answer Accuracy",
+    "Vanilla RAG": "Not available — insufficient gold annotation",
+    "RAGStress": "Not available — insufficient gold annotation",
+    "Absolute Change": null,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Answer Precision",
+    "Vanilla RAG": "Not available — insufficient gold annotation",
+    "RAGStress": "Not available — insufficient gold annotation",
+    "Absolute Change": null,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Answer Recall",
+    "Vanilla RAG": "Not available — insufficient gold annotation",
+    "RAGStress": "Not available — insufficient gold annotation",
+    "Absolute Change": null,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Answer F1",
+    "Vanilla RAG": "Not available — insufficient gold annotation",
+    "RAGStress": "Not available — insufficient gold annotation",
+    "Absolute Change": null,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Selective Accuracy",
+    "Vanilla RAG": "Not available — insufficient gold annotation",
+    "RAGStress": "Not available — insufficient gold annotation",
+    "Absolute Change": null,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Error Rate among answered",
+    "Vanilla RAG": "Not available — insufficient gold annotation",
+    "RAGStress": "Not available — insufficient gold annotation",
+    "Absolute Change": null,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Abstention Rate",
+    "Vanilla RAG": 0.0,
+    "RAGStress": 0.040000000000000036,
+    "Absolute Change": 0.040000000000000036,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Coverage",
+    "Vanilla RAG": 1.0,
+    "RAGStress": 0.96,
+    "Absolute Change": -0.040000000000000036,
+    "Relative Change (%)": -4.0000000000000036
+  },
+  {
+    "Metric": "Automated answer-stance accuracy",
+    "Vanilla RAG": 0.42,
+    "RAGStress": 0.52,
+    "Absolute Change": 0.10000000000000003,
+    "Relative Change (%)": 23.80952380952382
+  },
+  {
+    "Metric": "Automated selective stance accuracy",
+    "Vanilla RAG": 0.42,
+    "RAGStress": 0.5416666666666666,
+    "Absolute Change": 0.12166666666666665,
+    "Relative Change (%)": 28.968253968253965
+  },
+  {
+    "Metric": "Average Latency (s)",
+    "Vanilla RAG": 1.082746319998987,
+    "RAGStress": 11.833539690007456,
+    "Absolute Change": 10.750793370008468,
+    "Relative Change (%)": 992.9189479968425
+  },
+  {
+    "Metric": "Median Latency (s)",
+    "Vanilla RAG": 0.8320615499978885,
+    "RAGStress": 9.396267449948937,
+    "Absolute Change": 8.564205899951048,
+    "Relative Change (%)": 1029.2755265488208
+  },
+  {
+    "Metric": "Counter-Evidence Discovery Rate (NLI)",
+    "Vanilla RAG": "Not executed",
+    "RAGStress": 0.265625,
+    "Absolute Change": null,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Query Stability",
+    "Vanilla RAG": "Not executed",
+    "RAGStress": 0.7319312169312167,
+    "Absolute Change": null,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Automated stance precision",
+    "Vanilla RAG": 0.6336206896551724,
+    "RAGStress": 0.9047619047619048,
+    "Absolute Change": 0.2711412151067324,
+    "Relative Change (%)": 42.792355037253
+  },
+  {
+    "Metric": "Automated stance recall",
+    "Vanilla RAG": 0.42,
+    "RAGStress": 0.52,
+    "Absolute Change": 0.10000000000000003,
+    "Relative Change (%)": 23.80952380952382
+  },
+  {
+    "Metric": "Automated stance f1",
+    "Vanilla RAG": 0.4595959595959596,
+    "RAGStress": 0.6342710997442456,
+    "Absolute Change": 0.17467514014828595,
+    "Relative Change (%)": 38.00623928501167
+  },
+  {
+    "Metric": "Mean retrieval seconds",
+    "Vanilla RAG": 0.05388953601475805,
+    "RAGStress": 0.04950904798693955,
+    "Absolute Change": -0.004380488027818499,
+    "Relative Change (%)": -8.1286430571955
+  },
+  {
+    "Metric": "Mean generation seconds",
+    "Vanilla RAG": 1.0288557880138978,
+    "RAGStress": 1.0510634239949286,
+    "Absolute Change": 0.022207635981030815,
+    "Relative Change (%)": 2.158478986049193
+  },
+  {
+    "Metric": "Mean verification seconds",
+    "Vanilla RAG": 0.0,
+    "RAGStress": 7.498146374016069,
+    "Absolute Change": 7.498146374016069,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Mean counter_evidence seconds",
+    "Vanilla RAG": 0.0,
+    "RAGStress": 3.0541884800279515,
+    "Absolute Change": 3.0541884800279515,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Mean query_stability seconds",
+    "Vanilla RAG": 0.0,
+    "RAGStress": 0.16407237800769509,
+    "Absolute Change": 0.16407237800769509,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Mean other_audit seconds",
+    "Vanilla RAG": 0.0,
+    "RAGStress": 0.016559985973872246,
+    "Absolute Change": 0.016559985973872246,
+    "Relative Change (%)": null
+  },
+  {
+    "Metric": "Gold refuting-source detection rate",
+    "Vanilla RAG": 0.4,
+    "RAGStress": 0.4,
+    "Absolute Change": 0.0,
+    "Relative Change (%)": 0.0
+  },
+  {
+    "Metric": "RAGStress Overhead (%)",
+    "Vanilla RAG": 0,
+    "RAGStress": 992.9189479968425,
+    "Absolute Change": 992.9189479968425,
+    "Relative Change (%)": null
+  }
+]

@@ -26,8 +26,7 @@ def test_failed_generation_replaced_by_audited_corpus_quote():
     assert result['answer_repair']['quote'] == QUOTE
     assert result['superseded_claims'][0]['decision'] == 'ABSTAIN'
     assert 'cures every disease' not in result['final_answer']
-    assert result['claims'][0]['decision'] == 'QUALIFY'
-    assert result['claims'][0]['ablation']['survival'] == 0
+    assert result['claims'][0]['decision'] == 'KEEP'
 
 def test_out_of_corpus_words_block_quote_recovery():
     retriever = setup()

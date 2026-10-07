@@ -62,32 +62,17 @@ def test_question_rewrites_preserve_subject_effect_and_object():
 
 def test_decision_gates():
     row = {'label': 'SUPPORT', 'support': .99, 'contradiction': .01, 'source_group': 'g1'}
-    source_test, query_test = {'survival': 1.0}, {'mean_jaccard': .8}
-    assert decide([row], source_test, query_test)['decision'] == 'QUALIFY'
-    assert decide([row, dict(row, source_group='g2')], source_test, query_test)['decision'] == 'KEEP'
-    assert decide([row], source_test, query_test, False)['decision'] == 'ABSTAIN'
+    query_test = {'mean_jaccard': .8}
+    assert decide([row], query_test)['decision'] == 'KEEP'
+    assert decide([row, dict(row, source_group='g2')], query_test)['decision'] == 'KEEP'
+    assert decide([row], query_test, False)['decision'] == 'ABSTAIN'
     contradict = dict(row, label='CONTRADICT', support=.01, contradiction=.99)
-    assert decide([contradict], source_test, query_test)['decision'] == 'REWRITE'
-    assert decide([row, contradict], source_test, query_test)['status'] == 'CONTESTED'
+    assert decide([contradict], query_test)['decision'] == 'REWRITE'
+    assert decide([row, contradict], query_test)['status'] == 'CONTESTED'
 
 def test_source_excluded_before_reranking(corpus):
     retriever = Retriever(corpus, BM25(corpus))
     assert all(h['source_id'] != 'a' for h in retriever.retrieve('alpha', 5, 'bm25', {'a'}))
-
-def test_ablation_reretrieves_and_excludes_duplicate_sources():
-    from src.ablation import ablation
-    import hashlib
-    duplicate = {'a': {'id': 'a', 'title': '', 'text': 'alpha'},
-                 'b': {'id': 'b', 'title': '', 'text': 'alpha'},
-                 'c': {'id': 'c', 'title': '', 'text': 'alpha beta'}}
-    group = hashlib.sha256(b'alpha').hexdigest()[:16]
-    evidence = [{'source_id': 'a', 'source_group': group, 'label': 'SUPPORT', 'support': .95}]
-    class FakeClassifier:
-        def classify(self, claim, hits):
-            return [{'label': 'SUPPORT'} for hit in hits if hit['source_id'] == 'c']
-    result = ablation(Retriever(duplicate, BM25(duplicate)), FakeClassifier(), 'alpha', evidence, 'alpha', 'bm25')
-    assert result['tests'][0]['excluded_source_ids'] == ['a', 'b']
-    assert result['survival'] == 1
 
 def test_dense_missing_never_silently_becomes_sparse(corpus):
     with pytest.raises(RuntimeError):

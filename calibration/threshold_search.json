@@ -1,0 +1,166 @@
+{
+  "split": "original SciFact train",
+  "n": 80,
+  "seed": 358,
+  "old": {
+    "correct": 20,
+    "coverage": 0.275,
+    "selective_accuracy": 0.9090909090909091,
+    "macro_f1": 0.3881401617250674
+  },
+  "grid": [
+    {
+      "weak_support": 0.55,
+      "contradiction": 0.85,
+      "correct": 25,
+      "coverage": 0.3375,
+      "selective_accuracy": 0.9259259259259259,
+      "macro_f1": 0.465034965034965
+    },
+    {
+      "weak_support": 0.55,
+      "contradiction": 0.9,
+      "correct": 25,
+      "coverage": 0.3375,
+      "selective_accuracy": 0.9259259259259259,
+      "macro_f1": 0.465034965034965
+    },
+    {
+      "weak_support": 0.55,
+      "contradiction": 0.95,
+      "correct": 24,
+      "coverage": 0.325,
+      "selective_accuracy": 0.9230769230769231,
+      "macro_f1": 0.4515669515669516
+    },
+    {
+      "weak_support": 0.6,
+      "contradiction": 0.85,
+      "correct": 25,
+      "coverage": 0.3375,
+      "selective_accuracy": 0.9259259259259259,
+      "macro_f1": 0.465034965034965
+    },
+    {
+      "weak_support": 0.6,
+      "contradiction": 0.9,
+      "correct": 25,
+      "coverage": 0.3375,
+      "selective_accuracy": 0.9259259259259259,
+      "macro_f1": 0.465034965034965
+    },
+    {
+      "weak_support": 0.6,
+      "contradiction": 0.95,
+      "correct": 24,
+      "coverage": 0.325,
+      "selective_accuracy": 0.9230769230769231,
+      "macro_f1": 0.4515669515669516
+    },
+    {
+      "weak_support": 0.65,
+      "contradiction": 0.85,
+      "correct": 24,
+      "coverage": 0.325,
+      "selective_accuracy": 0.9230769230769231,
+      "macro_f1": 0.44919786096256686
+    },
+    {
+      "weak_support": 0.65,
+      "contradiction": 0.9,
+      "correct": 24,
+      "coverage": 0.325,
+      "selective_accuracy": 0.9230769230769231,
+      "macro_f1": 0.44919786096256686
+    },
+    {
+      "weak_support": 0.65,
+      "contradiction": 0.95,
+      "correct": 23,
+      "coverage": 0.3125,
+      "selective_accuracy": 0.92,
+      "macro_f1": 0.43572984749455335
+    },
+    {
+      "weak_support": 0.7,
+      "contradiction": 0.85,
+      "correct": 24,
+      "coverage": 0.325,
+      "selective_accuracy": 0.9230769230769231,
+      "macro_f1": 0.44919786096256686
+    },
+    {
+      "weak_support": 0.7,
+      "contradiction": 0.9,
+      "correct": 24,
+      "coverage": 0.325,
+      "selective_accuracy": 0.9230769230769231,
+      "macro_f1": 0.44919786096256686
+    },
+    {
+      "weak_support": 0.7,
+      "contradiction": 0.95,
+      "correct": 23,
+      "coverage": 0.3125,
+      "selective_accuracy": 0.92,
+      "macro_f1": 0.43572984749455335
+    },
+    {
+      "weak_support": 0.75,
+      "contradiction": 0.85,
+      "correct": 23,
+      "coverage": 0.3125,
+      "selective_accuracy": 0.92,
+      "macro_f1": 0.43272727272727274
+    },
+    {
+      "weak_support": 0.75,
+      "contradiction": 0.9,
+      "correct": 23,
+      "coverage": 0.3125,
+      "selective_accuracy": 0.92,
+      "macro_f1": 0.43272727272727274
+    },
+    {
+      "weak_support": 0.75,
+      "contradiction": 0.95,
+      "correct": 22,
+      "coverage": 0.3,
+      "selective_accuracy": 0.9166666666666666,
+      "macro_f1": 0.4192592592592592
+    },
+    {
+      "weak_support": 0.8,
+      "contradiction": 0.85,
+      "correct": 23,
+      "coverage": 0.3125,
+      "selective_accuracy": 0.92,
+      "macro_f1": 0.43272727272727274
+    },
+    {
+      "weak_support": 0.8,
+      "contradiction": 0.9,
+      "correct": 23,
+      "coverage": 0.3125,
+      "selective_accuracy": 0.92,
+      "macro_f1": 0.43272727272727274
+    },
+    {
+      "weak_support": 0.8,
+      "contradiction": 0.95,
+      "correct": 22,
+      "coverage": 0.3,
+      "selective_accuracy": 0.9166666666666666,
+      "macro_f1": 0.4192592592592592
+    }
+  ],
+  "chosen": {
+    "weak_support": 0.6,
+    "contradiction": 0.9,
+    "correct": 25,
+    "coverage": 0.3375,
+    "selective_accuracy": 0.9259259259259259,
+    "macro_f1": 0.465034965034965
+  },
+  "limitations": "Known supporting/refuting rationale pairs, no neutral gold. Exploratory calibration; not end-to-end correctness. Relevance/alias/context safeguards require separate sanity checks."
+}

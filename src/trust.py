@@ -1,27 +1,29 @@
 from .config import STABILITY_THRESHOLD
 
-def decide(evidence, source_test, query_test, classifier_available=True, query_relevant=True):
-    support = [row for row in evidence if row['label'] == 'SUPPORT']
-    contradiction = [row for row in evidence if row['label'] == 'CONTRADICT']
-    groups = {row['source_group'] for row in support}
-    components = {'support_max': max((row['support'] for row in evidence), default=0),
-                  'contradiction_max': max((row['contradiction'] for row in evidence), default=0),
-                  'distinct_support_groups': len(groups), 'ablation_survival': source_test['survival'],
+def decide(evidence, query_test, classifier_available=True, query_relevant=True):
+    strong = [r for r in evidence if r['label'] == 'SUPPORT']
+    weak = [r for r in evidence if r['label'] == 'WEAK_SUPPORT']
+    contradiction = [r for r in evidence if r['label'] == 'CONTRADICT']
+    components = {'support_max': max((r['support'] for r in evidence), default=0),
+                  'contradiction_max': max((r['contradiction'] for r in evidence), default=0),
+                  'supporting_documents': len({r.get('source_id') for r in strong + weak}),
+                  'strong_support': bool(strong), 'weak_support': bool(weak),
                   'query_jaccard': query_test['mean_jaccard'], 'query_relevant': query_relevant}
     if not classifier_available:
-        decision, status, reason = 'ABSTAIN', 'UNVERIFIED', 'Stance model unavailable; retrieval similarity alone cannot verify claims.'
+        decision, status, reason = 'ABSTAIN', 'UNVERIFIED', 'Evidence-checking model unavailable; similarity alone cannot verify claims.'
     elif not query_relevant:
-        decision, status, reason = 'ABSTAIN', 'INSUFFICIENT', 'Retrieved evidence has weak query relevance under the prototype gate.'
-    elif contradiction and support:
-        decision, status, reason = 'QUALIFY', 'CONTESTED', 'Retrieved passages both support and contradict this claim.'
+        decision, status, reason = 'ABSTAIN', 'INSUFFICIENT', 'Retrieved evidence is unrelated under the prototype query-relevance gate.'
+    elif contradiction and (strong or weak):
+        decision, status, reason = 'QUALIFY', 'CONTESTED', 'Relevant passages support and contradict the claim.'
     elif contradiction:
-        decision, status, reason = 'REWRITE', 'CONTRADICTED', 'The claim is contradicted; replace it with an attributed retrieved passage.'
-    elif not support:
-        decision, status, reason = 'ABSTAIN', 'INSUFFICIENT', 'No retrieved passage reaches the support threshold.'
-    elif len(groups) < 2 or source_test['survival'] != 1.0:
-        decision, status, reason = 'QUALIFY', 'FRAGILE', 'Single-source dependence or failure to survive a source removal.'
-    elif query_test['mean_jaccard'] < STABILITY_THRESHOLD:
-        decision, status, reason = 'QUALIFY', 'UNSTABLE', 'Top-K retrieval changes under wording perturbations.'
+        decision, status, reason = 'REWRITE', 'CONTRADICTED', 'Relevant corpus evidence contradicts the wording; replace it with an attributed passage.'
+    elif strong:
+        if query_test.get('tested', True) and query_test['mean_jaccard'] < STABILITY_THRESHOLD:
+            decision, status, reason = 'QUALIFY', 'UNSTABLE', 'Strong support exists, but retrieval is severely sensitive to wording.'
+        else:
+            decision, status, reason = 'KEEP', 'SUPPORTED', 'Strong relevant support, no confirmed contradiction, and no severe wording instability.'
+    elif weak:
+        decision, status, reason = 'QUALIFY', 'WEAKLY_SUPPORTED', 'Moderate semantic support exists with topical alignment; wording should remain qualified.'
     else:
-        decision, status, reason = 'KEEP', 'ROBUST_WITHIN_CORPUS', 'Supported by distinct source groups and survives tested evidence perturbations.'
-    return {'decision': decision, 'status': status, 'reason': reason, 'components': components}
+        decision, status, reason = 'ABSTAIN', 'INSUFFICIENT', 'No sufficiently aligned supporting or contradictory evidence could verify this claim.'
+    return {'decision':decision,'status':status,'reason':reason,'components':components}

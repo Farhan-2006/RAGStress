@@ -8,7 +8,7 @@ This document records assignment requirements separately from our engineering de
 | Relevant IR principles | 30 | Defined abstract/source and sentence windows; normalization/tokenization; dictionary/postings, DF/IDF; TF-IDF cosine and BM25; heap Top-K; semantic cosine; RRF; visible scores |
 | Working system | 20 | Live arbitrary queries, actual corpus, run instructions, explicit model failures; no fixed demo answers |
 | Evaluation | 15 | Held-out BEIR SciFact qrels, baseline comparison, P@5 / Recall@5 / MRR@5 / nDCG@5; manually judged queries; novelty experiments |
-| Novelty | 10 | Integrated leave-one-source-out, counter-search, query perturbation, claim audits and decision gates; hybrid/citations alone are not novelty |
+| Novelty | 10 | Integrated counter-search, query perturbation, claim audits and calibrated decisions; hybrid/citations alone are not novelty |
 | Report | 10 | PDF <=8 main pages excluding references/appendix; required sections, pipeline diagram, tables/graphs |
 | Video | 10 | 5-8 minutes, live end-to-end, limitation, pipeline/code/intermediate scores, evaluation, each member speaking; NO SLIDES |
 | Track relevance | 5 | T1: inspectable IR and every generated factual claim traced to ranked evidence |
@@ -28,5 +28,5 @@ This document records assignment requirements separately from our engineering de
 ## Our design decisions (not mandated by the PDF)
 - Stay on T1. BM25 + TF-IDF baseline; MiniLM dense; RRF fusion; Streamlit.
 - SciFact original dev stance annotations used ONLY as evaluation gold, never runtime evidence decisions.
-- No arbitrary weighted truth probability. Transparent support/survival/stability/contradiction gates.
+- No arbitrary weighted truth probability. Transparent support/stability/contradiction gates.
 - Separate retrieval relevance from semantic stance; no claim that two IDs prove independence.

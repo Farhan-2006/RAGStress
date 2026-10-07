@@ -1,0 +1,11 @@
+{
+  "counter_claims_tested": 64,
+  "counter_claims_with_discovery": 17,
+  "unqualified_drafts_challenged": 16,
+  "unqualified_drafts_challenged_rate": 0.32,
+  "pairwise_jaccard_mean": 0.7213359788359789,
+  "pairwise_jaccard_median": 0.6666666666666666,
+  "pairwise_jaccard_min": 0.1111111111111111,
+  "severe_pair_fraction": 0.006666666666666667,
+  "severe_query_fraction": 0.0
+}

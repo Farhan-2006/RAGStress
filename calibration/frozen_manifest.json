@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-10-07T16:31:18.244123+00:00",
+  "protocol": "Paragraph revision frozen after real supported/unanswerable sanity runs. Prior 50-case results describe the separately preserved earlier revision.",
+  "files": {
+    "src/__init__.py": "84be3a5a07e5e3c9902f979947e0c82289340dda10f1bc91a6b50b01e561142e",
+    "src/answer_repair.py": "b56e664386b91dda8d72f39e74206844bb7fba787e0f5293222ed933f13de3cc",
+    "src/claims.py": "83f4955b34cac96ea1a6bda7bda2c89200fc0767f26bffad2b599514ab12a1db",
+    "src/cli.py": "985756be4d42556d489dcdb6a3c42cd26a78d7d5fdaa960c3555ad290a2fe807",
+    "src/config.py": "44272736e74c820ae7b6a187677cc9af310e42d6db9fac80c41722c209119357",
+    "src/counter_evidence.py": "b6902f9f216f010af6a1f09b1a4290244ac4563fa1c7b961a772a0f8030c64cb",
+    "src/data.py": "ea2d9da4bc73aa58cade1707a988e5f9038182331111f186377f464db8051bdd",
+    "src/dense_retriever.py": "74fe54d704f1e6f4ad57db9dbf1b9810d84600b62cfaa48cf0b3736f15f1b79d",
+    "src/evaluation.py": "08dc716d07b3b4a7bbde050fecf7e86f4dd74e58d5bfad70bca1ea61ed62a975",
+    "src/generator.py": "11f925b80e3d21881ec7eeb456e9e33053452df8e236cafa70dd28ae89fd7d1c",
+    "src/hybrid_retriever.py": "b2cd7fab9998529bf1a9f5ca638f9d5f888eeaa63909ebe06e53ad3578c69563",
+    "src/pipeline.py": "1e0a3c33354f418766eb9d3730fa6ccb383ee4bf38ffe4cc6ef205e93c16242a",
+    "src/preprocessing.py": "eb5718ae4e3965b9661de2263e6c993fa51a0d1efb45725722c6775a9123430d",
+    "src/sparse_retriever.py": "7147b018a43bfdcd78f84327ad308be8f383bbf00bc524bdf2d4bf300f238cb1",
+    "src/stability.py": "eed5941aae47a116c787d28c149b9a7147c8806ba87e26157b4899b951dc9f1c",
+    "src/stance.py": "985fcb4b25b861161ddb4b3c408d5b08a80faf2ce55f82b847f794ac77169a4a",
+    "src/trust.py": "ed5243cf39dab8bd636bdaa90a445f9f59763ade94deee9ef10880984c539a58",
+    "src/vanilla.py": "b1e8ab7b3ec2b5f6c64d5e8c3135a0b2f89bd4a1a0af6909b03bb7c0a04b62ee"
+  },
+  "thresholds": {
+    "strong_support": 0.8,
+    "moderate_support": 0.6,
+    "contradiction": 0.9,
+    "topical_coverage": 0.15,
+    "semantic_alignment": 0.4,
+    "severe_stability": 0.15,
+    "query_relevance": 0.3
+  },
+  "initial_retrieval": {
+    "method": "hybrid",
+    "k": 5,
+    "rrf": 60,
+    "pool_k": 50
+  },
+  "calibration_split": "original SciFact train",
+  "evaluation_split": "original SciFact dev",
+  "revision": "single-paragraph-v2",
+  "parent_created_utc": "2026-10-07T15:31:08.902738+00:00"
+}

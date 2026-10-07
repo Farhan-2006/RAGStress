@@ -1,7 +1,7 @@
 # Required human judgment worksheet
 
 Public qrels are objective benchmark judgments; they do not replace the team's independent error analysis.
-Use at least 5 real queries, including support, contradiction, source dependence and an out-of-corpus query.
+Use at least 5 real queries, including support, contradiction, wording sensitivity and an out-of-corpus query.
 
 1. Run each query in BM25 and hybrid; export audit JSON and save Top-5 ranked source IDs.
 2. Two team members independently judge source relevance (0/1), each generated claim's support/contradiction/insufficient status, quote fidelity and whether the decision is appropriate.

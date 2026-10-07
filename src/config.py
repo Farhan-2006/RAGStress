@@ -31,4 +31,8 @@ POOL_K = 50
 RRF_CONSTANT = 60
 # Prototype thresholds, frozen before held-out evaluation; not probabilities of truth.
 NLI_THRESHOLD = 0.80
-STABILITY_THRESHOLD = 0.40
+STABILITY_THRESHOLD = 0.15  # Only severe retrieval instability qualifies otherwise supported claims.
+WEAK_SUPPORT_THRESHOLD = 0.60  # Selected on 80 original-training rationale pairs.
+CONTRADICTION_THRESHOLD = 0.90
+TOPICAL_COVERAGE_THRESHOLD = 0.15
+SEMANTIC_ALIGNMENT_THRESHOLD = 0.40

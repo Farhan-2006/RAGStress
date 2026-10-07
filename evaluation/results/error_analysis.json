@@ -1,0 +1,937 @@
+{
+  "both stance-aligned": [
+    {
+      "id": "823",
+      "query": "N348I mutations cause resistance to zidovudine (AZT).",
+      "gold_label": "SUPPORT",
+      "vanilla_answer": "N348I mutations cause resistance to zidovudine (AZT). [15319019] [2319305] [6426919]",
+      "vanilla_sources": [
+        "15319019",
+        "2319305",
+        "6426919",
+        "6421792",
+        "641786"
+      ],
+      "ragstress_answer": "N348I mutations cause resistance to zidovudine (AZT). [15319019]",
+      "decision": "KEEP",
+      "supporting_evidence": [
+        {
+          "source_id": "15319019",
+          "chunk_id": "15319019:1",
+          "quote": "N348I appeared early in therapy and was highly associated with thymidine analogue mutations (TAMs) M41L and T215Y/F (p , 0.001), the lamivudine resistance mutations M184V/I (p , 0.001), and non-nucleoside RTI (NNRTI) resistance mutations K103N and Y181C/I (p , 0.001).",
+          "label": "SUPPORT",
+          "support": 0.8999040722846985,
+          "contradiction": 0.0421052947640419,
+          "neutral": 0.057990625500679016,
+          "missing_entity_anchors": [
+            "azt"
+          ],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.6613247394561768,
+          "context_contradiction": 0.006137134041637182,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.43049017227181874,
+          "source_group": "12c4764eea985653",
+          "retrieval_rank": 1
+        }
+      ],
+      "conflicting_evidence": [],
+      "counter_discovery_claims": 0,
+      "query_stability": {
+        "kind": "template wording perturbations",
+        "base_ids": [
+          "15319019",
+          "2319305",
+          "6426919",
+          "6421792",
+          "641786"
+        ],
+        "variants": [
+          {
+            "query": "What does the scientific evidence say about N348I mutations cause resistance to zidovudine (AZT)?",
+            "source_ids": [
+              "15319019",
+              "2319305",
+              "6426919",
+              "39443128",
+              "641786"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Research evidence regarding N348I mutations cause resistance to zidovudine (AZT)",
+            "source_ids": [
+              "15319019",
+              "2319305",
+              "6426919",
+              "641786",
+              "6421792"
+            ],
+            "jaccard": 1.0
+          },
+          {
+            "query": "Find studies relevant to N348I mutations cause resistance to zidovudine (AZT)",
+            "source_ids": [
+              "15319019",
+              "2319305",
+              "6426919",
+              "6421792",
+              "641786"
+            ],
+            "jaccard": 1.0
+          }
+        ],
+        "mean_jaccard": 0.8888888888888888
+      },
+      "explanation": "Strong relevant support, no confirmed contradiction, and no severe wording instability."
+    },
+    {
+      "id": "922",
+      "query": "Patients in stable partnerships have a faster progression from HIV to AIDS.",
+      "gold_label": "CONTRADICT",
+      "vanilla_answer": "A stable partnership is associated with a slower rate of progression to AIDS or death in HIV infected patients receiving HAART. In an analysis stratified by previous antiretroviral therapy and clinical stage when starting HAART (US Centers for Disease Control and Prevention group A, B, or C), the adjusted hazard ratio for progression to AIDS or death was 0.79 (95% confidence interval 0.63 to 0.98) for participants with a stable partnership [17077004] [11230569] [31562330]",
+      "vanilla_sources": [
+        "17077004",
+        "11230569",
+        "31562330",
+        "46353045",
+        "374902"
+      ],
+      "ragstress_answer": "A stable partnership is associated with a slower rate of progression to AIDS or death in HIV infected patients receiving HAART. [17077004] [24596228]\n\nIn an analysis stratified by previous antiretroviral therapy and clinical stage when starting HAART (US Centers for Disease Control and Prevention group A, B, or C), the adjusted hazard ratio for progression to AIDS or death was 0.79 (95% confidence interval 0.63 to 0.98) for participants with a stable partnership [17077004]",
+      "decision": "KEEP",
+      "supporting_evidence": [
+        {
+          "source_id": "17077004",
+          "chunk_id": "17077004:1",
+          "quote": "CONCLUSIONS A stable partnership is associated with a slower rate of progression to AIDS or death in HIV infected patients receiving HAART.",
+          "label": "SUPPORT",
+          "support": 0.9758732318878174,
+          "contradiction": 0.0037436645943671465,
+          "neutral": 0.02038312517106533,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.9884316921234131,
+          "context_contradiction": 0.013929471373558044,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 1.0,
+          "source_group": "2f11327caa1618ac",
+          "retrieval_rank": 1
+        },
+        {
+          "source_id": "17077004",
+          "chunk_id": "17077004:1",
+          "quote": "In an analysis stratified by previous antiretroviral therapy and clinical stage when starting HAART (US Centers for Disease Control and Prevention group A, B, or C), the adjusted hazard ratio for progression to AIDS or death was 0.79 (95% confidence interval 0.63 to 0.98) for participants with a stable partnership compared with those without.",
+          "label": "SUPPORT",
+          "support": 0.9803526401519775,
+          "contradiction": 0.004739323630928993,
+          "neutral": 0.014908059500157833,
+          "missing_entity_anchors": [
+            "hiv"
+          ],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.6859992742538452,
+          "context_contradiction": 0.013929471373558044,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.5469591210384143,
+          "source_group": "2f11327caa1618ac",
+          "retrieval_rank": 1
+        }
+      ],
+      "conflicting_evidence": [],
+      "counter_discovery_claims": 0,
+      "query_stability": {
+        "kind": "template wording perturbations",
+        "base_ids": [
+          "17077004",
+          "11230569",
+          "31562330",
+          "46353045",
+          "374902"
+        ],
+        "variants": [
+          {
+            "query": "What does the scientific evidence say about Patients in stable partnerships have a faster progression from HIV to AIDS?",
+            "source_ids": [
+              "17077004",
+              "11230569",
+              "31562330",
+              "374902",
+              "22227889"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Research evidence regarding Patients in stable partnerships have a faster progression from HIV to AIDS",
+            "source_ids": [
+              "17077004",
+              "11230569",
+              "31562330",
+              "374902",
+              "22227889"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Find studies relevant to Patients in stable partnerships have a faster progression from HIV to AIDS",
+            "source_ids": [
+              "17077004",
+              "11230569",
+              "31562330",
+              "22227889",
+              "46353045"
+            ],
+            "jaccard": 0.6666666666666666
+          }
+        ],
+        "mean_jaccard": 0.6666666666666666
+      },
+      "explanation": "Strong relevant support, no confirmed contradiction, and no severe wording instability.; Strong relevant support, no confirmed contradiction, and no severe wording instability."
+    }
+  ],
+  "vanilla misaligned/full aligned": [
+    {
+      "id": "674",
+      "query": "LDL cholesterol has no involvement in the development of cardiovascular disease.",
+      "gold_label": "CONTRADICT",
+      "vanilla_answer": "LDL cholesterol has no involvement in the development of cardiovascular disease. [2095573] [7662206] [9814332]",
+      "vanilla_sources": [
+        "2095573",
+        "7662206",
+        "9814332",
+        "15360986",
+        "30981192"
+      ],
+      "ragstress_answer": "The proposed claim is not retained. Source [30981192] reports: \"Lowering low-density lipoprotein-cholesterol (LDL-C) is the primary target in the management of dyslipidemia in patients at high risk of cardiovascular disease.\"",
+      "decision": "REWRITE",
+      "supporting_evidence": [],
+      "conflicting_evidence": [
+        {
+          "source_id": "2095573",
+          "chunk_id": "2095573:2",
+          "quote": "These results potentially provide insight into the biological mechanisms that underlie the regulation of LDL cholesterol and might help in the discovery of novel therapeutic targets for cardiovascular disease.",
+          "label": "CONTRADICT",
+          "support": 5.2920593589078635e-05,
+          "contradiction": 0.9990647435188293,
+          "neutral": 0.0008824129472486675,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.6255184412002563,
+          "context_contradiction": 0.9984573125839233,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.6215729261877467,
+          "source_group": "db1996e33fd127c3",
+          "retrieval_rank": 1
+        },
+        {
+          "source_id": "2095573",
+          "chunk_id": "2095573:2",
+          "quote": "SNPs rs599839 and rs646776 both explained around 1% of the variation in circulating LDL-cholesterol concentrations and were associated with about 15% of an SD change in LDL cholesterol per allele, assuming an SD of 1 mmol/L.",
+          "label": "CONTRADICT",
+          "support": 8.320107008330524e-05,
+          "contradiction": 0.9929643869400024,
+          "neutral": 0.006952406372874975,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.5038760304450989,
+          "context_contradiction": 0.9984573125839233,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.40856922635899606,
+          "source_group": "db1996e33fd127c3",
+          "retrieval_rank": 1
+        }
+      ],
+      "counter_discovery_claims": 1,
+      "query_stability": {
+        "kind": "template wording perturbations",
+        "base_ids": [
+          "2095573",
+          "7662206",
+          "9814332",
+          "15360986",
+          "30981192"
+        ],
+        "variants": [
+          {
+            "query": "What does the scientific evidence say about LDL cholesterol has no involvement in the development of cardiovascular disease?",
+            "source_ids": [
+              "2095573",
+              "7662206",
+              "9814332",
+              "15360986",
+              "30981192"
+            ],
+            "jaccard": 1.0
+          },
+          {
+            "query": "Research evidence regarding LDL cholesterol has no involvement in the development of cardiovascular disease",
+            "source_ids": [
+              "2095573",
+              "7662206",
+              "15360986",
+              "9814332",
+              "5612738"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Find studies relevant to LDL cholesterol has no involvement in the development of cardiovascular disease",
+            "source_ids": [
+              "2095573",
+              "7662206",
+              "15360986",
+              "9814332",
+              "30981192"
+            ],
+            "jaccard": 1.0
+          }
+        ],
+        "mean_jaccard": 0.8888888888888888
+      },
+      "explanation": "Relevant corpus evidence contradicts the wording; replace it with an attributed passage."
+    },
+    {
+      "id": "692",
+      "query": "Leuko-increased blood increases infectious complications in red blood cell transfusion.",
+      "gold_label": "CONTRADICT",
+      "vanilla_answer": "Leuko-increased blood increases infectious complications in red blood cell transfusion. [24088502] [3698758] [11349166]",
+      "vanilla_sources": [
+        "24088502",
+        "3698758",
+        "11349166",
+        "23203102",
+        "623486"
+      ],
+      "ragstress_answer": "The proposed claim is not retained. Source [11349166] reports: \"RESULTS The study included a total of 36 blood donors who subsequently developed CJD and 436 recipients. Through 2006, 91 of these recipients were still alive, 329 were deceased, and 16 were lost to follow-up. After transfusion, these three groups had survived a total of 2096.0 person-years. A total of 144 recipients survived 5 years or longer after transfusion and 68 of them had received blood donated 60 or fewer months before the onset of CJD in the donor. We identified no recipient with CJD. CONCLUSIONS The current results of this large, ongoing lookback study show no evidence of transfusion transmission of CJD. They reinforce the conclusion that the risk, if any, of transfusion transmission of prion disease by CJD donors is significantly lower than the comparable risk of such transmission by vCJD donors.\"",
+      "decision": "REWRITE",
+      "supporting_evidence": [],
+      "conflicting_evidence": [
+        {
+          "source_id": "24088502",
+          "chunk_id": "24088502:2",
+          "quote": "CONCLUSION A national universal leukoreduction program is potentially associated with decreased mortality as well as decreased fever episodes and antibiotic use after red blood cell transfusion in high-risk patients.",
+          "label": "CONTRADICT",
+          "support": 0.00033528724452480674,
+          "contradiction": 0.9927690029144287,
+          "neutral": 0.006895751226693392,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.7365583777427673,
+          "context_contradiction": 0.9833305478096008,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.5529725236495744,
+          "source_group": "3980fb1adc7b37ed",
+          "retrieval_rank": 1
+        },
+        {
+          "source_id": "24088502",
+          "chunk_id": "24088502:2",
+          "quote": "The frequency of posttransfusion fevers decreased significantly following leukoreduction (adjusted OR, 0.86; 95% CI, 0.79-0.94), as did antibiotic use (adjusted OR, 0.90; 95% CI, 0.82-0.99).",
+          "label": "CONTRADICT",
+          "support": 0.0003414167440496385,
+          "contradiction": 0.993014931678772,
+          "neutral": 0.006643648725003004,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.5623047351837158,
+          "context_contradiction": 0.9833305478096008,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.0,
+          "source_group": "3980fb1adc7b37ed",
+          "retrieval_rank": 1
+        }
+      ],
+      "counter_discovery_claims": 1,
+      "query_stability": {
+        "kind": "template wording perturbations",
+        "base_ids": [
+          "24088502",
+          "3698758",
+          "11349166",
+          "23203102",
+          "623486"
+        ],
+        "variants": [
+          {
+            "query": "What does the scientific evidence say about Leuko-increased blood increases infectious complications in red blood cell transfusion?",
+            "source_ids": [
+              "24088502",
+              "11349166",
+              "23203102",
+              "3698758",
+              "40900567"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Research evidence regarding Leuko-increased blood increases infectious complications in red blood cell transfusion",
+            "source_ids": [
+              "24088502",
+              "11349166",
+              "3698758",
+              "23203102",
+              "40900567"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Find studies relevant to Leuko-increased blood increases infectious complications in red blood cell transfusion",
+            "source_ids": [
+              "24088502",
+              "23203102",
+              "3698758",
+              "11349166",
+              "26474812"
+            ],
+            "jaccard": 0.6666666666666666
+          }
+        ],
+        "mean_jaccard": 0.6666666666666666
+      },
+      "explanation": "Relevant corpus evidence contradicts the wording; replace it with an attributed passage."
+    }
+  ],
+  "unqualified draft challenged": [
+    {
+      "id": "674",
+      "query": "LDL cholesterol has no involvement in the development of cardiovascular disease.",
+      "gold_label": "CONTRADICT",
+      "vanilla_answer": "LDL cholesterol has no involvement in the development of cardiovascular disease. [2095573] [7662206] [9814332]",
+      "vanilla_sources": [
+        "2095573",
+        "7662206",
+        "9814332",
+        "15360986",
+        "30981192"
+      ],
+      "ragstress_answer": "The proposed claim is not retained. Source [30981192] reports: \"Lowering low-density lipoprotein-cholesterol (LDL-C) is the primary target in the management of dyslipidemia in patients at high risk of cardiovascular disease.\"",
+      "decision": "REWRITE",
+      "supporting_evidence": [],
+      "conflicting_evidence": [
+        {
+          "source_id": "2095573",
+          "chunk_id": "2095573:2",
+          "quote": "These results potentially provide insight into the biological mechanisms that underlie the regulation of LDL cholesterol and might help in the discovery of novel therapeutic targets for cardiovascular disease.",
+          "label": "CONTRADICT",
+          "support": 5.2920593589078635e-05,
+          "contradiction": 0.9990647435188293,
+          "neutral": 0.0008824129472486675,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.6255184412002563,
+          "context_contradiction": 0.9984573125839233,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.6215729261877467,
+          "source_group": "db1996e33fd127c3",
+          "retrieval_rank": 1
+        },
+        {
+          "source_id": "2095573",
+          "chunk_id": "2095573:2",
+          "quote": "SNPs rs599839 and rs646776 both explained around 1% of the variation in circulating LDL-cholesterol concentrations and were associated with about 15% of an SD change in LDL cholesterol per allele, assuming an SD of 1 mmol/L.",
+          "label": "CONTRADICT",
+          "support": 8.320107008330524e-05,
+          "contradiction": 0.9929643869400024,
+          "neutral": 0.006952406372874975,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.5038760304450989,
+          "context_contradiction": 0.9984573125839233,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.40856922635899606,
+          "source_group": "db1996e33fd127c3",
+          "retrieval_rank": 1
+        }
+      ],
+      "counter_discovery_claims": 1,
+      "query_stability": {
+        "kind": "template wording perturbations",
+        "base_ids": [
+          "2095573",
+          "7662206",
+          "9814332",
+          "15360986",
+          "30981192"
+        ],
+        "variants": [
+          {
+            "query": "What does the scientific evidence say about LDL cholesterol has no involvement in the development of cardiovascular disease?",
+            "source_ids": [
+              "2095573",
+              "7662206",
+              "9814332",
+              "15360986",
+              "30981192"
+            ],
+            "jaccard": 1.0
+          },
+          {
+            "query": "Research evidence regarding LDL cholesterol has no involvement in the development of cardiovascular disease",
+            "source_ids": [
+              "2095573",
+              "7662206",
+              "15360986",
+              "9814332",
+              "5612738"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Find studies relevant to LDL cholesterol has no involvement in the development of cardiovascular disease",
+            "source_ids": [
+              "2095573",
+              "7662206",
+              "15360986",
+              "9814332",
+              "30981192"
+            ],
+            "jaccard": 1.0
+          }
+        ],
+        "mean_jaccard": 0.8888888888888888
+      },
+      "explanation": "Relevant corpus evidence contradicts the wording; replace it with an attributed passage."
+    },
+    {
+      "id": "692",
+      "query": "Leuko-increased blood increases infectious complications in red blood cell transfusion.",
+      "gold_label": "CONTRADICT",
+      "vanilla_answer": "Leuko-increased blood increases infectious complications in red blood cell transfusion. [24088502] [3698758] [11349166]",
+      "vanilla_sources": [
+        "24088502",
+        "3698758",
+        "11349166",
+        "23203102",
+        "623486"
+      ],
+      "ragstress_answer": "The proposed claim is not retained. Source [11349166] reports: \"RESULTS The study included a total of 36 blood donors who subsequently developed CJD and 436 recipients. Through 2006, 91 of these recipients were still alive, 329 were deceased, and 16 were lost to follow-up. After transfusion, these three groups had survived a total of 2096.0 person-years. A total of 144 recipients survived 5 years or longer after transfusion and 68 of them had received blood donated 60 or fewer months before the onset of CJD in the donor. We identified no recipient with CJD. CONCLUSIONS The current results of this large, ongoing lookback study show no evidence of transfusion transmission of CJD. They reinforce the conclusion that the risk, if any, of transfusion transmission of prion disease by CJD donors is significantly lower than the comparable risk of such transmission by vCJD donors.\"",
+      "decision": "REWRITE",
+      "supporting_evidence": [],
+      "conflicting_evidence": [
+        {
+          "source_id": "24088502",
+          "chunk_id": "24088502:2",
+          "quote": "CONCLUSION A national universal leukoreduction program is potentially associated with decreased mortality as well as decreased fever episodes and antibiotic use after red blood cell transfusion in high-risk patients.",
+          "label": "CONTRADICT",
+          "support": 0.00033528724452480674,
+          "contradiction": 0.9927690029144287,
+          "neutral": 0.006895751226693392,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.7365583777427673,
+          "context_contradiction": 0.9833305478096008,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.5529725236495744,
+          "source_group": "3980fb1adc7b37ed",
+          "retrieval_rank": 1
+        },
+        {
+          "source_id": "24088502",
+          "chunk_id": "24088502:2",
+          "quote": "The frequency of posttransfusion fevers decreased significantly following leukoreduction (adjusted OR, 0.86; 95% CI, 0.79-0.94), as did antibiotic use (adjusted OR, 0.90; 95% CI, 0.82-0.99).",
+          "label": "CONTRADICT",
+          "support": 0.0003414167440496385,
+          "contradiction": 0.993014931678772,
+          "neutral": 0.006643648725003004,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.5623047351837158,
+          "context_contradiction": 0.9833305478096008,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.0,
+          "source_group": "3980fb1adc7b37ed",
+          "retrieval_rank": 1
+        }
+      ],
+      "counter_discovery_claims": 1,
+      "query_stability": {
+        "kind": "template wording perturbations",
+        "base_ids": [
+          "24088502",
+          "3698758",
+          "11349166",
+          "23203102",
+          "623486"
+        ],
+        "variants": [
+          {
+            "query": "What does the scientific evidence say about Leuko-increased blood increases infectious complications in red blood cell transfusion?",
+            "source_ids": [
+              "24088502",
+              "11349166",
+              "23203102",
+              "3698758",
+              "40900567"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Research evidence regarding Leuko-increased blood increases infectious complications in red blood cell transfusion",
+            "source_ids": [
+              "24088502",
+              "11349166",
+              "3698758",
+              "23203102",
+              "40900567"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Find studies relevant to Leuko-increased blood increases infectious complications in red blood cell transfusion",
+            "source_ids": [
+              "24088502",
+              "23203102",
+              "3698758",
+              "11349166",
+              "26474812"
+            ],
+            "jaccard": 0.6666666666666666
+          }
+        ],
+        "mean_jaccard": 0.6666666666666666
+      },
+      "explanation": "Relevant corpus evidence contradicts the wording; replace it with an attributed passage."
+    }
+  ],
+  "unsupported draft qualified": [],
+  "refuting source additionally detected": [],
+  "both stance-misaligned": [
+    {
+      "id": "217",
+      "query": "CX3CR1 on the Th2 cells promotes T cell survival",
+      "gold_label": "SUPPORT",
+      "vanilla_answer": "CX3CR1-induced survival was also observed for T(H)1 cells upon airway inflammation but not under homeostatic conditions or upon peripheral inflammation. Therefore, CX3CR1 and CX3CL1 may represent attractive therapeutic targets in asthma. [21366394] [21366394] [21363424] [22210434]",
+      "vanilla_sources": [
+        "21366394",
+        "21363424",
+        "22210434",
+        "41877386",
+        "45414636"
+      ],
+      "ragstress_answer": "CX3CR1-induced survival was also observed for T(H)1 cells upon airway inflammation but not under homeostatic conditions or upon peripheral inflammation. [21366394]\n\nTherefore, CX3CR1 and CX3CL1 may represent attractive therapeutic targets in asthma. [21366394]",
+      "decision": "KEEP",
+      "supporting_evidence": [
+        {
+          "source_id": "21366394",
+          "chunk_id": "21366394:1",
+          "quote": "CX3CR1-induced survival was also observed for T(H)1 cells upon airway inflammation but not under homeostatic conditions or upon peripheral inflammation.",
+          "label": "SUPPORT",
+          "support": 0.9865924715995789,
+          "contradiction": 0.0025247358717024326,
+          "neutral": 0.010882723145186901,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 1.0000001192092896,
+          "context_contradiction": 0.001129788695834577,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 1.0,
+          "source_group": "bfc3a206512a7a2e",
+          "retrieval_rank": 1
+        },
+        {
+          "source_id": "21366394",
+          "chunk_id": "21366394:1",
+          "quote": "Therefore, CX3CR1 and CX3CL1 may represent attractive therapeutic targets in asthma.",
+          "label": "SUPPORT",
+          "support": 0.9945226907730103,
+          "contradiction": 0.0005292579298838973,
+          "neutral": 0.00494801951572299,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 1.000000238418579,
+          "context_contradiction": 0.0007093001040630043,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 1.0,
+          "source_group": "bfc3a206512a7a2e",
+          "retrieval_rank": 1
+        }
+      ],
+      "conflicting_evidence": [],
+      "counter_discovery_claims": 0,
+      "query_stability": {
+        "kind": "template wording perturbations",
+        "base_ids": [
+          "21366394",
+          "21363424",
+          "22210434",
+          "41877386",
+          "45414636"
+        ],
+        "variants": [
+          {
+            "query": "What does the scientific evidence say about CX3CR1 on the Th2 cells promotes T cell survival?",
+            "source_ids": [
+              "21366394",
+              "21363424",
+              "22210434",
+              "10831818",
+              "8639034"
+            ],
+            "jaccard": 0.42857142857142855
+          },
+          {
+            "query": "Research evidence regarding CX3CR1 on the Th2 cells promotes T cell survival",
+            "source_ids": [
+              "21366394",
+              "21363424",
+              "22210434",
+              "10831818",
+              "41877386"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Find studies relevant to CX3CR1 on the Th2 cells promotes T cell survival",
+            "source_ids": [
+              "21366394",
+              "21363424",
+              "22210434",
+              "41877386",
+              "10831818"
+            ],
+            "jaccard": 0.6666666666666666
+          }
+        ],
+        "mean_jaccard": 0.5873015873015873
+      },
+      "explanation": "Strong relevant support, no confirmed contradiction, and no severe wording instability.; Strong relevant support, no confirmed contradiction, and no severe wording instability."
+    },
+    {
+      "id": "1368",
+      "query": "Vitamin D deficiency effects the term of delivery.",
+      "gold_label": "SUPPORT",
+      "vanilla_answer": "Vitamin D deficiency and vitamin D deficiency are common in elderly people, especially in those who are infirm and not exposed to sunlight or who live at latitudes that do not provide them with sunlight-mediated cholecalciferol during the winter months. [23267371] [275294] [30720103]",
+      "vanilla_sources": [
+        "23267371",
+        "275294",
+        "30720103",
+        "3150030",
+        "21553394"
+      ],
+      "ragstress_answer": "Vitamin D deficiency and vitamin D deficiency are common in elderly people, especially in those who are infirm and not exposed to sunlight or who live at latitudes that do not provide them with sunlight-mediated cholecalciferol during the winter months. [275294]",
+      "decision": "KEEP",
+      "supporting_evidence": [
+        {
+          "source_id": "275294",
+          "chunk_id": "275294:1",
+          "quote": "It is now recognized that vitamin D insufficiency and vitamin D deficiency are common in elderly people, especially in those who are infirm and not exposed to sunlight or who live at latitudes that do not provide them with sunlight-mediated cholecalciferol during the winter months.",
+          "label": "SUPPORT",
+          "support": 0.9954597353935242,
+          "contradiction": 0.0004919090424664319,
+          "neutral": 0.004048393107950687,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.9731602072715759,
+          "context_contradiction": 0.0023199364077299833,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 1.0,
+          "source_group": "bcc24401d7ec3d2f",
+          "retrieval_rank": 1
+        }
+      ],
+      "conflicting_evidence": [],
+      "counter_discovery_claims": 0,
+      "query_stability": {
+        "kind": "template wording perturbations",
+        "base_ids": [
+          "23267371",
+          "275294",
+          "30720103",
+          "3150030",
+          "21553394"
+        ],
+        "variants": [
+          {
+            "query": "What does the scientific evidence say about Vitamin D deficiency effects the term of delivery?",
+            "source_ids": [
+              "23267371",
+              "30720103",
+              "275294",
+              "21553394",
+              "3150030"
+            ],
+            "jaccard": 1.0
+          },
+          {
+            "query": "Research evidence regarding Vitamin D deficiency effects the term of delivery",
+            "source_ids": [
+              "23267371",
+              "21553394",
+              "275294",
+              "30720103",
+              "3150030"
+            ],
+            "jaccard": 1.0
+          },
+          {
+            "query": "Find studies relevant to Vitamin D deficiency effects the term of delivery",
+            "source_ids": [
+              "23267371",
+              "275294",
+              "3150030",
+              "21553394",
+              "30720103"
+            ],
+            "jaccard": 1.0
+          }
+        ],
+        "mean_jaccard": 1.0
+      },
+      "explanation": "Strong relevant support, no confirmed contradiction, and no severe wording instability."
+    }
+  ],
+  "supported draft withheld or qualified": [
+    {
+      "id": "233",
+      "query": "Cell autonomous sex determination in somatic cells does not occur in Galliformes.",
+      "gold_label": "CONTRADICT",
+      "vanilla_answer": "Our study demonstrates that avian somatic cells possess an inherent sex identity and that, in birds, sexual differentiation is substantively cell autonomous. In contrast to the outcome for mammalian mixed-sex chimaeras, in chicken mixed-sex chimaeras the donor cells were excluded from the functional structures of the host gonad. [36708463] A major question is whether genes encoded on the sex [4388470] [36708463] [28390999]",
+      "vanilla_sources": [
+        "4388470",
+        "36708463",
+        "28390999",
+        "12232678",
+        "23581096"
+      ],
+      "ragstress_answer": "Corpus evidence is contested for: Our study demonstrates that avian somatic cells possess an inherent sex identity and that, in birds, sexual differentiation is substantively cell autonomous. Supporting: [4388470]; conflicting: [41380943]\n\nCorpus evidence is contested for: In contrast to the outcome for mammalian mixed-sex chimaeras, in chicken mixed-sex chimaeras the donor cells were excluded from the functional structures of the host gonad. Supporting: [4388470]; conflicting: [41380943]\n\nA major question is whether genes encoded on the sex [36708463]",
+      "decision": "QUALIFY",
+      "supporting_evidence": [
+        {
+          "source_id": "4388470",
+          "chunk_id": "4388470:1",
+          "quote": "Our study demonstrates that avian somatic cells possess an inherent sex identity and that, in birds, sexual differentiation is substantively cell autonomous.",
+          "label": "SUPPORT",
+          "support": 0.9890696406364441,
+          "contradiction": 0.002042199485003948,
+          "neutral": 0.008888083510100842,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 1.0,
+          "context_contradiction": 0.012648449279367924,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 1.0,
+          "source_group": "56f8d7a2d550abde",
+          "retrieval_rank": 1
+        },
+        {
+          "source_id": "4388470",
+          "chunk_id": "4388470:1",
+          "quote": "In contrast to the outcome for mammalian mixed-sex chimaeras, in chicken mixed-sex chimaeras the donor cells were excluded from the functional structures of the host gonad. In an example where female tissue was transplanted into a male host, donor cells contributing to the developing testis retained a female identity and expressed a marker of female function. Our study demonstrates that avian somatic cells possess an inherent sex identity and that, in birds, sexual differentiation is substantively cell autonomous.",
+          "label": "SUPPORT",
+          "support": 0.9613692164421082,
+          "contradiction": 0.012648449279367924,
+          "neutral": 0.025982409715652466,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.8546338677406311,
+          "context_contradiction": 0.012648449279367924,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 1.0,
+          "source_group": "56f8d7a2d550abde",
+          "retrieval_rank": 1
+        }
+      ],
+      "conflicting_evidence": [
+        {
+          "source_id": "41380943",
+          "chunk_id": "41380943:0",
+          "quote": "During embryonic development, gonadal steroid hormones (androgens and estrogens) are thought to organize the sexual differentiation of the brain in the heterogametic sexes of higher vertebrates (males in mammals, females in birds).",
+          "label": "CONTRADICT",
+          "support": 9.508780931355432e-05,
+          "contradiction": 0.994345486164093,
+          "neutral": 0.005559472367167473,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.6284376978874207,
+          "context_contradiction": 0.9928279519081116,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.20445462078196963,
+          "source_group": "155c230e93a9bbd4",
+          "retrieval_rank": 3
+        },
+        {
+          "source_id": "41380943",
+          "chunk_id": "41380943:0",
+          "quote": "During embryonic development, gonadal steroid hormones (androgens and estrogens) are thought to organize the sexual differentiation of the brain in the heterogametic sexes of higher vertebrates (males in mammals, females in birds). Brain differentiation of the homogametic sexes is thought to proceed by default, not requiring sex hormones for sex-specific organization. In gallinaceous birds such as the Japanese quail, female brain organization is thought to develop via estrogen-dependent demasculinization of a default male brain phenotype. We performed male donor-to-female host (MF), female-to-male (FM), male-to-male (MM), and female-to-female (FF) isotopic, isochronic transplantation of the forebrain primordium in Japanese quail embryos before gonadal differentiation had occurred; brain chimeras had a forebrain (including the hypothalamus) originating exclusively from donor cells. MM, FF, and MF chimeras all showed sexual behavior governed by the genetic sex of the host.",
+          "label": "CONTRADICT",
+          "support": 0.0010516587644815445,
+          "contradiction": 0.9928279519081116,
+          "neutral": 0.006120357662439346,
+          "missing_entity_anchors": [],
+          "hard_entity_mismatch": false,
+          "semantic_alignment": 0.6020907759666443,
+          "context_contradiction": 0.9928279519081116,
+          "alignment_passed": true,
+          "entity_check_passed": true,
+          "idf_weighted_claim_term_coverage": 0.27992094844946663,
+          "source_group": "155c230e93a9bbd4",
+          "retrieval_rank": 3
+        }
+      ],
+      "counter_discovery_claims": 2,
+      "query_stability": {
+        "kind": "template wording perturbations",
+        "base_ids": [
+          "4388470",
+          "36708463",
+          "28390999",
+          "12232678",
+          "23581096"
+        ],
+        "variants": [
+          {
+            "query": "What does the scientific evidence say about Cell autonomous sex determination in somatic cells does not occur in Galliformes?",
+            "source_ids": [
+              "4388470",
+              "36708463",
+              "12232678",
+              "28390999",
+              "40971746"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Research evidence regarding Cell autonomous sex determination in somatic cells does not occur in Galliformes",
+            "source_ids": [
+              "4388470",
+              "36708463",
+              "12232678",
+              "28390999",
+              "28928964"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Find studies relevant to Cell autonomous sex determination in somatic cells does not occur in Galliformes",
+            "source_ids": [
+              "4388470",
+              "36708463",
+              "12232678",
+              "28390999",
+              "29641682"
+            ],
+            "jaccard": 0.6666666666666666
+          }
+        ],
+        "mean_jaccard": 0.6666666666666666
+      },
+      "explanation": "Relevant passages support and contradict the claim.; Relevant passages support and contradict the claim.; Strong relevant support, no confirmed contradiction, and no severe wording instability."
+    }
+  ]
+}

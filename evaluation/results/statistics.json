@@ -1,0 +1,42 @@
+[
+  {
+    "metric": "fully_supported_answer",
+    "test": "exact McNemar (binomial discordant pairs)",
+    "vanilla_only": 0,
+    "ragstress_only": 13,
+    "statistic": 0,
+    "p_value": 0.000244140625,
+    "interpretation": "NLI-based diagnostic; not independent human accuracy. Small discordant counts limit power."
+  },
+  {
+    "metric": "gold_stance_agreement",
+    "test": "exact McNemar (binomial discordant pairs)",
+    "vanilla_only": 6,
+    "ragstress_only": 11,
+    "statistic": 6,
+    "p_value": 0.332305908203125,
+    "interpretation": "NLI-based diagnostic; not independent human accuracy. Small discordant counts limit power."
+  },
+  {
+    "metric": "latency",
+    "test": "paired bootstrap, 2000 resamples",
+    "statistic": 10.750793370008468,
+    "ci95": [
+      9.070904154064833,
+      12.710317600165725
+    ],
+    "p_value": null,
+    "interpretation": "Percentile interval; no bootstrap p-value is invented."
+  },
+  {
+    "metric": "supported_answer_incidence",
+    "test": "paired bootstrap, 2000 resamples",
+    "statistic": 0.26,
+    "ci95": [
+      0.14,
+      0.38
+    ],
+    "p_value": null,
+    "interpretation": "Percentile interval; no bootstrap p-value is invented."
+  }
+]

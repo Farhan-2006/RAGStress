@@ -1,0 +1,8 @@
+{
+  "pairs": 80,
+  "correct": 23,
+  "decisive": 25,
+  "coverage": 0.3125,
+  "selective_accuracy": 0.92,
+  "interpretation": "Training rationale classification, not free-form answer accuracy."
+}

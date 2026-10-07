@@ -1,7 +1,7 @@
 import re
 from .preprocessing import sentences
 
-def extract_claims(answer, limit=3):
+def extract_claims(answer, limit=6):
     """Conservative sentence/semicolon candidates; not a perfect atomic parser.
 
     Do not split on 'and': biomedical comparisons often require both clauses.

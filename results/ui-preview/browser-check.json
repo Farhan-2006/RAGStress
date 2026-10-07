@@ -1,0 +1,9 @@
+{
+  "result": "KEEP",
+  "screenshots": 6,
+  "overflow": {
+    "viewport": 1440,
+    "body": 1440,
+    "main": 1130
+  }
+}

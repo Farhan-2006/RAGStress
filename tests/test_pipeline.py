@@ -19,9 +19,9 @@ def test_missing_classifier_abstains_and_keeps_trace():
 def test_unaudited_sentences_are_never_kept():
     class TooLong:
         def generate(self, query, hits):
-            return 'Alpha grows. Beta grows. Gamma grows. Delta grows.', 'test-double', None
+            return 'Alpha grows. Beta grows. Gamma grows. Delta grows. Epsilon grows. Zeta grows. Eta grows.', 'test-double', None
     corpus = {'1': {'id': '1', 'title': '', 'text': 'Alpha beta gamma delta.'}}
     result = Pipeline(Retriever(corpus, BM25(corpus)), TooLong()).run('alpha', 'bm25')
-    assert len(result['claims']) == 3
+    assert len(result['claims']) == 6
     assert result['unexamined_sentences_omitted']
-    assert 'Delta grows' not in result['final_answer']
+    assert 'Eta grows' not in result['final_answer']

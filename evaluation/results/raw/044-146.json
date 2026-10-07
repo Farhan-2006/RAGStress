@@ -1,0 +1,3677 @@
+{
+  "signature": "3eb956b240d65d33a6056930f20e84368e8f5f2994139614375e47c84d57b144",
+  "example": {
+    "id": "146",
+    "query": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.",
+    "gold_label": "SUPPORT",
+    "gold_doc_ids": [
+      "10582939"
+    ],
+    "gold_evidence": [
+      {
+        "doc_id": "10582939",
+        "sentence_index": 8,
+        "text": "After 6 months, 4 of 53 patients (7.5%) in the autologous MSC plus standard-dose CNI group (95% CI, 0.4%-14.7%; P = .04) and 4 of 52 patients (7.7%) in the low-dose group (95% CI, 0.5%-14.9%; P = .046) compared with 11 of 51 controls (21.6%; 95% CI, 10.5%-32.6%) had biopsy-confirmed acute rejection.",
+        "label": "SUPPORT"
+      },
+      {
+        "doc_id": "10582939",
+        "sentence_index": 12,
+        "text": "Also, during the 1-year follow-up, combined analysis of MSC-treated groups revealed significantly decreased risk of opportunistic infections than the control group (hazard ratio, 0.42; 95% CI, 0.20-0.85, P=.02)   CONCLUSION Among patients undergoing renal transplant, the use of autologous MSCs compared with anti-IL-2 receptor antibody induction therapy resulted in lower incidence of acute rejection, decreased risk of opportunistic infection, and better estimated renal function at 1 year.   \n",
+        "label": "SUPPORT"
+      }
+    ],
+    "split": "original-dev"
+  },
+  "systems": {
+    "ragstress": {
+      "query": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.",
+      "method": "hybrid",
+      "k": 5,
+      "initial_answer": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies. [10582939] [40164383] [4416964]",
+      "generation_mode": "local-flan-t5-small",
+      "corpus_sources": 5183,
+      "claim_mode": false,
+      "model_revisions": {
+        "sentence-transformers/all-MiniLM-L6-v2": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "cross-encoder/nli-MiniLM2-L6-H768": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+        "cross-encoder/nli-deberta-v3-small": "fa2804872c3b4bd748f38c0185cc85775361e735",
+        "google/flan-t5-small": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab"
+      },
+      "stance_model": "cross-encoder/nli-deberta-v3-small",
+      "prototype_thresholds": {
+        "strong_support": 0.8,
+        "query_jaccard": 0.15,
+        "query_cosine": 0.3
+      },
+      "warning": "Initial references are provisional context IDs; final citations are assigned by the evidence audit.",
+      "retrieved": [
+        {
+          "source_id": "10582939",
+          "score": 0.03278688524590164,
+          "sparse_rank": 1,
+          "bm25": 42.60660441089877,
+          "dense_rank": 1,
+          "dense": 0.7497351765632629,
+          "chunk_id": "10582939:0",
+          "passage": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+          "rank": 1,
+          "rrf": 0.03278688524590164,
+          "title": "Induction therapy with autologous mesenchymal stem cells in living-related kidney transplants: a randomized controlled trial."
+        },
+        {
+          "source_id": "40164383",
+          "score": 0.03225806451612903,
+          "sparse_rank": 2,
+          "bm25": 25.6580504266278,
+          "dense_rank": 2,
+          "dense": 0.5499600768089294,
+          "chunk_id": "40164383:3",
+          "passage": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+          "rank": 2,
+          "rrf": 0.03225806451612903,
+          "title": "Comparison of allogeneic vs autologous bone marrow–derived mesenchymal stem cells delivered by transendocardial injection in patients with ischemic cardiomyopathy: the POSEIDON randomized trial."
+        },
+        {
+          "source_id": "4416964",
+          "score": 0.02976190476190476,
+          "sparse_rank": 3,
+          "bm25": 22.615688270953278,
+          "dense_rank": 12,
+          "dense": 0.4737921953201294,
+          "chunk_id": "4416964:0",
+          "passage": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+          "rank": 3,
+          "rrf": 0.02976190476190476,
+          "title": "Immunogenicity of induced pluripotent stem cells"
+        },
+        {
+          "source_id": "24825841",
+          "score": 0.029513888888888888,
+          "sparse_rank": 12,
+          "bm25": 18.344560390352438,
+          "dense_rank": 4,
+          "dense": 0.5237165689468384,
+          "chunk_id": "24825841:0",
+          "passage": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+          "rank": 4,
+          "rrf": 0.029513888888888888,
+          "title": "Generating an iPSC bank for HLA-matched tissue transplantation based on known donor and recipient HLA types."
+        },
+        {
+          "source_id": "24101431",
+          "score": 0.029206349206349208,
+          "sparse_rank": 15,
+          "bm25": 17.784947920255238,
+          "dense_rank": 3,
+          "dense": 0.540718674659729,
+          "chunk_id": "24101431:1",
+          "passage": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+          "rank": 5,
+          "rrf": 0.029206349206349208,
+          "title": "The antidiabetic effect of mesenchymal stem cells is unrelated to their transdifferentiation potential but to their capability to restore Th1/Th2 balance and to modify the pancreatic microenvironment."
+        }
+      ],
+      "query_terms": [
+        {
+          "term": "rejection",
+          "df": 18,
+          "idf": 5.635561505947831,
+          "postings_sample": [
+            [
+              "2388819",
+              1
+            ],
+            [
+              "2474731",
+              2
+            ],
+            [
+              "2973910",
+              1
+            ],
+            [
+              "3545805",
+              2
+            ],
+            [
+              "4416964",
+              2
+            ],
+            [
+              "8790729",
+              1
+            ],
+            [
+              "9056874",
+              1
+            ],
+            [
+              "10128893",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "autologous",
+          "df": 24,
+          "idf": 5.354659120481429,
+          "postings_sample": [
+            [
+              "5836",
+              1
+            ],
+            [
+              "2601135",
+              4
+            ],
+            [
+              "3462075",
+              1
+            ],
+            [
+              "3619372",
+              1
+            ],
+            [
+              "3935126",
+              1
+            ],
+            [
+              "4416964",
+              3
+            ],
+            [
+              "4417177",
+              1
+            ],
+            [
+              "4457834",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "mesenchymal",
+          "df": 72,
+          "idf": 4.269745676171482,
+          "postings_sample": [
+            [
+              "104130",
+              2
+            ],
+            [
+              "1241113",
+              1
+            ],
+            [
+              "1617327",
+              4
+            ],
+            [
+              "1791714",
+              2
+            ],
+            [
+              "2828460",
+              1
+            ],
+            [
+              "2853291",
+              2
+            ],
+            [
+              "3052213",
+              1
+            ],
+            [
+              "3376731",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "transplantation",
+          "df": 96,
+          "idf": 3.9837892296871704,
+          "postings_sample": [
+            [
+              "301866",
+              2
+            ],
+            [
+              "1122198",
+              1
+            ],
+            [
+              "1905095",
+              1
+            ],
+            [
+              "2437807",
+              3
+            ],
+            [
+              "2488880",
+              1
+            ],
+            [
+              "2496002",
+              1
+            ],
+            [
+              "2559303",
+              2
+            ],
+            [
+              "2828460",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "antibodies",
+          "df": 109,
+          "idf": 3.857407688775555,
+          "postings_sample": [
+            [
+              "188911",
+              1
+            ],
+            [
+              "253672",
+              1
+            ],
+            [
+              "600808",
+              1
+            ],
+            [
+              "623486",
+              1
+            ],
+            [
+              "798152",
+              1
+            ],
+            [
+              "829646",
+              2
+            ],
+            [
+              "1259359",
+              1
+            ],
+            [
+              "1454773",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "induction",
+          "df": 249,
+          "idf": 3.0338733228405372,
+          "postings_sample": [
+            [
+              "5836",
+              1
+            ],
+            [
+              "72159",
+              1
+            ],
+            [
+              "118568",
+              1
+            ],
+            [
+              "213017",
+              1
+            ],
+            [
+              "301838",
+              1
+            ],
+            [
+              "365896",
+              1
+            ],
+            [
+              "418246",
+              1
+            ],
+            [
+              "471735",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "rates",
+          "df": 263,
+          "idf": 2.9792788700506936,
+          "postings_sample": [
+            [
+              "313403",
+              1
+            ],
+            [
+              "356218",
+              1
+            ],
+            [
+              "410286",
+              2
+            ],
+            [
+              "457630",
+              2
+            ],
+            [
+              "581832",
+              5
+            ],
+            [
+              "756887",
+              5
+            ],
+            [
+              "841371",
+              3
+            ],
+            [
+              "1102268",
+              3
+            ]
+          ]
+        },
+        {
+          "term": "therapy",
+          "df": 391,
+          "idf": 2.5833467226012528,
+          "postings_sample": [
+            [
+              "118568",
+              1
+            ],
+            [
+              "293661",
+              2
+            ],
+            [
+              "323335",
+              4
+            ],
+            [
+              "374902",
+              2
+            ],
+            [
+              "409280",
+              1
+            ],
+            [
+              "496873",
+              1
+            ],
+            [
+              "520579",
+              1
+            ],
+            [
+              "601033",
+              3
+            ]
+          ]
+        },
+        {
+          "term": "lower",
+          "df": 398,
+          "idf": 2.565624739801841,
+          "postings_sample": [
+            [
+              "4983",
+              1
+            ],
+            [
+              "202259",
+              4
+            ],
+            [
+              "313403",
+              1
+            ],
+            [
+              "380526",
+              1
+            ],
+            [
+              "409280",
+              2
+            ],
+            [
+              "456304",
+              3
+            ],
+            [
+              "519974",
+              1
+            ],
+            [
+              "520579",
+              2
+            ]
+          ]
+        },
+        {
+          "term": "stem",
+          "df": 432,
+          "idf": 2.4837499116601767,
+          "postings_sample": [
+            [
+              "5836",
+              1
+            ],
+            [
+              "33370",
+              3
+            ],
+            [
+              "36474",
+              2
+            ],
+            [
+              "92499",
+              3
+            ],
+            [
+              "104130",
+              5
+            ],
+            [
+              "106301",
+              2
+            ],
+            [
+              "226488",
+              4
+            ],
+            [
+              "243694",
+              2
+            ]
+          ]
+        },
+        {
+          "term": "receptor",
+          "df": 582,
+          "idf": 2.186003052592255,
+          "postings_sample": [
+            [
+              "5836",
+              1
+            ],
+            [
+              "118568",
+              1
+            ],
+            [
+              "207972",
+              2
+            ],
+            [
+              "266641",
+              1
+            ],
+            [
+              "306006",
+              1
+            ],
+            [
+              "364522",
+              1
+            ],
+            [
+              "368506",
+              2
+            ],
+            [
+              "519974",
+              2
+            ]
+          ]
+        },
+        {
+          "term": "than",
+          "df": 1101,
+          "idf": 1.548904071789713,
+          "postings_sample": [
+            [
+              "4983",
+              1
+            ],
+            [
+              "33370",
+              1
+            ],
+            [
+              "104130",
+              1
+            ],
+            [
+              "123859",
+              1
+            ],
+            [
+              "169264",
+              2
+            ],
+            [
+              "188911",
+              1
+            ],
+            [
+              "202259",
+              2
+            ],
+            [
+              "263364",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "has",
+          "df": 1404,
+          "idf": 1.3058955914878123,
+          "postings_sample": [
+            [
+              "7912",
+              1
+            ],
+            [
+              "19238",
+              1
+            ],
+            [
+              "70115",
+              1
+            ],
+            [
+              "87758",
+              1
+            ],
+            [
+              "103007",
+              1
+            ],
+            [
+              "140874",
+              2
+            ],
+            [
+              "152245",
+              2
+            ],
+            [
+              "159469",
+              3
+            ]
+          ]
+        },
+        {
+          "term": "cells",
+          "df": 1964,
+          "idf": 0.9703391990335961,
+          "postings_sample": [
+            [
+              "5836",
+              3
+            ],
+            [
+              "18670",
+              3
+            ],
+            [
+              "19238",
+              1
+            ],
+            [
+              "33370",
+              4
+            ],
+            [
+              "36474",
+              5
+            ],
+            [
+              "72159",
+              1
+            ],
+            [
+              "92308",
+              1
+            ],
+            [
+              "92499",
+              3
+            ]
+          ]
+        },
+        {
+          "term": "with",
+          "df": 3983,
+          "idf": 0.2634161292116899,
+          "postings_sample": [
+            [
+              "4983",
+              3
+            ],
+            [
+              "5836",
+              1
+            ],
+            [
+              "18670",
+              3
+            ],
+            [
+              "33370",
+              5
+            ],
+            [
+              "54440",
+              3
+            ],
+            [
+              "70115",
+              1
+            ],
+            [
+              "72159",
+              2
+            ],
+            [
+              "79447",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "of",
+          "df": 5173,
+          "idf": 0.0020275169871053203,
+          "postings_sample": [
+            [
+              "4983",
+              6
+            ],
+            [
+              "5836",
+              12
+            ],
+            [
+              "7912",
+              7
+            ],
+            [
+              "18670",
+              12
+            ],
+            [
+              "19238",
+              13
+            ],
+            [
+              "33370",
+              11
+            ],
+            [
+              "36474",
+              4
+            ],
+            [
+              "54440",
+              21
+            ]
+          ]
+        },
+        {
+          "term": "anti-interleukin-2",
+          "df": 0,
+          "idf": 0,
+          "postings_sample": []
+        }
+      ],
+      "answer_repair": null,
+      "superseded_claims": [],
+      "query_relevance_cosine": 0.7497351765632629,
+      "stability": {
+        "kind": "template wording perturbations",
+        "base_ids": [
+          "10582939",
+          "40164383",
+          "4416964",
+          "24825841",
+          "24101431"
+        ],
+        "variants": [
+          {
+            "query": "What does the scientific evidence say about Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies?",
+            "source_ids": [
+              "10582939",
+              "40164383",
+              "24825841",
+              "25985964",
+              "24101431"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Research evidence regarding Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies",
+            "source_ids": [
+              "10582939",
+              "40164383",
+              "24825841",
+              "4416964",
+              "19510470"
+            ],
+            "jaccard": 0.6666666666666666
+          },
+          {
+            "query": "Find studies relevant to Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies",
+            "source_ids": [
+              "10582939",
+              "40164383",
+              "24825841",
+              "4416964",
+              "24101431"
+            ],
+            "jaccard": 1.0
+          }
+        ],
+        "mean_jaccard": 0.7777777777777777
+      },
+      "claims": [
+        {
+          "claim": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.",
+          "claim_retrieval": [
+            {
+              "source_id": "10582939",
+              "score": 0.03278688524590164,
+              "sparse_rank": 1,
+              "bm25": 42.60660441089877,
+              "dense_rank": 1,
+              "dense": 0.7497351765632629,
+              "chunk_id": "10582939:0",
+              "passage": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+              "rank": 1,
+              "rrf": 0.03278688524590164,
+              "title": "Induction therapy with autologous mesenchymal stem cells in living-related kidney transplants: a randomized controlled trial."
+            },
+            {
+              "source_id": "40164383",
+              "score": 0.03225806451612903,
+              "sparse_rank": 2,
+              "bm25": 25.6580504266278,
+              "dense_rank": 2,
+              "dense": 0.5499600768089294,
+              "chunk_id": "40164383:3",
+              "passage": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+              "rank": 2,
+              "rrf": 0.03225806451612903,
+              "title": "Comparison of allogeneic vs autologous bone marrow–derived mesenchymal stem cells delivered by transendocardial injection in patients with ischemic cardiomyopathy: the POSEIDON randomized trial."
+            },
+            {
+              "source_id": "4416964",
+              "score": 0.02976190476190476,
+              "sparse_rank": 3,
+              "bm25": 22.615688270953278,
+              "dense_rank": 12,
+              "dense": 0.4737921953201294,
+              "chunk_id": "4416964:0",
+              "passage": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+              "rank": 3,
+              "rrf": 0.02976190476190476,
+              "title": "Immunogenicity of induced pluripotent stem cells"
+            },
+            {
+              "source_id": "24825841",
+              "score": 0.029513888888888888,
+              "sparse_rank": 12,
+              "bm25": 18.344560390352438,
+              "dense_rank": 4,
+              "dense": 0.5237165689468384,
+              "chunk_id": "24825841:0",
+              "passage": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+              "rank": 4,
+              "rrf": 0.029513888888888888,
+              "title": "Generating an iPSC bank for HLA-matched tissue transplantation based on known donor and recipient HLA types."
+            },
+            {
+              "source_id": "24101431",
+              "score": 0.029206349206349208,
+              "sparse_rank": 15,
+              "bm25": 17.784947920255238,
+              "dense_rank": 3,
+              "dense": 0.540718674659729,
+              "chunk_id": "24101431:1",
+              "passage": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+              "rank": 5,
+              "rrf": 0.029206349206349208,
+              "title": "The antidiabetic effect of mesenchymal stem cells is unrelated to their transdifferentiation potential but to their capability to restore Th1/Th2 balance and to modify the pancreatic microenvironment."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "10582939",
+              "chunk_id": "10582939:0",
+              "quote": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging.",
+              "label": "NEUTRAL",
+              "support": 8.364192763110623e-05,
+              "contradiction": 0.0018561542965471745,
+              "neutral": 0.9980601668357849,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.3911779224872589,
+              "context_contradiction": 0.007332989480346441,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.33079642401917303,
+              "source_group": "e0d2bf33e5dcfb31",
+              "retrieval_rank": 1
+            },
+            {
+              "source_id": "10582939",
+              "chunk_id": "10582939:0",
+              "quote": "OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor.",
+              "label": "NEUTRAL",
+              "support": 0.00036017794627696276,
+              "contradiction": 0.0002853916957974434,
+              "neutral": 0.9993544220924377,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.5378290414810181,
+              "context_contradiction": 0.007332989480346441,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.20114475762401118,
+              "source_group": "e0d2bf33e5dcfb31",
+              "retrieval_rank": 1
+            },
+            {
+              "source_id": "10582939",
+              "chunk_id": "10582939:0",
+              "quote": "Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease.",
+              "label": "NEUTRAL",
+              "support": 0.005095545202493668,
+              "contradiction": 8.095619705272838e-05,
+              "neutral": 0.9948234558105469,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.6684454083442688,
+              "context_contradiction": 0.007332989480346441,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.17952544126083358,
+              "source_group": "e0d2bf33e5dcfb31",
+              "retrieval_rank": 1
+            },
+            {
+              "source_id": "10582939",
+              "chunk_id": "10582939:0",
+              "quote": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+              "label": "NEUTRAL",
+              "support": 0.16738031804561615,
+              "contradiction": 0.007332989480346441,
+              "neutral": 0.8252867460250854,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.6845635175704956,
+              "context_contradiction": 0.007332989480346441,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.6917595358677813,
+              "source_group": "e0d2bf33e5dcfb31",
+              "retrieval_rank": 1
+            },
+            {
+              "source_id": "40164383",
+              "chunk_id": "40164383:3",
+              "quote": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions.",
+              "label": "NEUTRAL",
+              "support": 0.007901031523942947,
+              "contradiction": 0.00028563171508722007,
+              "neutral": 0.9918133020401001,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.3495546281337738,
+              "context_contradiction": 0.0004498944617807865,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.1998758162887877,
+              "source_group": "4af6be08921eca8d",
+              "retrieval_rank": 2
+            },
+            {
+              "source_id": "40164383",
+              "chunk_id": "40164383:3",
+              "quote": "In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling.",
+              "label": "NEUTRAL",
+              "support": 0.004025090020149946,
+              "contradiction": 0.00010359787120250985,
+              "neutral": 0.9958712458610535,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.23381145298480988,
+              "context_contradiction": 0.0004498944617807865,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 4.712566902555996e-05,
+              "source_group": "4af6be08921eca8d",
+              "retrieval_rank": 2
+            },
+            {
+              "source_id": "40164383",
+              "chunk_id": "40164383:3",
+              "quote": "TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+              "label": "NEUTRAL",
+              "support": 0.00026833900483325124,
+              "contradiction": 0.00035469289286993444,
+              "neutral": 0.9993769526481628,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.15558600425720215,
+              "context_contradiction": 0.0004498944617807865,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.0,
+              "source_group": "4af6be08921eca8d",
+              "retrieval_rank": 2
+            },
+            {
+              "source_id": "40164383",
+              "chunk_id": "40164383:3",
+              "quote": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+              "label": "NEUTRAL",
+              "support": 0.0016401390312239528,
+              "contradiction": 0.0004498944617807865,
+              "neutral": 0.9979099631309509,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.34971845149993896,
+              "context_contradiction": 0.0004498944617807865,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.1998758162887877,
+              "source_group": "4af6be08921eca8d",
+              "retrieval_rank": 2
+            },
+            {
+              "source_id": "4416964",
+              "chunk_id": "4416964:0",
+              "quote": "We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients.",
+              "label": "NEUTRAL",
+              "support": 0.0020691952668130398,
+              "contradiction": 0.005874716676771641,
+              "neutral": 0.9920560717582703,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.3549848794937134,
+              "context_contradiction": 0.00902506709098816,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.21127116036122173,
+              "source_group": "00a8be1c3ee2b797",
+              "retrieval_rank": 3
+            },
+            {
+              "source_id": "4416964",
+              "chunk_id": "4416964:0",
+              "quote": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells.",
+              "label": "NEUTRAL",
+              "support": 0.0002803696843329817,
+              "contradiction": 0.00028026249492540956,
+              "neutral": 0.9994392991065979,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.4341772198677063,
+              "context_contradiction": 0.00902506709098816,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.21091185218530464,
+              "source_group": "00a8be1c3ee2b797",
+              "retrieval_rank": 3
+            },
+            {
+              "source_id": "4416964",
+              "chunk_id": "4416964:0",
+              "quote": "Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined.",
+              "label": "NEUTRAL",
+              "support": 0.00014292178093455732,
+              "contradiction": 0.001470103394240141,
+              "neutral": 0.9983869791030884,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.48727214336395264,
+              "context_contradiction": 0.00902506709098816,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.1773652122799208,
+              "source_group": "00a8be1c3ee2b797",
+              "retrieval_rank": 3
+            },
+            {
+              "source_id": "4416964",
+              "chunk_id": "4416964:0",
+              "quote": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+              "label": "NEUTRAL",
+              "support": 0.002252994105219841,
+              "contradiction": 0.00902506709098816,
+              "neutral": 0.9887219667434692,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.45550405979156494,
+              "context_contradiction": 0.00902506709098816,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.3722524534277661,
+              "source_group": "00a8be1c3ee2b797",
+              "retrieval_rank": 3
+            },
+            {
+              "source_id": "24825841",
+              "chunk_id": "24825841:0",
+              "quote": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential.",
+              "label": "NEUTRAL",
+              "support": 0.0009375032968819141,
+              "contradiction": 0.006175484508275986,
+              "neutral": 0.9928869605064392,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.5262041687965393,
+              "context_contradiction": 0.017226986587047577,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.2113182860302473,
+              "source_group": "104ff0a24d13cd7b",
+              "retrieval_rank": 4
+            },
+            {
+              "source_id": "24825841",
+              "chunk_id": "24825841:0",
+              "quote": "Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+              "label": "NEUTRAL",
+              "support": 0.00030822172993794084,
+              "contradiction": 0.000582160719204694,
+              "neutral": 0.9991095662117004,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.32939592003822327,
+              "context_contradiction": 0.017226986587047577,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.057777037193106486,
+              "source_group": "104ff0a24d13cd7b",
+              "retrieval_rank": 4
+            },
+            {
+              "source_id": "24825841",
+              "chunk_id": "24825841:0",
+              "quote": "Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression.",
+              "label": "NEUTRAL",
+              "support": 0.0005025244900025427,
+              "contradiction": 0.000289619667455554,
+              "neutral": 0.9992079138755798,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.30149757862091064,
+              "context_contradiction": 0.017226986587047577,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.00616971867326331,
+              "source_group": "104ff0a24d13cd7b",
+              "retrieval_rank": 4
+            },
+            {
+              "source_id": "24825841",
+              "chunk_id": "24825841:0",
+              "quote": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+              "label": "NEUTRAL",
+              "support": 0.00397444749251008,
+              "contradiction": 0.017226986587047577,
+              "neutral": 0.9787985682487488,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.5133892893791199,
+              "context_contradiction": 0.017226986587047577,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.21744087903448506,
+              "source_group": "104ff0a24d13cd7b",
+              "retrieval_rank": 4
+            },
+            {
+              "source_id": "24101431",
+              "chunk_id": "24101431:1",
+              "quote": "Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+              "label": "NEUTRAL",
+              "support": 0.0002245814393972978,
+              "contradiction": 0.000292566284770146,
+              "neutral": 0.9994828701019287,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.4028206467628479,
+              "context_contradiction": 0.0009500305168330669,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.09876511190538714,
+              "source_group": "38c1345bde6d2246",
+              "retrieval_rank": 5
+            },
+            {
+              "source_id": "24101431",
+              "chunk_id": "24101431:1",
+              "quote": "MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor.",
+              "label": "NEUTRAL",
+              "support": 0.0021265032701194286,
+              "contradiction": 0.0029924949631094933,
+              "neutral": 0.9948810338973999,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.3543328046798706,
+              "context_contradiction": 0.0009500305168330669,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.09264251890114938,
+              "source_group": "38c1345bde6d2246",
+              "retrieval_rank": 5
+            },
+            {
+              "source_id": "24101431",
+              "chunk_id": "24101431:1",
+              "quote": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells.",
+              "label": "NEUTRAL",
+              "support": 0.00014547254249919206,
+              "contradiction": 0.0010921793291345239,
+              "neutral": 0.9987623691558838,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.308870792388916,
+              "context_contradiction": 0.0009500305168330669,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.02872335655990305,
+              "source_group": "38c1345bde6d2246",
+              "retrieval_rank": 5
+            },
+            {
+              "source_id": "24101431",
+              "chunk_id": "24101431:1",
+              "quote": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+              "label": "NEUTRAL",
+              "support": 0.0002500501286704093,
+              "contradiction": 0.0009500305168330669,
+              "neutral": 0.9987999200820923,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.4679022431373596,
+              "context_contradiction": 0.0009500305168330669,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.12131874979202688,
+              "source_group": "38c1345bde6d2246",
+              "retrieval_rank": 5
+            }
+          ],
+          "counter_evidence": {
+            "queries": [
+              "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies",
+              "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies conflicting evidence",
+              "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies no significant effect ineffective",
+              "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies refuted does not contrary evidence"
+            ],
+            "runs": [
+              {
+                "query": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies",
+                "hits": [
+                  {
+                    "source_id": "10582939",
+                    "score": 0.03278688524590164,
+                    "sparse_rank": 1,
+                    "bm25": 42.60660441089877,
+                    "dense_rank": 1,
+                    "dense": 0.7484192848205566,
+                    "chunk_id": "10582939:0",
+                    "passage": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+                    "rank": 1,
+                    "rrf": 0.03278688524590164,
+                    "title": "Induction therapy with autologous mesenchymal stem cells in living-related kidney transplants: a randomized controlled trial."
+                  },
+                  {
+                    "source_id": "40164383",
+                    "score": 0.03225806451612903,
+                    "sparse_rank": 2,
+                    "bm25": 25.6580504266278,
+                    "dense_rank": 2,
+                    "dense": 0.5470434427261353,
+                    "chunk_id": "40164383:3",
+                    "passage": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+                    "rank": 2,
+                    "rrf": 0.03225806451612903,
+                    "title": "Comparison of allogeneic vs autologous bone marrow–derived mesenchymal stem cells delivered by transendocardial injection in patients with ischemic cardiomyopathy: the POSEIDON randomized trial."
+                  },
+                  {
+                    "source_id": "4416964",
+                    "score": 0.029571646010002173,
+                    "sparse_rank": 3,
+                    "bm25": 22.615688270953278,
+                    "dense_rank": 13,
+                    "dense": 0.4710307717323303,
+                    "chunk_id": "4416964:0",
+                    "passage": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+                    "rank": 3,
+                    "rrf": 0.029571646010002173,
+                    "title": "Immunogenicity of induced pluripotent stem cells"
+                  },
+                  {
+                    "source_id": "24825841",
+                    "score": 0.029513888888888888,
+                    "sparse_rank": 12,
+                    "bm25": 18.344560390352438,
+                    "dense_rank": 4,
+                    "dense": 0.5250698924064636,
+                    "chunk_id": "24825841:0",
+                    "passage": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+                    "rank": 4,
+                    "rrf": 0.029513888888888888,
+                    "title": "Generating an iPSC bank for HLA-matched tissue transplantation based on known donor and recipient HLA types."
+                  },
+                  {
+                    "source_id": "24101431",
+                    "score": 0.029206349206349208,
+                    "sparse_rank": 15,
+                    "bm25": 17.784947920255238,
+                    "dense_rank": 3,
+                    "dense": 0.5418955087661743,
+                    "chunk_id": "24101431:1",
+                    "passage": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+                    "rank": 5,
+                    "rrf": 0.029206349206349208,
+                    "title": "The antidiabetic effect of mesenchymal stem cells is unrelated to their transdifferentiation potential but to their capability to restore Th1/Th2 balance and to modify the pancreatic microenvironment."
+                  }
+                ]
+              },
+              {
+                "query": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies conflicting evidence",
+                "hits": [
+                  {
+                    "source_id": "10582939",
+                    "score": 0.03278688524590164,
+                    "sparse_rank": 1,
+                    "bm25": 42.60660441089877,
+                    "dense_rank": 1,
+                    "dense": 0.7465945482254028,
+                    "chunk_id": "10582939:0",
+                    "passage": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+                    "rank": 1,
+                    "rrf": 0.03278688524590164,
+                    "title": "Induction therapy with autologous mesenchymal stem cells in living-related kidney transplants: a randomized controlled trial."
+                  },
+                  {
+                    "source_id": "40164383",
+                    "score": 0.03225806451612903,
+                    "sparse_rank": 2,
+                    "bm25": 25.6580504266278,
+                    "dense_rank": 2,
+                    "dense": 0.547472357749939,
+                    "chunk_id": "40164383:3",
+                    "passage": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+                    "rank": 2,
+                    "rrf": 0.03225806451612903,
+                    "title": "Comparison of allogeneic vs autologous bone marrow–derived mesenchymal stem cells delivered by transendocardial injection in patients with ischemic cardiomyopathy: the POSEIDON randomized trial."
+                  },
+                  {
+                    "source_id": "24825841",
+                    "score": 0.029513888888888888,
+                    "sparse_rank": 12,
+                    "bm25": 18.344560390352438,
+                    "dense_rank": 4,
+                    "dense": 0.5296657085418701,
+                    "chunk_id": "24825841:0",
+                    "passage": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+                    "rank": 3,
+                    "rrf": 0.029513888888888888,
+                    "title": "Generating an iPSC bank for HLA-matched tissue transplantation based on known donor and recipient HLA types."
+                  },
+                  {
+                    "source_id": "24101431",
+                    "score": 0.029206349206349208,
+                    "sparse_rank": 15,
+                    "bm25": 17.784947920255238,
+                    "dense_rank": 3,
+                    "dense": 0.5406465530395508,
+                    "chunk_id": "24101431:1",
+                    "passage": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+                    "rank": 4,
+                    "rrf": 0.029206349206349208,
+                    "title": "The antidiabetic effect of mesenchymal stem cells is unrelated to their transdifferentiation potential but to their capability to restore Th1/Th2 balance and to modify the pancreatic microenvironment."
+                  },
+                  {
+                    "source_id": "4416964",
+                    "score": 0.029206349206349208,
+                    "sparse_rank": 3,
+                    "bm25": 22.615688270953278,
+                    "dense_rank": 15,
+                    "dense": 0.4685731828212738,
+                    "chunk_id": "4416964:0",
+                    "passage": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+                    "rank": 5,
+                    "rrf": 0.029206349206349208,
+                    "title": "Immunogenicity of induced pluripotent stem cells"
+                  }
+                ]
+              },
+              {
+                "query": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies no significant effect ineffective",
+                "hits": [
+                  {
+                    "source_id": "10582939",
+                    "score": 0.03278688524590164,
+                    "sparse_rank": 1,
+                    "bm25": 42.60660441089877,
+                    "dense_rank": 1,
+                    "dense": 0.755422830581665,
+                    "chunk_id": "10582939:0",
+                    "passage": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+                    "rank": 1,
+                    "rrf": 0.03278688524590164,
+                    "title": "Induction therapy with autologous mesenchymal stem cells in living-related kidney transplants: a randomized controlled trial."
+                  },
+                  {
+                    "source_id": "40164383",
+                    "score": 0.03225806451612903,
+                    "sparse_rank": 2,
+                    "bm25": 28.62210127880503,
+                    "dense_rank": 2,
+                    "dense": 0.5518261790275574,
+                    "chunk_id": "40164383:3",
+                    "passage": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+                    "rank": 2,
+                    "rrf": 0.03225806451612903,
+                    "title": "Comparison of allogeneic vs autologous bone marrow–derived mesenchymal stem cells delivered by transendocardial injection in patients with ischemic cardiomyopathy: the POSEIDON randomized trial."
+                  },
+                  {
+                    "source_id": "24101431",
+                    "score": 0.03125763125763126,
+                    "sparse_rank": 5,
+                    "bm25": 22.60557972619326,
+                    "dense_rank": 3,
+                    "dense": 0.5435336828231812,
+                    "chunk_id": "24101431:1",
+                    "passage": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+                    "rank": 3,
+                    "rrf": 0.03125763125763126,
+                    "title": "The antidiabetic effect of mesenchymal stem cells is unrelated to their transdifferentiation potential but to their capability to restore Th1/Th2 balance and to modify the pancreatic microenvironment."
+                  },
+                  {
+                    "source_id": "4416964",
+                    "score": 0.029030910609857977,
+                    "sparse_rank": 3,
+                    "bm25": 24.35074867663041,
+                    "dense_rank": 16,
+                    "dense": 0.465721070766449,
+                    "chunk_id": "4416964:0",
+                    "passage": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+                    "rank": 4,
+                    "rrf": 0.029030910609857977,
+                    "title": "Immunogenicity of induced pluripotent stem cells"
+                  },
+                  {
+                    "source_id": "24825841",
+                    "score": 0.028612012987012988,
+                    "sparse_rank": 17,
+                    "bm25": 18.344560390352438,
+                    "dense_rank": 4,
+                    "dense": 0.5156614780426025,
+                    "chunk_id": "24825841:0",
+                    "passage": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+                    "rank": 5,
+                    "rrf": 0.028612012987012988,
+                    "title": "Generating an iPSC bank for HLA-matched tissue transplantation based on known donor and recipient HLA types."
+                  }
+                ]
+              },
+              {
+                "query": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies refuted does not contrary evidence",
+                "hits": [
+                  {
+                    "source_id": "10582939",
+                    "score": 0.03278688524590164,
+                    "sparse_rank": 1,
+                    "bm25": 42.60660441089877,
+                    "dense_rank": 1,
+                    "dense": 0.7410019040107727,
+                    "chunk_id": "10582939:0",
+                    "passage": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+                    "rank": 1,
+                    "rrf": 0.03278688524590164,
+                    "title": "Induction therapy with autologous mesenchymal stem cells in living-related kidney transplants: a randomized controlled trial."
+                  },
+                  {
+                    "source_id": "40164383",
+                    "score": 0.03225806451612903,
+                    "sparse_rank": 2,
+                    "bm25": 27.182229704146653,
+                    "dense_rank": 2,
+                    "dense": 0.5428422689437866,
+                    "chunk_id": "40164383:3",
+                    "passage": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+                    "rank": 2,
+                    "rrf": 0.03225806451612903,
+                    "title": "Comparison of allogeneic vs autologous bone marrow–derived mesenchymal stem cells delivered by transendocardial injection in patients with ischemic cardiomyopathy: the POSEIDON randomized trial."
+                  },
+                  {
+                    "source_id": "4416964",
+                    "score": 0.03036576949620428,
+                    "sparse_rank": 3,
+                    "bm25": 23.544790214379724,
+                    "dense_rank": 9,
+                    "dense": 0.4776688814163208,
+                    "chunk_id": "4416964:0",
+                    "passage": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+                    "rank": 3,
+                    "rrf": 0.03036576949620428,
+                    "title": "Immunogenicity of induced pluripotent stem cells"
+                  },
+                  {
+                    "source_id": "24101431",
+                    "score": 0.029571646010002173,
+                    "sparse_rank": 13,
+                    "bm25": 18.697074080965162,
+                    "dense_rank": 3,
+                    "dense": 0.5309714674949646,
+                    "chunk_id": "24101431:1",
+                    "passage": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+                    "rank": 4,
+                    "rrf": 0.029571646010002173,
+                    "title": "The antidiabetic effect of mesenchymal stem cells is unrelated to their transdifferentiation potential but to their capability to restore Th1/Th2 balance and to modify the pancreatic microenvironment."
+                  },
+                  {
+                    "source_id": "24825841",
+                    "score": 0.028958333333333336,
+                    "sparse_rank": 15,
+                    "bm25": 18.344560390352438,
+                    "dense_rank": 4,
+                    "dense": 0.5240721702575684,
+                    "chunk_id": "24825841:0",
+                    "passage": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+                    "rank": 5,
+                    "rrf": 0.028958333333333336,
+                    "title": "Generating an iPSC bank for HLA-matched tissue transplantation based on known donor and recipient HLA types."
+                  }
+                ]
+              }
+            ],
+            "evidence": [
+              {
+                "source_id": "10582939",
+                "chunk_id": "10582939:0",
+                "quote": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging.",
+                "label": "NEUTRAL",
+                "support": 8.364192763110623e-05,
+                "contradiction": 0.0018561542965471745,
+                "neutral": 0.9980601668357849,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.3911779224872589,
+                "context_contradiction": 0.007332989480346441,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.33079642401917303,
+                "source_group": "e0d2bf33e5dcfb31",
+                "retrieval_rank": 1
+              },
+              {
+                "source_id": "10582939",
+                "chunk_id": "10582939:0",
+                "quote": "OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor.",
+                "label": "NEUTRAL",
+                "support": 0.00036017794627696276,
+                "contradiction": 0.0002853916957974434,
+                "neutral": 0.9993544220924377,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.5378290414810181,
+                "context_contradiction": 0.007332989480346441,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.20114475762401118,
+                "source_group": "e0d2bf33e5dcfb31",
+                "retrieval_rank": 1
+              },
+              {
+                "source_id": "10582939",
+                "chunk_id": "10582939:0",
+                "quote": "Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease.",
+                "label": "NEUTRAL",
+                "support": 0.005095545202493668,
+                "contradiction": 8.095619705272838e-05,
+                "neutral": 0.9948234558105469,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.6684454083442688,
+                "context_contradiction": 0.007332989480346441,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.17952544126083358,
+                "source_group": "e0d2bf33e5dcfb31",
+                "retrieval_rank": 1
+              },
+              {
+                "source_id": "10582939",
+                "chunk_id": "10582939:0",
+                "quote": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+                "label": "NEUTRAL",
+                "support": 0.16738031804561615,
+                "contradiction": 0.007332989480346441,
+                "neutral": 0.8252867460250854,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.6845635175704956,
+                "context_contradiction": 0.007332989480346441,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.6917595358677813,
+                "source_group": "e0d2bf33e5dcfb31",
+                "retrieval_rank": 1
+              },
+              {
+                "source_id": "40164383",
+                "chunk_id": "40164383:3",
+                "quote": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions.",
+                "label": "NEUTRAL",
+                "support": 0.007901031523942947,
+                "contradiction": 0.00028563171508722007,
+                "neutral": 0.9918133020401001,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.3495546281337738,
+                "context_contradiction": 0.0004498944617807865,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.1998758162887877,
+                "source_group": "4af6be08921eca8d",
+                "retrieval_rank": 2
+              },
+              {
+                "source_id": "40164383",
+                "chunk_id": "40164383:3",
+                "quote": "In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling.",
+                "label": "NEUTRAL",
+                "support": 0.004025090020149946,
+                "contradiction": 0.00010359787120250985,
+                "neutral": 0.9958712458610535,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.23381145298480988,
+                "context_contradiction": 0.0004498944617807865,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 4.712566902555996e-05,
+                "source_group": "4af6be08921eca8d",
+                "retrieval_rank": 2
+              },
+              {
+                "source_id": "40164383",
+                "chunk_id": "40164383:3",
+                "quote": "TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+                "label": "NEUTRAL",
+                "support": 0.00026833900483325124,
+                "contradiction": 0.00035469289286993444,
+                "neutral": 0.9993769526481628,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.15558600425720215,
+                "context_contradiction": 0.0004498944617807865,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.0,
+                "source_group": "4af6be08921eca8d",
+                "retrieval_rank": 2
+              },
+              {
+                "source_id": "40164383",
+                "chunk_id": "40164383:3",
+                "quote": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+                "label": "NEUTRAL",
+                "support": 0.0016401390312239528,
+                "contradiction": 0.0004498944617807865,
+                "neutral": 0.9979099631309509,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.34971845149993896,
+                "context_contradiction": 0.0004498944617807865,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.1998758162887877,
+                "source_group": "4af6be08921eca8d",
+                "retrieval_rank": 2
+              },
+              {
+                "source_id": "4416964",
+                "chunk_id": "4416964:0",
+                "quote": "We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients.",
+                "label": "NEUTRAL",
+                "support": 0.0020691952668130398,
+                "contradiction": 0.005874716676771641,
+                "neutral": 0.9920560717582703,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.3549848794937134,
+                "context_contradiction": 0.00902506709098816,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.21127116036122173,
+                "source_group": "00a8be1c3ee2b797",
+                "retrieval_rank": 3
+              },
+              {
+                "source_id": "4416964",
+                "chunk_id": "4416964:0",
+                "quote": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells.",
+                "label": "NEUTRAL",
+                "support": 0.0002803696843329817,
+                "contradiction": 0.00028026249492540956,
+                "neutral": 0.9994392991065979,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.4341772198677063,
+                "context_contradiction": 0.00902506709098816,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.21091185218530464,
+                "source_group": "00a8be1c3ee2b797",
+                "retrieval_rank": 3
+              },
+              {
+                "source_id": "4416964",
+                "chunk_id": "4416964:0",
+                "quote": "Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined.",
+                "label": "NEUTRAL",
+                "support": 0.00014292178093455732,
+                "contradiction": 0.001470103394240141,
+                "neutral": 0.9983869791030884,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.48727214336395264,
+                "context_contradiction": 0.00902506709098816,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.1773652122799208,
+                "source_group": "00a8be1c3ee2b797",
+                "retrieval_rank": 3
+              },
+              {
+                "source_id": "4416964",
+                "chunk_id": "4416964:0",
+                "quote": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+                "label": "NEUTRAL",
+                "support": 0.002252994105219841,
+                "contradiction": 0.00902506709098816,
+                "neutral": 0.9887219667434692,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.45550405979156494,
+                "context_contradiction": 0.00902506709098816,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.3722524534277661,
+                "source_group": "00a8be1c3ee2b797",
+                "retrieval_rank": 3
+              },
+              {
+                "source_id": "24825841",
+                "chunk_id": "24825841:0",
+                "quote": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential.",
+                "label": "NEUTRAL",
+                "support": 0.0009375032968819141,
+                "contradiction": 0.006175484508275986,
+                "neutral": 0.9928869605064392,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.5262041687965393,
+                "context_contradiction": 0.017226986587047577,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.2113182860302473,
+                "source_group": "104ff0a24d13cd7b",
+                "retrieval_rank": 4
+              },
+              {
+                "source_id": "24825841",
+                "chunk_id": "24825841:0",
+                "quote": "Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+                "label": "NEUTRAL",
+                "support": 0.00030822172993794084,
+                "contradiction": 0.000582160719204694,
+                "neutral": 0.9991095662117004,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.32939592003822327,
+                "context_contradiction": 0.017226986587047577,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.057777037193106486,
+                "source_group": "104ff0a24d13cd7b",
+                "retrieval_rank": 4
+              },
+              {
+                "source_id": "24825841",
+                "chunk_id": "24825841:0",
+                "quote": "Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression.",
+                "label": "NEUTRAL",
+                "support": 0.0005025244900025427,
+                "contradiction": 0.000289619667455554,
+                "neutral": 0.9992079138755798,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.30149757862091064,
+                "context_contradiction": 0.017226986587047577,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.00616971867326331,
+                "source_group": "104ff0a24d13cd7b",
+                "retrieval_rank": 4
+              },
+              {
+                "source_id": "24825841",
+                "chunk_id": "24825841:0",
+                "quote": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+                "label": "NEUTRAL",
+                "support": 0.00397444749251008,
+                "contradiction": 0.017226986587047577,
+                "neutral": 0.9787985682487488,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.5133892893791199,
+                "context_contradiction": 0.017226986587047577,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.21744087903448506,
+                "source_group": "104ff0a24d13cd7b",
+                "retrieval_rank": 4
+              },
+              {
+                "source_id": "24101431",
+                "chunk_id": "24101431:1",
+                "quote": "Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+                "label": "NEUTRAL",
+                "support": 0.0002245814393972978,
+                "contradiction": 0.000292566284770146,
+                "neutral": 0.9994828701019287,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.4028206467628479,
+                "context_contradiction": 0.0009500305168330669,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.09876511190538714,
+                "source_group": "38c1345bde6d2246",
+                "retrieval_rank": 5
+              },
+              {
+                "source_id": "24101431",
+                "chunk_id": "24101431:1",
+                "quote": "MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor.",
+                "label": "NEUTRAL",
+                "support": 0.0021265032701194286,
+                "contradiction": 0.0029924949631094933,
+                "neutral": 0.9948810338973999,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.3543328046798706,
+                "context_contradiction": 0.0009500305168330669,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.09264251890114938,
+                "source_group": "38c1345bde6d2246",
+                "retrieval_rank": 5
+              },
+              {
+                "source_id": "24101431",
+                "chunk_id": "24101431:1",
+                "quote": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells.",
+                "label": "NEUTRAL",
+                "support": 0.00014547254249919206,
+                "contradiction": 0.0010921793291345239,
+                "neutral": 0.9987623691558838,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.308870792388916,
+                "context_contradiction": 0.0009500305168330669,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.02872335655990305,
+                "source_group": "38c1345bde6d2246",
+                "retrieval_rank": 5
+              },
+              {
+                "source_id": "24101431",
+                "chunk_id": "24101431:1",
+                "quote": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+                "label": "NEUTRAL",
+                "support": 0.0002500501286704093,
+                "contradiction": 0.0009500305168330669,
+                "neutral": 0.9987999200820923,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.4679022431373596,
+                "context_contradiction": 0.0009500305168330669,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.12131874979202688,
+                "source_group": "38c1345bde6d2246",
+                "retrieval_rank": 5
+              }
+            ],
+            "audited_passages": 5
+          },
+          "timings": {
+            "verification": 3.562526599969715,
+            "counter_evidence": 0.22916819993406534
+          },
+          "decision": "ABSTAIN",
+          "status": "INSUFFICIENT",
+          "reason": "No sufficiently aligned supporting or contradictory evidence could verify this claim.",
+          "components": {
+            "support_max": 0.16738031804561615,
+            "contradiction_max": 0.017226986587047577,
+            "supporting_documents": 0,
+            "strong_support": false,
+            "weak_support": false,
+            "query_jaccard": 0.7777777777777777,
+            "query_relevant": true
+          }
+        }
+      ],
+      "claim_extraction": "sentence/semicolon candidates; complex sentences may not be atomic",
+      "unexamined_sentences_omitted": false,
+      "decision": "ABSTAIN",
+      "final_answer": "I could not retrieve sufficiently robust evidence from this corpus to answer this claim confidently.",
+      "elapsed_seconds": 16.24210310005583,
+      "timings": {
+        "verification": 13.095957399811596,
+        "counter_evidence": 1.784528600051999,
+        "retrieval": 0.0683362998533994,
+        "generation": 1.0394697999581695,
+        "query_stability": 0.20025369990617037,
+        "other_audit": 0.053557300474494696
+      },
+      "components_enabled": {
+        "counter_evidence": true,
+        "query_stability": true
+      },
+      "evaluation": {
+        "content_claims": [],
+        "claim_judgments": [],
+        "ir": {
+          "P@5": 0.2,
+          "Recall@5": 1.0,
+          "F1@5": 0.33333333333333337,
+          "MRR@5": 1.0,
+          "nDCG@5": 1.0,
+          "Recall@1": 1.0,
+          "P@10": 0.1,
+          "Recall@10": 1.0,
+          "F1@10": 0.18181818181818182,
+          "MRR@10": 1.0,
+          "nDCG@10": 1.0
+        },
+        "gold_sentence_recall": 0.0,
+        "answer_stance_diagnostic": {
+          "predicted": "ABSTAIN",
+          "scores": null
+        },
+        "gold_stance_agreement": false,
+        "answered": false,
+        "fully_supported_answer": false,
+        "evidence_precision": "Not available — insufficient gold annotation",
+        "freeform_answer_correctness": "Not available — insufficient gold annotation"
+      }
+    },
+    "vanilla": {
+      "query": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.",
+      "method": "hybrid",
+      "k": 5,
+      "retrieved": [
+        {
+          "source_id": "10582939",
+          "score": 0.03278688524590164,
+          "sparse_rank": 1,
+          "bm25": 42.60660441089877,
+          "dense_rank": 1,
+          "dense": 0.7497351765632629,
+          "chunk_id": "10582939:0",
+          "passage": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+          "rank": 1,
+          "rrf": 0.03278688524590164,
+          "title": "Induction therapy with autologous mesenchymal stem cells in living-related kidney transplants: a randomized controlled trial."
+        },
+        {
+          "source_id": "40164383",
+          "score": 0.03225806451612903,
+          "sparse_rank": 2,
+          "bm25": 25.6580504266278,
+          "dense_rank": 2,
+          "dense": 0.5499600768089294,
+          "chunk_id": "40164383:3",
+          "passage": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+          "rank": 2,
+          "rrf": 0.03225806451612903,
+          "title": "Comparison of allogeneic vs autologous bone marrow–derived mesenchymal stem cells delivered by transendocardial injection in patients with ischemic cardiomyopathy: the POSEIDON randomized trial."
+        },
+        {
+          "source_id": "4416964",
+          "score": 0.02976190476190476,
+          "sparse_rank": 3,
+          "bm25": 22.615688270953278,
+          "dense_rank": 12,
+          "dense": 0.4737921953201294,
+          "chunk_id": "4416964:0",
+          "passage": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+          "rank": 3,
+          "rrf": 0.02976190476190476,
+          "title": "Immunogenicity of induced pluripotent stem cells"
+        },
+        {
+          "source_id": "24825841",
+          "score": 0.029513888888888888,
+          "sparse_rank": 12,
+          "bm25": 18.344560390352438,
+          "dense_rank": 4,
+          "dense": 0.5237165689468384,
+          "chunk_id": "24825841:0",
+          "passage": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+          "rank": 4,
+          "rrf": 0.029513888888888888,
+          "title": "Generating an iPSC bank for HLA-matched tissue transplantation based on known donor and recipient HLA types."
+        },
+        {
+          "source_id": "24101431",
+          "score": 0.029206349206349208,
+          "sparse_rank": 15,
+          "bm25": 17.784947920255238,
+          "dense_rank": 3,
+          "dense": 0.540718674659729,
+          "chunk_id": "24101431:1",
+          "passage": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+          "rank": 5,
+          "rrf": 0.029206349206349208,
+          "title": "The antidiabetic effect of mesenchymal stem cells is unrelated to their transdifferentiation potential but to their capability to restore Th1/Th2 balance and to modify the pancreatic microenvironment."
+        }
+      ],
+      "generated_answer": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies. [10582939] [40164383] [4416964]",
+      "generation_mode": "local-flan-t5-small",
+      "warning": "Initial references are provisional context IDs; final citations are assigned by the evidence audit.",
+      "elapsed_seconds": 0.9580830000340939,
+      "timings": {
+        "retrieval": 0.057962700026109815,
+        "generation": 0.9001191998831928
+      },
+      "evaluation": {
+        "content_claims": [
+          "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies."
+        ],
+        "claim_judgments": [
+          {
+            "claim": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.",
+            "supported": false,
+            "contradicted": false,
+            "unsupported": true,
+            "evidence": [
+              {
+                "source_id": "10582939",
+                "chunk_id": "10582939:0",
+                "quote": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging.",
+                "label": "NEUTRAL",
+                "support": 8.364192763110623e-05,
+                "contradiction": 0.0018561542965471745,
+                "neutral": 0.9980601668357849,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.3911779224872589,
+                "context_contradiction": 0.007332989480346441,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.33079642401917303,
+                "source_group": "e0d2bf33e5dcfb31",
+                "retrieval_rank": 1
+              },
+              {
+                "source_id": "10582939",
+                "chunk_id": "10582939:0",
+                "quote": "OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor.",
+                "label": "NEUTRAL",
+                "support": 0.00036017794627696276,
+                "contradiction": 0.0002853916957974434,
+                "neutral": 0.9993544220924377,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.5378290414810181,
+                "context_contradiction": 0.007332989480346441,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.20114475762401118,
+                "source_group": "e0d2bf33e5dcfb31",
+                "retrieval_rank": 1
+              },
+              {
+                "source_id": "10582939",
+                "chunk_id": "10582939:0",
+                "quote": "Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease.",
+                "label": "NEUTRAL",
+                "support": 0.005095545202493668,
+                "contradiction": 8.095619705272838e-05,
+                "neutral": 0.9948234558105469,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.6684454083442688,
+                "context_contradiction": 0.007332989480346441,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.17952544126083358,
+                "source_group": "e0d2bf33e5dcfb31",
+                "retrieval_rank": 1
+              },
+              {
+                "source_id": "10582939",
+                "chunk_id": "10582939:0",
+                "quote": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+                "label": "NEUTRAL",
+                "support": 0.16738031804561615,
+                "contradiction": 0.007332989480346441,
+                "neutral": 0.8252867460250854,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.6845635175704956,
+                "context_contradiction": 0.007332989480346441,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.6917595358677813,
+                "source_group": "e0d2bf33e5dcfb31",
+                "retrieval_rank": 1
+              },
+              {
+                "source_id": "40164383",
+                "chunk_id": "40164383:3",
+                "quote": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions.",
+                "label": "NEUTRAL",
+                "support": 0.007901031523942947,
+                "contradiction": 0.00028563171508722007,
+                "neutral": 0.9918133020401001,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.3495546281337738,
+                "context_contradiction": 0.0004498944617807865,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.1998758162887877,
+                "source_group": "4af6be08921eca8d",
+                "retrieval_rank": 2
+              },
+              {
+                "source_id": "40164383",
+                "chunk_id": "40164383:3",
+                "quote": "In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling.",
+                "label": "NEUTRAL",
+                "support": 0.004025090020149946,
+                "contradiction": 0.00010359787120250985,
+                "neutral": 0.9958712458610535,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.23381145298480988,
+                "context_contradiction": 0.0004498944617807865,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 4.712566902555996e-05,
+                "source_group": "4af6be08921eca8d",
+                "retrieval_rank": 2
+              },
+              {
+                "source_id": "40164383",
+                "chunk_id": "40164383:3",
+                "quote": "TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+                "label": "NEUTRAL",
+                "support": 0.00026833900483325124,
+                "contradiction": 0.00035469289286993444,
+                "neutral": 0.9993769526481628,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.15558600425720215,
+                "context_contradiction": 0.0004498944617807865,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.0,
+                "source_group": "4af6be08921eca8d",
+                "retrieval_rank": 2
+              },
+              {
+                "source_id": "40164383",
+                "chunk_id": "40164383:3",
+                "quote": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+                "label": "NEUTRAL",
+                "support": 0.0016401390312239528,
+                "contradiction": 0.0004498944617807865,
+                "neutral": 0.9979099631309509,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.34971845149993896,
+                "context_contradiction": 0.0004498944617807865,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.1998758162887877,
+                "source_group": "4af6be08921eca8d",
+                "retrieval_rank": 2
+              },
+              {
+                "source_id": "4416964",
+                "chunk_id": "4416964:0",
+                "quote": "We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients.",
+                "label": "NEUTRAL",
+                "support": 0.0020691952668130398,
+                "contradiction": 0.005874716676771641,
+                "neutral": 0.9920560717582703,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.3549848794937134,
+                "context_contradiction": 0.00902506709098816,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.21127116036122173,
+                "source_group": "00a8be1c3ee2b797",
+                "retrieval_rank": 3
+              },
+              {
+                "source_id": "4416964",
+                "chunk_id": "4416964:0",
+                "quote": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells.",
+                "label": "NEUTRAL",
+                "support": 0.0002803696843329817,
+                "contradiction": 0.00028026249492540956,
+                "neutral": 0.9994392991065979,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.4341772198677063,
+                "context_contradiction": 0.00902506709098816,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.21091185218530464,
+                "source_group": "00a8be1c3ee2b797",
+                "retrieval_rank": 3
+              },
+              {
+                "source_id": "4416964",
+                "chunk_id": "4416964:0",
+                "quote": "Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined.",
+                "label": "NEUTRAL",
+                "support": 0.00014292178093455732,
+                "contradiction": 0.001470103394240141,
+                "neutral": 0.9983869791030884,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.48727214336395264,
+                "context_contradiction": 0.00902506709098816,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.1773652122799208,
+                "source_group": "00a8be1c3ee2b797",
+                "retrieval_rank": 3
+              },
+              {
+                "source_id": "4416964",
+                "chunk_id": "4416964:0",
+                "quote": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+                "label": "NEUTRAL",
+                "support": 0.002252994105219841,
+                "contradiction": 0.00902506709098816,
+                "neutral": 0.9887219667434692,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.45550405979156494,
+                "context_contradiction": 0.00902506709098816,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.3722524534277661,
+                "source_group": "00a8be1c3ee2b797",
+                "retrieval_rank": 3
+              },
+              {
+                "source_id": "24825841",
+                "chunk_id": "24825841:0",
+                "quote": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential.",
+                "label": "NEUTRAL",
+                "support": 0.0009375032968819141,
+                "contradiction": 0.006175484508275986,
+                "neutral": 0.9928869605064392,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.5262041687965393,
+                "context_contradiction": 0.017226986587047577,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.2113182860302473,
+                "source_group": "104ff0a24d13cd7b",
+                "retrieval_rank": 4
+              },
+              {
+                "source_id": "24825841",
+                "chunk_id": "24825841:0",
+                "quote": "Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+                "label": "NEUTRAL",
+                "support": 0.00030822172993794084,
+                "contradiction": 0.000582160719204694,
+                "neutral": 0.9991095662117004,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.32939592003822327,
+                "context_contradiction": 0.017226986587047577,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.057777037193106486,
+                "source_group": "104ff0a24d13cd7b",
+                "retrieval_rank": 4
+              },
+              {
+                "source_id": "24825841",
+                "chunk_id": "24825841:0",
+                "quote": "Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression.",
+                "label": "NEUTRAL",
+                "support": 0.0005025244900025427,
+                "contradiction": 0.000289619667455554,
+                "neutral": 0.9992079138755798,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.30149757862091064,
+                "context_contradiction": 0.017226986587047577,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.00616971867326331,
+                "source_group": "104ff0a24d13cd7b",
+                "retrieval_rank": 4
+              },
+              {
+                "source_id": "24825841",
+                "chunk_id": "24825841:0",
+                "quote": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+                "label": "NEUTRAL",
+                "support": 0.00397444749251008,
+                "contradiction": 0.017226986587047577,
+                "neutral": 0.9787985682487488,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.5133892893791199,
+                "context_contradiction": 0.017226986587047577,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.21744087903448506,
+                "source_group": "104ff0a24d13cd7b",
+                "retrieval_rank": 4
+              },
+              {
+                "source_id": "24101431",
+                "chunk_id": "24101431:1",
+                "quote": "Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+                "label": "NEUTRAL",
+                "support": 0.0002245814393972978,
+                "contradiction": 0.000292566284770146,
+                "neutral": 0.9994828701019287,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.4028206467628479,
+                "context_contradiction": 0.0009500305168330669,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.09876511190538714,
+                "source_group": "38c1345bde6d2246",
+                "retrieval_rank": 5
+              },
+              {
+                "source_id": "24101431",
+                "chunk_id": "24101431:1",
+                "quote": "MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor.",
+                "label": "NEUTRAL",
+                "support": 0.0021265032701194286,
+                "contradiction": 0.0029924949631094933,
+                "neutral": 0.9948810338973999,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.3543328046798706,
+                "context_contradiction": 0.0009500305168330669,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.09264251890114938,
+                "source_group": "38c1345bde6d2246",
+                "retrieval_rank": 5
+              },
+              {
+                "source_id": "24101431",
+                "chunk_id": "24101431:1",
+                "quote": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells.",
+                "label": "NEUTRAL",
+                "support": 0.00014547254249919206,
+                "contradiction": 0.0010921793291345239,
+                "neutral": 0.9987623691558838,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.308870792388916,
+                "context_contradiction": 0.0009500305168330669,
+                "alignment_passed": false,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.02872335655990305,
+                "source_group": "38c1345bde6d2246",
+                "retrieval_rank": 5
+              },
+              {
+                "source_id": "24101431",
+                "chunk_id": "24101431:1",
+                "quote": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+                "label": "NEUTRAL",
+                "support": 0.0002500501286704093,
+                "contradiction": 0.0009500305168330669,
+                "neutral": 0.9987999200820923,
+                "missing_entity_anchors": [],
+                "hard_entity_mismatch": false,
+                "semantic_alignment": 0.4679022431373596,
+                "context_contradiction": 0.0009500305168330669,
+                "alignment_passed": true,
+                "entity_check_passed": true,
+                "idf_weighted_claim_term_coverage": 0.12131874979202688,
+                "source_group": "38c1345bde6d2246",
+                "retrieval_rank": 5
+              }
+            ]
+          }
+        ],
+        "ir": {
+          "P@5": 0.2,
+          "Recall@5": 1.0,
+          "F1@5": 0.33333333333333337,
+          "MRR@5": 1.0,
+          "nDCG@5": 1.0,
+          "Recall@1": 1.0,
+          "P@10": 0.1,
+          "Recall@10": 1.0,
+          "F1@10": 0.18181818181818182,
+          "MRR@10": 1.0,
+          "nDCG@10": 1.0
+        },
+        "gold_sentence_recall": 0.0,
+        "answer_stance_diagnostic": {
+          "predicted": "SUPPORT",
+          "scores": [
+            0.0008555352687835693,
+            0.9944004416465759,
+            0.004744093399494886
+          ]
+        },
+        "gold_stance_agreement": true,
+        "answered": true,
+        "fully_supported_answer": false,
+        "evidence_precision": "Not available — insufficient gold annotation",
+        "freeform_answer_correctness": "Not available — insufficient gold annotation"
+      }
+    },
+    "nli_only": {
+      "query": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.",
+      "method": "hybrid",
+      "k": 5,
+      "initial_answer": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies. [10582939] [40164383] [4416964]",
+      "generation_mode": "local-flan-t5-small",
+      "corpus_sources": 5183,
+      "claim_mode": false,
+      "model_revisions": {
+        "sentence-transformers/all-MiniLM-L6-v2": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "cross-encoder/nli-MiniLM2-L6-H768": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+        "cross-encoder/nli-deberta-v3-small": "fa2804872c3b4bd748f38c0185cc85775361e735",
+        "google/flan-t5-small": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab"
+      },
+      "stance_model": "cross-encoder/nli-deberta-v3-small",
+      "prototype_thresholds": {
+        "strong_support": 0.8,
+        "query_jaccard": 0.15,
+        "query_cosine": 0.3
+      },
+      "warning": "Initial references are provisional context IDs; final citations are assigned by the evidence audit.",
+      "retrieved": [
+        {
+          "source_id": "10582939",
+          "score": 0.03278688524590164,
+          "sparse_rank": 1,
+          "bm25": 42.60660441089877,
+          "dense_rank": 1,
+          "dense": 0.7497351765632629,
+          "chunk_id": "10582939:0",
+          "passage": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+          "rank": 1,
+          "rrf": 0.03278688524590164,
+          "title": "Induction therapy with autologous mesenchymal stem cells in living-related kidney transplants: a randomized controlled trial."
+        },
+        {
+          "source_id": "40164383",
+          "score": 0.03225806451612903,
+          "sparse_rank": 2,
+          "bm25": 25.6580504266278,
+          "dense_rank": 2,
+          "dense": 0.5499600768089294,
+          "chunk_id": "40164383:3",
+          "passage": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+          "rank": 2,
+          "rrf": 0.03225806451612903,
+          "title": "Comparison of allogeneic vs autologous bone marrow–derived mesenchymal stem cells delivered by transendocardial injection in patients with ischemic cardiomyopathy: the POSEIDON randomized trial."
+        },
+        {
+          "source_id": "4416964",
+          "score": 0.02976190476190476,
+          "sparse_rank": 3,
+          "bm25": 22.615688270953278,
+          "dense_rank": 12,
+          "dense": 0.4737921953201294,
+          "chunk_id": "4416964:0",
+          "passage": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+          "rank": 3,
+          "rrf": 0.02976190476190476,
+          "title": "Immunogenicity of induced pluripotent stem cells"
+        },
+        {
+          "source_id": "24825841",
+          "score": 0.029513888888888888,
+          "sparse_rank": 12,
+          "bm25": 18.344560390352438,
+          "dense_rank": 4,
+          "dense": 0.5237165689468384,
+          "chunk_id": "24825841:0",
+          "passage": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+          "rank": 4,
+          "rrf": 0.029513888888888888,
+          "title": "Generating an iPSC bank for HLA-matched tissue transplantation based on known donor and recipient HLA types."
+        },
+        {
+          "source_id": "24101431",
+          "score": 0.029206349206349208,
+          "sparse_rank": 15,
+          "bm25": 17.784947920255238,
+          "dense_rank": 3,
+          "dense": 0.540718674659729,
+          "chunk_id": "24101431:1",
+          "passage": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+          "rank": 5,
+          "rrf": 0.029206349206349208,
+          "title": "The antidiabetic effect of mesenchymal stem cells is unrelated to their transdifferentiation potential but to their capability to restore Th1/Th2 balance and to modify the pancreatic microenvironment."
+        }
+      ],
+      "query_terms": [
+        {
+          "term": "rejection",
+          "df": 18,
+          "idf": 5.635561505947831,
+          "postings_sample": [
+            [
+              "2388819",
+              1
+            ],
+            [
+              "2474731",
+              2
+            ],
+            [
+              "2973910",
+              1
+            ],
+            [
+              "3545805",
+              2
+            ],
+            [
+              "4416964",
+              2
+            ],
+            [
+              "8790729",
+              1
+            ],
+            [
+              "9056874",
+              1
+            ],
+            [
+              "10128893",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "autologous",
+          "df": 24,
+          "idf": 5.354659120481429,
+          "postings_sample": [
+            [
+              "5836",
+              1
+            ],
+            [
+              "2601135",
+              4
+            ],
+            [
+              "3462075",
+              1
+            ],
+            [
+              "3619372",
+              1
+            ],
+            [
+              "3935126",
+              1
+            ],
+            [
+              "4416964",
+              3
+            ],
+            [
+              "4417177",
+              1
+            ],
+            [
+              "4457834",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "mesenchymal",
+          "df": 72,
+          "idf": 4.269745676171482,
+          "postings_sample": [
+            [
+              "104130",
+              2
+            ],
+            [
+              "1241113",
+              1
+            ],
+            [
+              "1617327",
+              4
+            ],
+            [
+              "1791714",
+              2
+            ],
+            [
+              "2828460",
+              1
+            ],
+            [
+              "2853291",
+              2
+            ],
+            [
+              "3052213",
+              1
+            ],
+            [
+              "3376731",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "transplantation",
+          "df": 96,
+          "idf": 3.9837892296871704,
+          "postings_sample": [
+            [
+              "301866",
+              2
+            ],
+            [
+              "1122198",
+              1
+            ],
+            [
+              "1905095",
+              1
+            ],
+            [
+              "2437807",
+              3
+            ],
+            [
+              "2488880",
+              1
+            ],
+            [
+              "2496002",
+              1
+            ],
+            [
+              "2559303",
+              2
+            ],
+            [
+              "2828460",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "antibodies",
+          "df": 109,
+          "idf": 3.857407688775555,
+          "postings_sample": [
+            [
+              "188911",
+              1
+            ],
+            [
+              "253672",
+              1
+            ],
+            [
+              "600808",
+              1
+            ],
+            [
+              "623486",
+              1
+            ],
+            [
+              "798152",
+              1
+            ],
+            [
+              "829646",
+              2
+            ],
+            [
+              "1259359",
+              1
+            ],
+            [
+              "1454773",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "induction",
+          "df": 249,
+          "idf": 3.0338733228405372,
+          "postings_sample": [
+            [
+              "5836",
+              1
+            ],
+            [
+              "72159",
+              1
+            ],
+            [
+              "118568",
+              1
+            ],
+            [
+              "213017",
+              1
+            ],
+            [
+              "301838",
+              1
+            ],
+            [
+              "365896",
+              1
+            ],
+            [
+              "418246",
+              1
+            ],
+            [
+              "471735",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "rates",
+          "df": 263,
+          "idf": 2.9792788700506936,
+          "postings_sample": [
+            [
+              "313403",
+              1
+            ],
+            [
+              "356218",
+              1
+            ],
+            [
+              "410286",
+              2
+            ],
+            [
+              "457630",
+              2
+            ],
+            [
+              "581832",
+              5
+            ],
+            [
+              "756887",
+              5
+            ],
+            [
+              "841371",
+              3
+            ],
+            [
+              "1102268",
+              3
+            ]
+          ]
+        },
+        {
+          "term": "therapy",
+          "df": 391,
+          "idf": 2.5833467226012528,
+          "postings_sample": [
+            [
+              "118568",
+              1
+            ],
+            [
+              "293661",
+              2
+            ],
+            [
+              "323335",
+              4
+            ],
+            [
+              "374902",
+              2
+            ],
+            [
+              "409280",
+              1
+            ],
+            [
+              "496873",
+              1
+            ],
+            [
+              "520579",
+              1
+            ],
+            [
+              "601033",
+              3
+            ]
+          ]
+        },
+        {
+          "term": "lower",
+          "df": 398,
+          "idf": 2.565624739801841,
+          "postings_sample": [
+            [
+              "4983",
+              1
+            ],
+            [
+              "202259",
+              4
+            ],
+            [
+              "313403",
+              1
+            ],
+            [
+              "380526",
+              1
+            ],
+            [
+              "409280",
+              2
+            ],
+            [
+              "456304",
+              3
+            ],
+            [
+              "519974",
+              1
+            ],
+            [
+              "520579",
+              2
+            ]
+          ]
+        },
+        {
+          "term": "stem",
+          "df": 432,
+          "idf": 2.4837499116601767,
+          "postings_sample": [
+            [
+              "5836",
+              1
+            ],
+            [
+              "33370",
+              3
+            ],
+            [
+              "36474",
+              2
+            ],
+            [
+              "92499",
+              3
+            ],
+            [
+              "104130",
+              5
+            ],
+            [
+              "106301",
+              2
+            ],
+            [
+              "226488",
+              4
+            ],
+            [
+              "243694",
+              2
+            ]
+          ]
+        },
+        {
+          "term": "receptor",
+          "df": 582,
+          "idf": 2.186003052592255,
+          "postings_sample": [
+            [
+              "5836",
+              1
+            ],
+            [
+              "118568",
+              1
+            ],
+            [
+              "207972",
+              2
+            ],
+            [
+              "266641",
+              1
+            ],
+            [
+              "306006",
+              1
+            ],
+            [
+              "364522",
+              1
+            ],
+            [
+              "368506",
+              2
+            ],
+            [
+              "519974",
+              2
+            ]
+          ]
+        },
+        {
+          "term": "than",
+          "df": 1101,
+          "idf": 1.548904071789713,
+          "postings_sample": [
+            [
+              "4983",
+              1
+            ],
+            [
+              "33370",
+              1
+            ],
+            [
+              "104130",
+              1
+            ],
+            [
+              "123859",
+              1
+            ],
+            [
+              "169264",
+              2
+            ],
+            [
+              "188911",
+              1
+            ],
+            [
+              "202259",
+              2
+            ],
+            [
+              "263364",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "has",
+          "df": 1404,
+          "idf": 1.3058955914878123,
+          "postings_sample": [
+            [
+              "7912",
+              1
+            ],
+            [
+              "19238",
+              1
+            ],
+            [
+              "70115",
+              1
+            ],
+            [
+              "87758",
+              1
+            ],
+            [
+              "103007",
+              1
+            ],
+            [
+              "140874",
+              2
+            ],
+            [
+              "152245",
+              2
+            ],
+            [
+              "159469",
+              3
+            ]
+          ]
+        },
+        {
+          "term": "cells",
+          "df": 1964,
+          "idf": 0.9703391990335961,
+          "postings_sample": [
+            [
+              "5836",
+              3
+            ],
+            [
+              "18670",
+              3
+            ],
+            [
+              "19238",
+              1
+            ],
+            [
+              "33370",
+              4
+            ],
+            [
+              "36474",
+              5
+            ],
+            [
+              "72159",
+              1
+            ],
+            [
+              "92308",
+              1
+            ],
+            [
+              "92499",
+              3
+            ]
+          ]
+        },
+        {
+          "term": "with",
+          "df": 3983,
+          "idf": 0.2634161292116899,
+          "postings_sample": [
+            [
+              "4983",
+              3
+            ],
+            [
+              "5836",
+              1
+            ],
+            [
+              "18670",
+              3
+            ],
+            [
+              "33370",
+              5
+            ],
+            [
+              "54440",
+              3
+            ],
+            [
+              "70115",
+              1
+            ],
+            [
+              "72159",
+              2
+            ],
+            [
+              "79447",
+              1
+            ]
+          ]
+        },
+        {
+          "term": "of",
+          "df": 5173,
+          "idf": 0.0020275169871053203,
+          "postings_sample": [
+            [
+              "4983",
+              6
+            ],
+            [
+              "5836",
+              12
+            ],
+            [
+              "7912",
+              7
+            ],
+            [
+              "18670",
+              12
+            ],
+            [
+              "19238",
+              13
+            ],
+            [
+              "33370",
+              11
+            ],
+            [
+              "36474",
+              4
+            ],
+            [
+              "54440",
+              21
+            ]
+          ]
+        },
+        {
+          "term": "anti-interleukin-2",
+          "df": 0,
+          "idf": 0,
+          "postings_sample": []
+        }
+      ],
+      "answer_repair": null,
+      "superseded_claims": [],
+      "query_relevance_cosine": 0.7497351765632629,
+      "stability": {
+        "kind": "not tested",
+        "tested": false,
+        "base_ids": [],
+        "variants": [],
+        "mean_jaccard": null
+      },
+      "claims": [
+        {
+          "claim": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.",
+          "claim_retrieval": [
+            {
+              "source_id": "10582939",
+              "score": 0.03278688524590164,
+              "sparse_rank": 1,
+              "bm25": 42.60660441089877,
+              "dense_rank": 1,
+              "dense": 0.7497351765632629,
+              "chunk_id": "10582939:0",
+              "passage": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+              "rank": 1,
+              "rrf": 0.03278688524590164,
+              "title": "Induction therapy with autologous mesenchymal stem cells in living-related kidney transplants: a randomized controlled trial."
+            },
+            {
+              "source_id": "40164383",
+              "score": 0.03225806451612903,
+              "sparse_rank": 2,
+              "bm25": 25.6580504266278,
+              "dense_rank": 2,
+              "dense": 0.5499600768089294,
+              "chunk_id": "40164383:3",
+              "passage": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+              "rank": 2,
+              "rrf": 0.03225806451612903,
+              "title": "Comparison of allogeneic vs autologous bone marrow–derived mesenchymal stem cells delivered by transendocardial injection in patients with ischemic cardiomyopathy: the POSEIDON randomized trial."
+            },
+            {
+              "source_id": "4416964",
+              "score": 0.02976190476190476,
+              "sparse_rank": 3,
+              "bm25": 22.615688270953278,
+              "dense_rank": 12,
+              "dense": 0.4737921953201294,
+              "chunk_id": "4416964:0",
+              "passage": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+              "rank": 3,
+              "rrf": 0.02976190476190476,
+              "title": "Immunogenicity of induced pluripotent stem cells"
+            },
+            {
+              "source_id": "24825841",
+              "score": 0.029513888888888888,
+              "sparse_rank": 12,
+              "bm25": 18.344560390352438,
+              "dense_rank": 4,
+              "dense": 0.5237165689468384,
+              "chunk_id": "24825841:0",
+              "passage": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+              "rank": 4,
+              "rrf": 0.029513888888888888,
+              "title": "Generating an iPSC bank for HLA-matched tissue transplantation based on known donor and recipient HLA types."
+            },
+            {
+              "source_id": "24101431",
+              "score": 0.029206349206349208,
+              "sparse_rank": 15,
+              "bm25": 17.784947920255238,
+              "dense_rank": 3,
+              "dense": 0.540718674659729,
+              "chunk_id": "24101431:1",
+              "passage": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+              "rank": 5,
+              "rrf": 0.029206349206349208,
+              "title": "The antidiabetic effect of mesenchymal stem cells is unrelated to their transdifferentiation potential but to their capability to restore Th1/Th2 balance and to modify the pancreatic microenvironment."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "10582939",
+              "chunk_id": "10582939:0",
+              "quote": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging.",
+              "label": "NEUTRAL",
+              "support": 8.364192763110623e-05,
+              "contradiction": 0.0018561542965471745,
+              "neutral": 0.9980601668357849,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.3911779224872589,
+              "context_contradiction": 0.007332989480346441,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.33079642401917303,
+              "source_group": "e0d2bf33e5dcfb31",
+              "retrieval_rank": 1
+            },
+            {
+              "source_id": "10582939",
+              "chunk_id": "10582939:0",
+              "quote": "OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor.",
+              "label": "NEUTRAL",
+              "support": 0.00036017794627696276,
+              "contradiction": 0.0002853916957974434,
+              "neutral": 0.9993544220924377,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.5378290414810181,
+              "context_contradiction": 0.007332989480346441,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.20114475762401118,
+              "source_group": "e0d2bf33e5dcfb31",
+              "retrieval_rank": 1
+            },
+            {
+              "source_id": "10582939",
+              "chunk_id": "10582939:0",
+              "quote": "Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease.",
+              "label": "NEUTRAL",
+              "support": 0.005095545202493668,
+              "contradiction": 8.095619705272838e-05,
+              "neutral": 0.9948234558105469,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.6684454083442688,
+              "context_contradiction": 0.007332989480346441,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.17952544126083358,
+              "source_group": "e0d2bf33e5dcfb31",
+              "retrieval_rank": 1
+            },
+            {
+              "source_id": "10582939",
+              "chunk_id": "10582939:0",
+              "quote": "CONTEXT Antibody-based induction therapy plus calcineurin inhibitors (CNIs) reduce acute rejection rates in kidney recipients; however, opportunistic infections and toxic CNI effects remain challenging. Reportedly, mesenchymal stem cells (MSCs) have successfully treated graft-vs-host disease. OBJECTIVE To assess autologous MSCs as replacement of antibody induction for patients with end-stage renal disease who undergo ABO-compatible, cross-match-negative kidney transplants from a living-related donor. DESIGN, SETTING, AND PATIENTS One hundred fifty-nine patients were enrolled in this single-site, prospective, open-label, randomized study from February 2008-May 2009, when recruitment was completed. INTERVENTION Patients were inoculated with marrow-derived autologous MSC (1-2 x 10(6)/kg) at kidney reperfusion and two weeks later. Fifty-three patients received standard-dose and 52 patients received low-dose CNIs (80% of standard); 51 patients in the control group received anti-IL-2 receptor antibody plus standard-dose CNIs.",
+              "label": "NEUTRAL",
+              "support": 0.16738031804561615,
+              "contradiction": 0.007332989480346441,
+              "neutral": 0.8252867460250854,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.6845635175704956,
+              "context_contradiction": 0.007332989480346441,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.6917595358677813,
+              "source_group": "e0d2bf33e5dcfb31",
+              "retrieval_rank": 1
+            },
+            {
+              "source_id": "40164383",
+              "chunk_id": "40164383:3",
+              "quote": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions.",
+              "label": "NEUTRAL",
+              "support": 0.007901031523942947,
+              "contradiction": 0.00028563171508722007,
+              "neutral": 0.9918133020401001,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.3495546281337738,
+              "context_contradiction": 0.0004498944617807865,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.1998758162887877,
+              "source_group": "4af6be08921eca8d",
+              "retrieval_rank": 2
+            },
+            {
+              "source_id": "40164383",
+              "chunk_id": "40164383:3",
+              "quote": "In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling.",
+              "label": "NEUTRAL",
+              "support": 0.004025090020149946,
+              "contradiction": 0.00010359787120250985,
+              "neutral": 0.9958712458610535,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.23381145298480988,
+              "context_contradiction": 0.0004498944617807865,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 4.712566902555996e-05,
+              "source_group": "4af6be08921eca8d",
+              "retrieval_rank": 2
+            },
+            {
+              "source_id": "40164383",
+              "chunk_id": "40164383:3",
+              "quote": "TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+              "label": "NEUTRAL",
+              "support": 0.00026833900483325124,
+              "contradiction": 0.00035469289286993444,
+              "neutral": 0.9993769526481628,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.15558600425720215,
+              "context_contradiction": 0.0004498944617807865,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.0,
+              "source_group": "4af6be08921eca8d",
+              "retrieval_rank": 2
+            },
+            {
+              "source_id": "40164383",
+              "chunk_id": "40164383:3",
+              "quote": "CONCLUSIONS In this early-stage study of patients with ICM, transendocardial injection of allogeneic and autologous MSCs without a placebo control were both associated with low rates of treatment-emergent SAEs, including immunologic reactions. In aggregate, MSC injection favorably affected patient functional capacity, quality of life, and ventricular remodeling. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT01087996.",
+              "label": "NEUTRAL",
+              "support": 0.0016401390312239528,
+              "contradiction": 0.0004498944617807865,
+              "neutral": 0.9979099631309509,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.34971845149993896,
+              "context_contradiction": 0.0004498944617807865,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.1998758162887877,
+              "source_group": "4af6be08921eca8d",
+              "retrieval_rank": 2
+            },
+            {
+              "source_id": "4416964",
+              "chunk_id": "4416964:0",
+              "quote": "We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients.",
+              "label": "NEUTRAL",
+              "support": 0.0020691952668130398,
+              "contradiction": 0.005874716676771641,
+              "neutral": 0.9920560717582703,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.3549848794937134,
+              "context_contradiction": 0.00902506709098816,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.21127116036122173,
+              "source_group": "00a8be1c3ee2b797",
+              "retrieval_rank": 3
+            },
+            {
+              "source_id": "4416964",
+              "chunk_id": "4416964:0",
+              "quote": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells.",
+              "label": "NEUTRAL",
+              "support": 0.0002803696843329817,
+              "contradiction": 0.00028026249492540956,
+              "neutral": 0.9994392991065979,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.4341772198677063,
+              "context_contradiction": 0.00902506709098816,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.21091185218530464,
+              "source_group": "00a8be1c3ee2b797",
+              "retrieval_rank": 3
+            },
+            {
+              "source_id": "4416964",
+              "chunk_id": "4416964:0",
+              "quote": "Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined.",
+              "label": "NEUTRAL",
+              "support": 0.00014292178093455732,
+              "contradiction": 0.001470103394240141,
+              "neutral": 0.9983869791030884,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.48727214336395264,
+              "context_contradiction": 0.00902506709098816,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.1773652122799208,
+              "source_group": "00a8be1c3ee2b797",
+              "retrieval_rank": 3
+            },
+            {
+              "source_id": "4416964",
+              "chunk_id": "4416964:0",
+              "quote": "Induced pluripotent stem cells (iPSCs), reprogrammed from somatic cells with defined factors, hold great promise for regenerative medicine as the renewable source of autologous cells. Whereas it has been generally assumed that these autologous cells should be immune-tolerated by the recipient from whom the iPSCs are derived, their immunogenicity has not been vigorously examined. We show here that, whereas embryonic stem cells (ESCs) derived from inbred C57BL/6 (B6) mice can efficiently form teratomas in B6 mice without any evident immune rejection, the allogeneic ESCs from 129/SvJ mice fail to form teratomas in B6 mice due to rapid rejection by recipients. B6 mouse embryonic fibroblasts (MEFs) were reprogrammed into iPSCs by either retroviral approach (ViPSCs) or a novel episomal approach (EiPSCs) that causes no genomic integration. In contrast to B6 ESCs, teratomas formed by B6 ViPSCs were mostly immune-rejected by B6 recipients.",
+              "label": "NEUTRAL",
+              "support": 0.002252994105219841,
+              "contradiction": 0.00902506709098816,
+              "neutral": 0.9887219667434692,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.45550405979156494,
+              "context_contradiction": 0.00902506709098816,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.3722524534277661,
+              "source_group": "00a8be1c3ee2b797",
+              "retrieval_rank": 3
+            },
+            {
+              "source_id": "24825841",
+              "chunk_id": "24825841:0",
+              "quote": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential.",
+              "label": "NEUTRAL",
+              "support": 0.0009375032968819141,
+              "contradiction": 0.006175484508275986,
+              "neutral": 0.9928869605064392,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.5262041687965393,
+              "context_contradiction": 0.017226986587047577,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.2113182860302473,
+              "source_group": "104ff0a24d13cd7b",
+              "retrieval_rank": 4
+            },
+            {
+              "source_id": "24825841",
+              "chunk_id": "24825841:0",
+              "quote": "Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+              "label": "NEUTRAL",
+              "support": 0.00030822172993794084,
+              "contradiction": 0.000582160719204694,
+              "neutral": 0.9991095662117004,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.32939592003822327,
+              "context_contradiction": 0.017226986587047577,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.057777037193106486,
+              "source_group": "104ff0a24d13cd7b",
+              "retrieval_rank": 4
+            },
+            {
+              "source_id": "24825841",
+              "chunk_id": "24825841:0",
+              "quote": "Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression.",
+              "label": "NEUTRAL",
+              "support": 0.0005025244900025427,
+              "contradiction": 0.000289619667455554,
+              "neutral": 0.9992079138755798,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.30149757862091064,
+              "context_contradiction": 0.017226986587047577,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.00616971867326331,
+              "source_group": "104ff0a24d13cd7b",
+              "retrieval_rank": 4
+            },
+            {
+              "source_id": "24825841",
+              "chunk_id": "24825841:0",
+              "quote": "The likelihood for immunological rejection of Human Leukocyte Antigens (HLA)-mismatched induced pluripotent stem cells (iPSCs) limits their therapeutic potential. Here we show how a tissue bank from 150 selected homozygous HLA-typed volunteers could match 93% of the UK population with a minimal requirement for immunosuppression. Our model provides a practical approach for using existing HLA-typed samples to generate an iPSC stem cell bank that circumvents prospective typing of a large number of individuals.",
+              "label": "NEUTRAL",
+              "support": 0.00397444749251008,
+              "contradiction": 0.017226986587047577,
+              "neutral": 0.9787985682487488,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.5133892893791199,
+              "context_contradiction": 0.017226986587047577,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.21744087903448506,
+              "source_group": "104ff0a24d13cd7b",
+              "retrieval_rank": 4
+            },
+            {
+              "source_id": "24101431",
+              "chunk_id": "24101431:1",
+              "quote": "Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+              "label": "NEUTRAL",
+              "support": 0.0002245814393972978,
+              "contradiction": 0.000292566284770146,
+              "neutral": 0.9994828701019287,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.4028206467628479,
+              "context_contradiction": 0.0009500305168330669,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.09876511190538714,
+              "source_group": "38c1345bde6d2246",
+              "retrieval_rank": 5
+            },
+            {
+              "source_id": "24101431",
+              "chunk_id": "24101431:1",
+              "quote": "MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor.",
+              "label": "NEUTRAL",
+              "support": 0.0021265032701194286,
+              "contradiction": 0.0029924949631094933,
+              "neutral": 0.9948810338973999,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.3543328046798706,
+              "context_contradiction": 0.0009500305168330669,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.09264251890114938,
+              "source_group": "38c1345bde6d2246",
+              "retrieval_rank": 5
+            },
+            {
+              "source_id": "24101431",
+              "chunk_id": "24101431:1",
+              "quote": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells.",
+              "label": "NEUTRAL",
+              "support": 0.00014547254249919206,
+              "contradiction": 0.0010921793291345239,
+              "neutral": 0.9987623691558838,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.308870792388916,
+              "context_contradiction": 0.0009500305168330669,
+              "alignment_passed": false,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.02872335655990305,
+              "source_group": "38c1345bde6d2246",
+              "retrieval_rank": 5
+            },
+            {
+              "source_id": "24101431",
+              "chunk_id": "24101431:1",
+              "quote": "This correlated with a systemic and local reduction in the abundance of autoaggressive T cells together with an increase in regulatory T cells. Additionally, in the pancreas of mice with T1DM treated with MSCs, we observed a cytokine profile shift from proinflammatory to antinflammatory. MSC transplantation did not reduce pancreatic cell apoptosis but recovered local expression and increased the circulating levels of epidermal growth factor, a pancreatic trophic factor. Therefore, the antidiabetic effect of MSCs intravenously administered is unrelated to their transdifferentiation potential but to their capability to restore the balance between Th1 and Th2 immunological responses along with the modification of the pancreatic microenvironment. Our data should be taken into account when designing clinical trials aimed to evaluate MSC transplantation in patients with T1DM since the presence of endogenous precursors seems to be critical in order to restore glycemic control.",
+              "label": "NEUTRAL",
+              "support": 0.0002500501286704093,
+              "contradiction": 0.0009500305168330669,
+              "neutral": 0.9987999200820923,
+              "missing_entity_anchors": [],
+              "hard_entity_mismatch": false,
+              "semantic_alignment": 0.4679022431373596,
+              "context_contradiction": 0.0009500305168330669,
+              "alignment_passed": true,
+              "entity_check_passed": true,
+              "idf_weighted_claim_term_coverage": 0.12131874979202688,
+              "source_group": "38c1345bde6d2246",
+              "retrieval_rank": 5
+            }
+          ],
+          "counter_evidence": {
+            "runs": [],
+            "evidence": [],
+            "queries": [],
+            "audited_passages": 0
+          },
+          "timings": {
+            "verification": 3.5765682999044657,
+            "counter_evidence": 2.200016751885414e-06
+          },
+          "decision": "ABSTAIN",
+          "status": "INSUFFICIENT",
+          "reason": "No sufficiently aligned supporting or contradictory evidence could verify this claim.",
+          "components": {
+            "support_max": 0.16738031804561615,
+            "contradiction_max": 0.017226986587047577,
+            "supporting_documents": 0,
+            "strong_support": false,
+            "weak_support": false,
+            "query_jaccard": null,
+            "query_relevant": true
+          }
+        }
+      ],
+      "claim_extraction": "sentence/semicolon candidates; complex sentences may not be atomic",
+      "unexamined_sentences_omitted": false,
+      "decision": "ABSTAIN",
+      "final_answer": "I could not retrieve sufficiently robust evidence from this corpus to answer this claim confidently.",
+      "elapsed_seconds": 15.356648599961773,
+      "timings": {
+        "verification": 14.37677549989894,
+        "counter_evidence": 5.00003807246685e-06,
+        "retrieval": 0.0463448001537472,
+        "generation": 0.8761150999926031,
+        "query_stability": 2.400018274784088e-06,
+        "other_audit": 0.05740579986013472
+      },
+      "components_enabled": {
+        "counter_evidence": false,
+        "query_stability": false
+      },
+      "evaluation": {
+        "content_claims": [],
+        "claim_judgments": [],
+        "ir": {
+          "P@5": 0.2,
+          "Recall@5": 1.0,
+          "F1@5": 0.33333333333333337,
+          "MRR@5": 1.0,
+          "nDCG@5": 1.0,
+          "Recall@1": 1.0,
+          "P@10": 0.1,
+          "Recall@10": 1.0,
+          "F1@10": 0.18181818181818182,
+          "MRR@10": 1.0,
+          "nDCG@10": 1.0
+        },
+        "gold_sentence_recall": 0.0,
+        "answer_stance_diagnostic": {
+          "predicted": "ABSTAIN",
+          "scores": null
+        },
+        "gold_stance_agreement": false,
+        "answered": false,
+        "fully_supported_answer": false,
+        "evidence_precision": "Not available — insufficient gold annotation",
+        "freeform_answer_correctness": "Not available — insufficient gold annotation"
+      }
+    }
+  },
+  "gold_refutation_diagnostic": {
+    "eligible": false,
+    "vanilla": null,
+    "ragstress": null,
+    "expanded_gold_sentence_recall": 0.0,
+    "counter_only": null
+  },
+  "stability_pairwise": [
+    0.6666666666666666,
+    0.6666666666666666,
+    1.0,
+    0.42857142857142855,
+    0.6666666666666666,
+    0.6666666666666666
+  ],
+  "counter_discovery_claims": 0,
+  "counter_tested_claims": 1,
+  "unqualified_draft": true,
+  "potential_false_confidence": false
+}

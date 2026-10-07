@@ -83,7 +83,7 @@ def novelty_experiment(args):
     rng = random.Random(SEED)
     sampled = rng.sample(sorted(qrels), min(args.limit, len(qrels)))
     methods = ['bm25'] + ([] if args.sparse_only else ['dense', 'hybrid'])
-    stability_rows, counter_rows, ablation_rows = [], [], []
+    stability_rows, counter_rows = [], []
     from .config import DATA
     gold = {str(row['id']): row for row in jsonl(DATA / 'original/claims_dev.jsonl')}
     for method in methods:
@@ -93,16 +93,6 @@ def novelty_experiment(args):
             stability_rows.append({'method': method, 'qid': qid, 'jaccard': probe['mean_jaccard']})
             hits = retriever.retrieve(query, args.k, method)
             base_ids = [h['source_id'] for h in hits]
-            relevant = {doc for doc, grade in qrels[qid].items() if grade > 0}
-            removed = next((doc for doc in base_ids if doc in relevant), None)
-            if removed:
-                other = relevant - {removed}
-                rerun = retriever.retrieve(query, args.k, method, {removed})
-                after = {h['source_id'] for h in rerun}
-                ablation_rows.append({'method': method, 'qid': qid, 'removed': removed,
-                                      'annotated_alternatives': len(other),
-                                      'alternative_recall': len(after & other) / len(other) if other else '',
-                                      'removed_absent': removed not in after})
             labels = gold.get(qid, {}).get('evidence', {})
             contradictions = {source for source, annotation in labels.items() if any(a['label'] == 'CONTRADICT' for a in annotation)}
             if contradictions:
@@ -115,22 +105,17 @@ def novelty_experiment(args):
                                      'budget_matched_original_recall': len(equal_budget & contradictions) / len(contradictions),
                                      'expanded_unique_sources': len(after)})
     write_csv(RESULTS / 'stability.csv', stability_rows)
-    write_csv(RESULTS / 'source-ablation-gold.csv', ablation_rows)
     write_csv(RESULTS / 'counter-retrieval-gold.csv', counter_rows)
     summary = []
     for method in methods:
         stability_values = [r['jaccard'] for r in stability_rows if r['method'] == method]
         counters = [r for r in counter_rows if r['method'] == method]
-        removals = [r for r in ablation_rows if r['method'] == method]
-        eligible = [r for r in removals if r['annotated_alternatives'] > 0]
         summary.append({'method': method, 'queries': len(sampled),
                         'mean_jaccard': sum(stability_values) / len(stability_values),
                         'contradiction_queries': len(counters),
                         'initial_counter_recall': sum(r['initial_contradiction_recall'] for r in counters) / len(counters) if counters else None,
                         'expanded_counter_recall': sum(r['expanded_contradiction_recall'] for r in counters) / len(counters) if counters else None,
-                        'budget_matched_original_counter_recall': sum(r['budget_matched_original_recall'] for r in counters) / len(counters) if counters else None,
-                        'ablation_queries': len(removals), 'with_gold_alternative': len(eligible),
-                        'alternative_recall': sum(r['alternative_recall'] for r in eligible) / len(eligible) if eligible else None})
+                        'budget_matched_original_counter_recall': sum(r['budget_matched_original_recall'] for r in counters) / len(counters) if counters else None})
     write_json(RESULTS / 'novelty.json', {'seed': SEED, 'sampled_test_qids': sampled, 'summary': summary,
                                         'limitations': 'Counter expansion retrieves up to 4K slots versus K initial; recall gain is not an equal-budget comparison. Template probes are not verified paraphrases. Gold used only for evaluation. No gold alternative is not evidence of claim falsity.'})
     print(json.dumps(summary, indent=2))

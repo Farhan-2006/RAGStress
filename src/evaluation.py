@@ -8,7 +8,9 @@ def metrics(ranked, qrels, k=5):
     dcg = sum((2 ** qrels.get(doc, 0) - 1) / math.log2(rank + 2) for rank, doc in enumerate(ids))
     ideal = sum((2 ** grade - 1) / math.log2(rank + 2)
                 for rank, grade in enumerate(sorted((g for g in qrels.values() if g > 0), reverse=True)[:k]))
-    return {f'P@{k}': found / k, f'Recall@{k}': found / len(relevant) if relevant else 0,
+    precision, recall = found/k, found/len(relevant) if relevant else 0
+    return {f'P@{k}': precision, f'Recall@{k}': recall,
+            f'F1@{k}': 2*precision*recall/(precision+recall) if precision+recall else 0,
             f'MRR@{k}': next((1 / (i + 1) for i, doc in enumerate(ids) if doc in relevant), 0),
             f'nDCG@{k}': dcg / ideal if ideal else 0}
 
